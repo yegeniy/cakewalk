@@ -1,8 +1,39 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
   <head>
-    <title> Hello from the CakeWalk Project </title>
+
+    <script src="http://maps.google.com/maps?file=api&v=1
+
+            &key="ABQIAAAAxEu4zYabDH1ybGR2fHbcZxSIOG_jcHTbyiVdF_0wDxeB8HluTRS8uPj0RuK03a-gofElARj0S6zaTQ" type="text/javascript">
+
+    </script>
+
   </head>
+
   <body>
-    <h1> Hello from a brand new rails project!</h1>
+
+    <div id="map" style="width: 400px; height: 300px"></div>
+
+    <script type="text/javascript">
+
+    //<![CDATA[
+
+    
+
+    var map = new GMap(document.getElementById("map"));
+
+    map.centerAndZoom(new GPoint(-83.022206, 39.998264), 3);
+
+    
+
+    //]]>
+
+    </script>
+
   </body>
+
 </html>
