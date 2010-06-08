@@ -25,3 +25,28 @@ Rendering rescues/layout (not_found)
 Processing SayController#hello (for 127.0.0.1 at 2010-06-02 13:56:36) [GET]
 Rendering say/hello
 Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SampleController#map (for 127.0.0.1 at 2010-06-08 14:34:07) [GET]
+Rendering sample/map
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/sample/map]
+
+
+Processing SampleController#map (for 127.0.0.1 at 2010-06-08 14:34:39) [GET]
+Rendering sample/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sample/map]
+
+
+Processing SampleController#map (for 127.0.0.1 at 2010-06-08 14:34:45) [GET]
+Rendering sample/map
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sample/map]
+
+
+Processing SampleController#map (for 127.0.0.1 at 2010-06-08 14:34:55) [GET]
+Rendering sample/map
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sample/map]
+
+
+Processing SampleController#map (for 127.0.0.1 at 2010-06-08 14:35:03) [GET]
+Rendering sample/map
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sample/map]
