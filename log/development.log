@@ -1025,3 +1025,46 @@ Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:16:59) [POST]
   Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
 Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma+to+100+south+st+waltham+ma
 Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing StartUpController#index (for 127.0.0.1 at 2010-06-09 14:36:56) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-09 14:36:59) [GET]
+Rendering start_up/map
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-09 14:37:09) [GET]
+Rendering start_up/map
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-09 14:38:30) [GET]
+Rendering start_up/map
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 14:40:26) [GET]
+Rendering search/index
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:40:34) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma+to+100+south+st+waltham+ma
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/result]
