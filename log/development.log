@@ -25,3 +25,605 @@ Rendering rescues/layout (not_found)
 Processing SayController#hello (for 127.0.0.1 at 2010-06-02 13:56:36) [GET]
 Rendering say/hello
 Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:22:54) [GET]
+Rendering start_up/map
+Completed in 154ms (View: 149, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 21:28:17) [GET]
+
+ActionController::RoutingError (No route matches "/friends" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:28:27) [GET]
+Rendering start_up/map
+Completed in 47ms (View: 43, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:31:04) [GET]
+Rendering start_up/map
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:33:39) [GET]
+Rendering start_up/map
+Completed in 43ms (View: 37, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:34:24) [GET]
+Rendering start_up/map
+Completed in 39ms (View: 34, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:38:27) [GET]
+Rendering start_up/map
+Completed in 400ms (View: 392, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:38:38) [GET]
+Rendering start_up/map
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:39:12) [GET]
+Rendering start_up/map
+Completed in 218ms (View: 45, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:40:27) [GET]
+Rendering start_up/map
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:42:51) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:43:10) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:45:12) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:46:28) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:46:50) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:49:04) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:53:10) [GET]
+Rendering start_up/map
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:53:15) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:55:19) [GET]
+Rendering start_up/map
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:55:53) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 21:59:56) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:00:20) [GET]
+Rendering start_up/map
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:00:44) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:04:25) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:06:04) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:06:52) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:07:09) [GET]
+Rendering start_up/map
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:07:23) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:07:40) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:08:36) [GET]
+Rendering start_up/map
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:09:12) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:09:44) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:10:15) [GET]
+Rendering start_up/map
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:10:32) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:10:45) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:13:36) [GET]
+Rendering start_up/map
+Completed in 77ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:17:09) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:18:43) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:18:55) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:19:22) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:26:02) [GET]
+Rendering start_up/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 22:27:02) [GET]
+
+ActionController::RoutingError (No route matches "/points" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 22:27:09) [GET]
+
+ActionController::RoutingError (No route matches "/point" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 22:27:48) [GET]
+
+ActionController::RoutingError (No route matches "/points" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:31:42) [GET]
+Rendering start_up/map
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#points (for 127.0.0.1 at 2010-06-08 22:32:00) [GET]
+
+ActionController::UnknownAction (No action responded to points. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartUpController#points (for 127.0.0.1 at 2010-06-08 22:32:22) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to points. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartUpController#points (for 127.0.0.1 at 2010-06-08 22:53:45) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to points. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartUpController#maps (for 127.0.0.1 at 2010-06-08 22:53:54) [GET]
+
+ActionController::UnknownAction (No action responded to maps. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartUpController#maps (for 127.0.0.1 at 2010-06-08 22:54:11) [GET]
+
+ActionController::UnknownAction (No action responded to maps. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-06-08 22:54:38) [GET]
+Rendering say/hello
+Completed in 77ms (View: 75, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-08 22:54:53) [GET]
+Rendering start_up/map
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/start_up/map]
+
+
+Processing StartUpController#map (for 127.0.0.1 at 2010-06-09 13:00:39) [GET]
+Rendering start_up/map
+Completed in 341ms (View: 340, DB: 0) | 200 OK [http://localhost/start_up/map]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePoints (20100609022417)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609022417')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePoints (20100609022417)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePoints (20100609022417)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePoints (20100609022417)
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100609173256')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mMarker Load (1.0ms)[0m   [0;1mSELECT * FROM "markers" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePoints (20100609022417)
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mMarker Load (0.0ms)[0m   [0;1mSELECT * FROM "markers" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mMarker Load (1.0ms)[0m   [0;1mSELECT * FROM "markers" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mMarker Load (1.0ms)[0m   [0;1mSELECT * FROM "markers" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mMarker Create (1.0ms)[0m   [0;1mINSERT INTO "markers" ("left", "found", "lng", "lat") VALUES(NULL, NULL, 71.63658, 42.7777)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (9.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near "MODIFY": syntax error: ALTER TABLE markers MODIFY lat numeric(15,10);[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mMarker Create (2.0ms)[0m   [0;1mINSERT INTO "markers" ("left", "found", "lng", "lat") VALUES(NULL, NULL, -71.257992, 42.366498)[0m
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:12:49) [GET]
+Rendering operate_marker/map
+Completed in 231ms (View: 229, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:14:11) [GET]
+Rendering operate_marker/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:15:24) [GET]
+Rendering operate_marker/map
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:16:24) [GET]
+Rendering operate_marker/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:27:09) [GET]
+Rendering operate_marker/map
+Completed in 165ms (View: 163, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:27:22) [GET]
+Rendering operate_marker/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:32:38) [GET]
+Rendering operate_marker/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:32:50) [GET]
+  Parameters: {"m"=>{"left"=>"", "found"=>"", "lng"=>"-71.26105785369873", "lat"=>"42.36778728401668"}}
+Rendering operate_marker/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/operate_marker/map?m%5Bfound%5D=&m%5Bleft%5D=&m%5Blng%5D=-71.26105785369873&m%5Blat%5D=42.36778728401668]
+  [4;36;1mMarker Load (1.0ms)[0m   [0;1mSELECT * FROM "markers" [0m
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:35:07) [GET]
+  Parameters: {"m"=>{"left"=>"yes", "found"=>"yes", "lng"=>"-71.25792503356934", "lat"=>"42.3671531342247"}}
+Rendering operate_marker/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/operate_marker/map?m%5Bfound%5D=yes&m%5Bleft%5D=yes&m%5Blng%5D=-71.25792503356934&m%5Blat%5D=42.3671531342247]
+  [4;35;1mMarker Load (1.0ms)[0m   [0mSELECT * FROM "markers" [0m
