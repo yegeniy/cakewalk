@@ -1,4 +1,21 @@
 <title>Home</title>
 
 <h2> Search for a path </h2>
-<form> </form>
+
+<% form_tag :action => 'result' do %>
+	<fieldset>
+		<legend> Where do want to go from? </legend>
+		
+		<p>
+			<label for="start"> Start: </label>
+			<%= text_field_tag :start, params[:start] %>
+		</p>
+		
+		<p>
+			<label for="end"> End: </label>
+			<%= text_field_tag :end, params[:end] %>
+		</p>
+		
+		<p><%= submit_tag "Search!" %></p>
+	</fieldset>
+<% end %>
