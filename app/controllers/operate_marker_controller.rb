@@ -1,0 +1,2 @@
+class OperateMarkerController < ApplicationController
+end
