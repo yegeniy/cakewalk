@@ -50,3 +50,978 @@ Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sample/map]
 Processing SampleController#map (for 127.0.0.1 at 2010-06-08 14:35:03) [GET]
 Rendering sample/map
 Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sample/map]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 08:49:29) [GET]
+
+SyntaxError (/Users/nickgordon/Work/cakewalk/app/controllers/search_controller.rb:5: syntax error, unexpected $end, expecting kEND):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 08:49:47) [GET]
+Rendering search/index
+ERROR: compiling _run_erb_app47views47search47index46html46erb RAISED compile error
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:8: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47search47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>Home</title>\n\n<h2> Search for a path </h2>\n"
+
+
+;  form_for :googlesearch; @output_buffer.concat "\n\t"
+; @output_buffer.concat(( f.text_field 'From: ' ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat(( f.text_field 'To: ' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:8:in `compile!'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:8: syntax error, unexpected kENSURE, expecting $end) on line #8 of app/views/search/index.html.erb:
+5: 	<%= f.text_field 'From: ' %>
+6: 	<%= f.text_field 'To: ' %>
+7: <% end %>
+
+    app/views/search/index.html.erb:8:in `compile!'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 08:50:24) [GET]
+Rendering search/index
+ERROR: compiling _run_erb_app47views47search47index46html46erb RAISED compile error
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:9: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47search47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>Home</title>\n\n<h2> Search for a path </h2>\n\n"
+
+
+
+;  form_for :googlesearch; @output_buffer.concat "\n\t"
+; @output_buffer.concat(( f.text_field 'From: ' ).to_s); @output_buffer.concat " </p>\n\t"
+; @output_buffer.concat(( f.text_field 'To: ' ).to_s); @output_buffer.concat " </p>\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:9:in `compile!'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:9: syntax error, unexpected kENSURE, expecting $end) on line #9 of app/views/search/index.html.erb:
+6: 	<%= f.text_field 'From: ' %> </p>
+7: 	<%= f.text_field 'To: ' %> </p>
+8: <% end %>
+
+    app/views/search/index.html.erb:9:in `compile!'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 08:53:37) [GET]
+Rendering search/index
+ERROR: compiling _run_erb_app47views47search47index46html46erb RAISED compile error
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:5: syntax error, unexpected kDO_BLOCK
+...l => {:action => 'search'}, do |f|; @output_buffer.concat "\...
+                              ^
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:9: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47search47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>Home</title>\n\n<h2> Search for a path </h2>\n\n"
+
+
+
+;  form_for :to, :from, :url => {:action => 'search'}, do |f|; @output_buffer.concat "\n\t"
+; @output_buffer.concat(( f.text_field 'From: ' ).to_s); @output_buffer.concat " </p>\n\t"
+; @output_buffer.concat(( f.text_field 'To: ' ).to_s); @output_buffer.concat " </p>\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:9:in `compile!'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/nickgordon/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/nickgordon/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/nickgordon/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/nickgordon/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:5: syntax error, unexpected kDO_BLOCK
+...l => {:action => 'search'}, do |f|; @output_buffer.concat "\...
+                              ^
+/Users/nickgordon/Work/cakewalk/app/views/search/index.html.erb:9: syntax error, unexpected kENSURE, expecting $end) on line #5 of app/views/search/index.html.erb:
+2: 
+3: <h2> Search for a path </h2>
+4: 
+5: <% form_for :to, :from, :url => {:action => 'search'}, do |f|%>
+6: 	<%= f.text_field 'From: ' %> </p>
+7: 	<%= f.text_field 'To: ' %> </p>
+8: <% end %>
+
+    app/views/search/index.html.erb:9:in `compile!'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 08:53:47) [GET]
+Rendering search/index
+
+ActionView::TemplateError (undefined method `From: ' for :from:Symbol) on line #6 of app/views/search/index.html.erb:
+3: <h2> Search for a path </h2>
+4: 
+5: <% form_for :to, :from, :url => {:action => 'search'} do |f|%>
+6: 	<%= f.text_field 'From: ' %> </p>
+7: 	<%= f.text_field 'To: ' %> </p>
+8: <% end %>
+
+    app/views/search/index.html.erb:6
+    app/views/search/index.html.erb:5
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 08:54:40) [GET]
+Rendering search/index
+
+ActionView::TemplateError (undefined method `from' for :from:Symbol) on line #6 of app/views/search/index.html.erb:
+3: <h2> Search for a path </h2>
+4: 
+5: <% form_for :to, :from, :url => {:action => 'search'} do |f|%>
+6: 	<%= f.text_field 	'from' %> </p>
+7: 	<%= f.text_field 	'to' %> </p>
+8: <% end %>
+
+    app/views/search/index.html.erb:6
+    app/views/search/index.html.erb:5
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 08:57:28) [GET]
+
+SyntaxError (/Users/nickgordon/Work/cakewalk/app/controllers/search_controller.rb:8: syntax error, unexpected $end, expecting kEND):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 08:58:22) [GET]
+
+SyntaxError (/Users/nickgordon/Work/cakewalk/app/controllers/search_controller.rb:8: syntax error, unexpected $end, expecting kEND):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 09:00:23) [GET]
+
+SyntaxError (/Users/nickgordon/Work/cakewalk/app/controllers/search_controller.rb:8: syntax error, unexpected $end, expecting kEND):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 13:13:34) [GET]
+
+SyntaxError (/Users/nickgordon/Work/cakewalk/app/controllers/search_controller.rb:8: syntax error, unexpected $end, expecting kEND):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:15:01) [GET]
+Rendering search/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/search/index.html.erb:
+2: 
+3: <h2> Search for a path </h2>
+4: 
+5: <% form_for do |form|%>
+6: 	<p> From:	<%= form.text_field %> </p>
+7: 	<p> To: 	<%= form.text_field %> </p>
+8: <% end %>
+
+    app/views/search/index.html.erb:5:in `form_for'
+    app/views/search/index.html.erb:5
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:15:33) [GET]
+Rendering search/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #6 of app/views/search/index.html.erb:
+3: <h2> Search for a path </h2>
+4: 
+5: <% form_for(:from, :to) do |form|%>
+6: 	<p> From:	<%= form.text_field %> </p>
+7: 	<p> To: 	<%= form.text_field %> </p>
+8: <% end %>
+
+    app/views/search/index.html.erb:6:in `text_field'
+    app/views/search/index.html.erb:6
+    app/views/search/index.html.erb:5
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:17:29) [GET]
+Rendering search/index
+
+ActionView::TemplateError (undefined method `stringify_keys' for :to:Symbol) on line #5 of app/views/search/index.html.erb:
+2: 
+3: <h2> Search for a path </h2>
+4: 
+5: <% form_tag(:from, :to) do |form|%>
+6: 	<p> From:	<%= form.text_field %> </p>
+7: 	<p> To: 	<%= form.text_field %> </p>
+8: <% end %>
+
+    app/views/search/index.html.erb:5
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:22:48) [GET]
+Rendering search/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:22:55) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"your mom", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:22:56) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"your mom", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:24:57) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"your mom", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:25:37) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"your mom", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:30:14) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"your mom", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:30:16) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"Elsewhere", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:30:16) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"Elsewhere", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:33:26) [GET]
+Rendering search/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:40:10) [GET]
+Rendering search/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:40:15) [GET]
+
+ActionView::MissingTemplate (Missing template search/result.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:42:27) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"Elsewhere", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:42:44) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"Elsewhere", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#search/result (for 127.0.0.1 at 2010-06-09 13:42:51) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"", "start"=>""}
+
+ActionController::UnknownAction (No action responded to search/result. Actions: index and result):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#search/result (for 127.0.0.1 at 2010-06-09 13:43:09) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"", "start"=>""}
+
+ActionController::UnknownAction (No action responded to search/result. Actions: index and result):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 13:43:24) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"Elsewhere", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:43:25) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"", "start"=>""}
+
+ActionView::MissingTemplate (Missing template search/result.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:43:39) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+
+ActionView::MissingTemplate (Missing template search/result.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:45:11) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:45:39) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:45:59) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:46:18) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:46:20) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:47:16) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:47:55) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:53:48) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:54:34) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:54:51) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:56:05) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 13:57:04) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/search/result]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-09 14:04:08) [POST]
+  Parameters: {"commit"=>"Search!", "from"=>"Elsewhere", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "to"=>"me"}
+Rendering search/index
+Completed in 77ms (View: 75, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:04:09) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Rendering search/result
+
+ActionView::TemplateError (undefined method `redirect_to' for #<ActionView::Base:0x10366b148>) on line #4 of app/views/search/result.html.erb:
+1: <p> You are trying to go from <%=h @start %> </p>
+2: <p> To <%= @end%> </p>
+3: 	
+4: <% redirect_to :action => ("http://maps.google.com/maps?q=" + @start + "to" + @end)%>
+
+    app/views/search/result.html.erb:4
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:05:26) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Redirected to http://localhost:3000/search/http:%2F%2Fmaps.google.com%2Fmaps%3Fq=Hi!toGoodbye!
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-09 14:05:26) [GET]
+
+ActionController::RoutingError (No route matches "/search/http:%2F%2Fmaps.google.com%2Fmaps%3Fq=Hi!toGoodbye!" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:07:26) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"Goodbye!", "start"=>"Hi!"}
+Redirected to http://maps.google.com/maps?q=Hi!toGoodbye!
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:08:00) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415 south st waltham mato100 south st waltham ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:09:28) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415 south st waltham mato100 south st waltham ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:09:40) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415 south st waltham mato100 south st waltham ma
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:09:48) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415 south st waltham mato100 south st waltham ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:09:54) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"hell", "start"=>"florida"}
+Redirected to http://maps.google.com/maps?q=floridatohell
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:10:42) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"hell", "start"=>"florida"}
+Redirected to http://maps.google.com/maps?q=florida+to+hell
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:10:58) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415 south st waltham ma+to+100 south st waltham ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:10:58) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415 south st waltham ma+to+100 south st waltham ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:14:10) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma++415+south+st+waltham+ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:14:27) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma++to+415+south+st+waltham+ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:14:49) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma++to+100+south+st+waltham+ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:15:17) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma++to+100+south+st+waltham+ma
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:16:37) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma++to+100+south+st+waltham+ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:16:50) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma+to+100+south+st+waltham+ma
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/search/result]
+
+
+Processing SearchController#result (for 127.0.0.1 at 2010-06-09 14:16:59) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"bG3qVpVpRdjIdrjVjaUtaIV388m+XVyVMMSuR5x2nsg=", "end"=>"100 south st waltham ma", "start"=>"415 south st waltham ma"}
+Redirected to http://maps.google.com/maps?q=415+south+st+waltham+ma+to+100+south+st+waltham+ma
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/result]
