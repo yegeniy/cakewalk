@@ -9,6 +9,7 @@ t.column :left, :string, :limit=>100
 end
 execute("ALTER TABLE points MODIFY lat numeric(15,10);")
 execute("ALTER TABLE points MODIFY lng numeric(15,10);")
+end
 
 def self.down
 drop_table :points
