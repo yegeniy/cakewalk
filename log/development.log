@@ -652,3 +652,5 @@ Migrating to CreateStores (20100610180647)
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("markers")[0m
   [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("points")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("stores")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stores" [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stores" [0m
