@@ -627,3 +627,28 @@ Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-09 14:35:07) [G
 Rendering operate_marker/map
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/operate_marker/map?m%5Bfound%5D=yes&m%5Bleft%5D=yes&m%5Blng%5D=-71.25792503356934&m%5Blat%5D=42.3671531342247]
   [4;35;1mMarker Load (1.0ms)[0m   [0mSELECT * FROM "markers" [0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePoints (20100609022417)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100609022417')[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreateStores (20100610180647)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "stores" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(2), "zip" varchar(9), "phone" varchar(15), "lat" varchar(20), "lng" varchar(20)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100610180647')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("stores")[0m
