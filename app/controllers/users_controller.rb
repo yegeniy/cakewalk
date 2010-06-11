@@ -2,6 +2,9 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
+
+ before_filter :requirelogin
+ before_filter :testadmin, :except => ["new", "edit", "create", "update"]
   def index
     @users = User.find(:all, :order => :name)
 
@@ -94,8 +97,5 @@ class UsersController < ApplicationController
   
   end
   
-protected
-    
-    def authorize
-    end
+   
 end

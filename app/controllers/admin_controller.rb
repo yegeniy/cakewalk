@@ -2,7 +2,10 @@ class AdminController < ApplicationController
 
   # just display the form and wait for user to
   # enter a name and password
-  
+
+before_filter :testadmin, :except => ["login", "logout"]
+before_filter :requirelogin, :except => "login"
+
   def login
     if request.post?
       user = User.authenticate(params[:name], params[:password])

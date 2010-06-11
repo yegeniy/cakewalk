@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  before_filter :authorize, :except => :login
   helper :all # include all helpers, all the time
 
   # See ActionController::RequestForgeryProtection for details
@@ -12,11 +11,22 @@ class ApplicationController < ActionController::Base
   # filter_parameter_logging :password
     
 protected
-  def authorize
+  def requirelogin
     unless User.find_by_id(session[:user_id])
       flash[:notice] = "Please log in"
       redirect_to :controller => 'admin', :action => 'login'
     end
   end
+  
+  def testadmin
+    unless User.find_by_id(session[:user_id]).getadmin ==true
+      flash[:notice] = "You are not an admin...."
+      redirect_to :controller => 'admin', :action => 'login'
+    end
+    rescue
+      flash[:notice]= "Please log in first.."
+      redirect_to :controller => 'admin', :action => 'login'
+  end    
+   
 end
 
