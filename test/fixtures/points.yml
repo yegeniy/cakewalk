@@ -5,3 +5,23 @@
 #
 # two:
 #   column: value
+point_1: 
+  name: Sherman Hall, Brandeis University
+  address: 415 South St.
+  city: Waltham     
+  state: MA
+  zip: 02453 
+
+point_2: 
+  name: Rose Art Museum, Brandeis University
+  address: 415 South St.
+  city: Waltham     
+  state: MA
+  zip: 02453 
+
+point_3: 
+  name: Golding Health Center, Brandeis University
+  address: 415 South St.
+  city: Waltham     
+  state: MA
+  zip: 02453 

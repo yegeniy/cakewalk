@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100610180647) do
+ActiveRecord::Schema.define(:version => 20100612191202) do
+
+  create_table "edges", :force => true do |t|
+    t.string   "from"
+    t.string   "to"
+    t.string   "direction"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "point_id"
+  end
 
   create_table "markers", :force => true do |t|
     t.decimal "lat"
@@ -19,18 +28,12 @@ ActiveRecord::Schema.define(:version => 20100610180647) do
   end
 
   create_table "points", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "stores", :force => true do |t|
     t.string "name",     :limit => 50
     t.string "address",  :limit => 100
     t.string "address2", :limit => 100
     t.string "city",     :limit => 50
-    t.string "state",    :limit => 2
+    t.string "state",    :limit => 20
     t.string "zip",      :limit => 9
-    t.string "phone",    :limit => 15
     t.string "lat",      :limit => 20
     t.string "lng",      :limit => 20
   end
