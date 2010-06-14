@@ -1,0 +1,39 @@
+
+.cake-form legend {
+  color: black;
+  background: #ffa20c;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.cake-form fieldset {
+  background: cornflowerblue;
+  border: 2px solid black;
+}
+
+.cake-form div {
+  margin: 0.5em 0;
+}
+
+.cake-form label{
+	width: 4em;
+	float: left;
+	text-align: right;
+	margin-right: 1.5em;
+	display: block
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+.cake-form input
+{
+	color: black;
+	background: #fee3ad;
+	border: 2px solid black;
+	font-weight: bold;
+}

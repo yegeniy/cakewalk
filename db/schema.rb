@@ -9,6 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+
 ActiveRecord::Schema.define(:version => 20100614192252) do
 
   create_table "edges", :force => true do |t|
@@ -37,6 +38,15 @@ ActiveRecord::Schema.define(:version => 20100614192252) do
     t.string "zip",      :limit => 9
     t.string "lat",      :limit => 20
     t.string "lng",      :limit => 20
+
   end
+  
+    create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "hashed_password"
+    t.string   "salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "isadmin"
 
 end
