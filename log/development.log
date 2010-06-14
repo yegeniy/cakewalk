@@ -5211,3 +5211,54 @@ Processing SearchController#index (for 127.0.0.1 at 2010-06-14 16:15:08) [GET]
 Rendering template within layouts/search
 Rendering search/index
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 16:17:12) [GET]
+  [4;36;1mEdge Load (0.7ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+Completed in 43ms (View: 35, DB: 2) | 200 OK [http://localhost/edges]
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-14 16:19:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 2) [0m
+Rendering template within layouts/edges
+Rendering edges/edit
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Completed in 75ms (View: 16, DB: 1) | 200 OK [http://localhost/edges/2/edit]
+
+
+Processing EdgesController#update (for 127.0.0.1 at 2010-06-14 16:20:10) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"+jqJJskx1rrOmLzV57RSpyRTHXF36+PdQnXGhp+UpwE=", "id"=>"2", "edge"=>{"point_id"=>"376883159", "to_point_id"=>"947431166", "direction"=>"Going fast and straight"}}
+  [4;36;1mEdge Load (0.3ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 2) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mEdge Update (0.3ms)[0m   [0;1mUPDATE "edges" SET "to_point_id" = 947431166, "updated_at" = '2010-06-14 20:20:10', "direction" = 'Going fast and straight' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/edges/2
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/edges/2]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 16:20:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 2) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/edges/2]
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 16:20:12) [GET]
+  [4;36;1mEdge Load (0.6ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/edges]
