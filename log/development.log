@@ -656,3 +656,569 @@ Migrating to CreateStores (20100610180647)
   [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stores" [0m
   [4;36;1mStore Load (5.1ms)[0m   [0;1mSELECT * FROM "stores" [0m
   [4;36;1mStore Load (5.1ms)[0m   [0;1mSELECT * FROM "stores" [0m
+  [4;36;1mStore Load (7.0ms)[0m   [0;1mSELECT * FROM "stores" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-11 16:37:30) [GET]
+
+ActionController::RoutingError (No route matches "/edge" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-11 16:37:42) [GET]
+  [4;36;1mEdge Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: edges: SELECT * FROM "edges" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: edges: SELECT * FROM "edges" ):
+  app/controllers/edges_controller.rb:5:in `index'
+
+Rendered rescues/_trace (214.0ms)
+Rendered rescues/_request_and_response (7.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-11 16:37:58) [GET]
+
+ActionController::RoutingError (No route matches "/edge" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-11 16:41:16) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'edges'):
+  app/controllers/edges_controller.rb:27:in `new'
+  app/controllers/edges_controller.rb:27:in `new'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-11 16:41:24) [GET]
+  [4;35;1mEdge Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: edges: SELECT * FROM "edges" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: edges: SELECT * FROM "edges" ):
+  app/controllers/edges_controller.rb:5:in `index'
+
+Rendered rescues/_trace (385.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (3.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePoints (20100609022417)
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreateStores (20100610180647)
+Migrating to CreateEdges (20100611203245)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE "edges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from" varchar(255), "to" varchar(255), "direction" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100611203245')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stores")[0m
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-11 16:43:23) [GET]
+  [4;36;1mEdge Load (2.0ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 2331ms (View: 2296, DB: 2) | 200 OK [http://localhost/edges/]
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-11 16:43:31) [GET]
+Rendering template within layouts/edges
+Rendering edges/new
+Completed in 90ms (View: 53, DB: 0) | 200 OK [http://localhost/edges/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mCREATE TABLE "edges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from" varchar(255), "to" varchar(255), "direction" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(2), "zip" varchar(9), "lat" varchar(20), "lng" varchar(20)) [0m
+  [4;35;1mSQL (8.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (14.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100611203245')[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100610180647')[0m
+  [4;36;1mMarker Load (2.0ms)[0m   [0;1mSELECT * FROM "markers" [0m
+  [4;35;1mPoint Load (1.0ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreatePoints (20100610180647)
+Migrating to CreateEdges (20100611203245)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "edges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from" varchar(255), "to" varchar(255), "direction" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(2), "zip" varchar(9), "lat" varchar(20), "lng" varchar(20)) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100611203245')[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100610180647')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "points" [0m
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mEdge Load (1.0ms)[0m   [0mSELECT * FROM "edges" [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreatePoints (20100610180647)
+Migrating to CreateEdges (20100611203245)
+Migrating to AddEdgeIdToPoint (20100612164239)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mALTER TABLE "points" ADD "egde_id" integer[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100612164239')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-12 12:45:40) [GET]
+  [4;36;1mEdge Load (1.0ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 3643ms (View: 3587, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-12 12:45:53) [GET]
+Rendering template within layouts/edges
+Rendering edges/new
+Completed in 35ms (View: 20, DB: 0) | 200 OK [http://localhost/edges/new]
+
+
+Processing EdgesController#create (for 127.0.0.1 at 2010-06-12 12:46:42) [POST]
+  Parameters: {"edge"=>{"from"=>"Sherman Hall, Brandeis University", "to"=>"Rose Art Museum, Brandeis University", "direction"=>"Go straight"}, "commit"=>"Create", "authenticity_token"=>"yjRO+jBTPdoYCW/dNnMi3S91E75VKv/8I0FL7MzHn10="}
+  [4;35;1mEdge Create (1.0ms)[0m   [0mINSERT INTO "edges" ("updated_at", "from", "to", "direction", "created_at") VALUES('2010-06-12 16:46:42', 'Sherman Hall, Brandeis University', 'Rose Art Museum, Brandeis University', 'Go straight', '2010-06-12 16:46:42')[0m
+Redirected to http://localhost:3000/edges/1
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/edges]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-12 12:46:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (1.0ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+Completed in 38ms (View: 18, DB: 1) | 200 OK [http://localhost/edges/1]
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-12 12:46:46) [GET]
+  [4;35;1mEdge Load (1.0ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 26ms (View: 10, DB: 1) | 200 OK [http://localhost/edges]
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mPoint Load (1.0ms)[0m   [0mSELECT * FROM "points" LIMIT 1[0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" LIMIT 1[0m
+  [4;35;1mPoint Load (2.0ms)[0m   [0mSELECT * FROM "points" LIMIT 1[0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" LIMIT 1[0m
+  [4;35;1mEdge Load (1.0ms)[0m   [0mSELECT * FROM "edges" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreatePoints (20100610180647)
+Migrating to CreateEdges (20100611203245)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "edges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from" varchar(255), "to" varchar(255), "direction" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(2), "zip" varchar(9), "lat" varchar(20), "lng" varchar(20), "egde_id" integer) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100612164239')[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100610180647')[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611203245')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreatePoints (20100610180647)
+Migrating to CreateEdges (20100611203245)
+Migrating to AddEdgeIdToPoint (20100612164239)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreatePoints (20100610180647)
+Migrating to CreateEdges (20100611203245)
+Migrating to AddEdgeIdToPoint (20100612164239)
+Migrating to AddPointIdToEdge (20100612170353)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mALTER TABLE "edges" ADD "point_id" integer[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100612170353')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mEdge Load (1.0ms)[0m   [0mSELECT * FROM "edges" [0m
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-12 13:11:09) [GET]
+  [4;36;1mEdge Load (2.0ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 32ms (View: 7, DB: 2) | 200 OK [http://localhost/edges]
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mEdge Load (2.0ms)[0m   [0mSELECT * FROM "edges" [0m
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreatePoints (20100610180647)
+Migrating to CreateEdges (20100611203245)
+Migrating to AddEdgeIdToPoint (20100612164239)
+Migrating to AddPointIdToEdge (20100612170353)
+Migrating to RemoveEdgeIdFromPoint (20100612171605)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100612171605')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("edges")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("markers")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("points")[0m
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "edges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from" varchar(255), "to" varchar(255), "direction" varchar(255), "created_at" datetime, "updated_at" datetime, "point_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(2), "zip" varchar(9), "lat" varchar(20), "lng" varchar(20), "egde_id" integer) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (7.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (29.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100612171605')[0m
+  [4;35;1mSQL (24.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100610180647')[0m
+  [4;35;1mSQL (29.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611203245')[0m
+  [4;36;1mSQL (45.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100612164239')[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100612170353')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCREATE TABLE "edges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from" varchar(255), "to" varchar(255), "direction" varchar(255), "created_at" datetime, "updated_at" datetime, "point_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(2), "zip" varchar(9), "lat" varchar(20), "lng" varchar(20), "egde_id" integer) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100612171605')[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100610180647')[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611203245')[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100612164239')[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100612170353')[0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mPoint Load (2.0ms)[0m   [0mSELECT * FROM "points" LIMIT 1[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" LIMIT 1[0m
+  [4;35;1mPoint Load (0.0ms)[0m   [0mSELECT * FROM "points" LIMIT 1[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreatePoints (20100610180647)
+Migrating to CreateEdges (20100611203245)
+Migrating to AddPointIdToEdge (20100612170353)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mEdge Load (1.0ms)[0m   [0;1mSELECT * FROM "edges" [0m
+  [4;35;1mPoint Load (1.0ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMarkers (20100609173256)
+Migrating to CreateEdges (20100611203245)
+Migrating to CreatePoints (20100612191202)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(20), "zip" varchar(9), "lat" varchar(20), "lng" varchar(20)) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100612191202')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("edges")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("markers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("points")[0m
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mPoint Load (2.0ms)[0m   [0mSELECT * FROM "points" LIMIT 1[0m
+  [4;36;1mEdge Load (0.0ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges".point_id = 376883159) [0m
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-12 15:20:31) [GET]
+Rendering template within layouts/edges
+Rendering edges/new
+Completed in 26ms (View: 10, DB: 0) | 200 OK [http://localhost/edges/new]
+
+
+Processing EdgesController#create (for 127.0.0.1 at 2010-06-12 15:21:17) [POST]
+  Parameters: {"edge"=>{"from"=>"Rose Art Museum, Brandeis University", "to"=>"Sherman Hall, Brandeis University", "direction"=>"Go straight"}, "commit"=>"Create", "authenticity_token"=>"yjRO+jBTPdoYCW/dNnMi3S91E75VKv/8I0FL7MzHn10="}
+  [4;35;1mEdge Create (1.0ms)[0m   [0mINSERT INTO "edges" ("updated_at", "from", "point_id", "to", "direction", "created_at") VALUES('2010-06-12 19:21:17', 'Rose Art Museum, Brandeis University', NULL, 'Sherman Hall, Brandeis University', 'Go straight', '2010-06-12 19:21:17')[0m
+Redirected to http://localhost:3000/edges/1
+Completed in 70ms (DB: 1) | 302 Found [http://localhost/edges]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-12 15:21:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (0.0ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+Completed in 29ms (View: 9, DB: 0) | 200 OK [http://localhost/edges/1]
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-12 15:21:21) [GET]
+  [4;35;1mEdge Load (2.0ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 27ms (View: 12, DB: 2) | 200 OK [http://localhost/edges]
+  [4;35;1mEdge Load (1.0ms)[0m   [0mSELECT * FROM "edges" [0m
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-12 19:18:41) [GET]
+  [4;36;1mEdge Load (19.0ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 349ms (View: 133, DB: 19) | 200 OK [http://localhost/edges]
+  [4;36;1mPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 13:24:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (15.0ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+Completed in 3448ms (View: 3370, DB: 15) | 200 OK [http://localhost/edges/1]
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 13:25:03) [GET]
+  [4;35;1mEdge Load (0.0ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/edges]
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-14 13:26:29) [GET]
+Rendering template within layouts/edges
+Rendering edges/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/edges/new]
