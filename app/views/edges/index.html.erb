@@ -9,7 +9,7 @@
 
 <% @edges.each do |edge| %>
   <tr>
-    <td><%=h edge.from %></td>
+    <td><%=h edge.point.name %></td>
     <td><%=h edge.to %></td>
     <td><%=h edge.direction %></td>
     <td><%= link_to 'Show', edge %></td>

@@ -1222,3 +1222,613 @@ Processing EdgesController#new (for 127.0.0.1 at 2010-06-14 13:26:29) [GET]
 Rendering template within layouts/edges
 Rendering edges/new
 Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/edges/new]
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 14:28:34) [GET]
+  [4;36;1mEdge Load (0.6ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+Completed in 31ms (View: 24, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:28:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-14 14:28:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/edit
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/edges/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:28:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-14 14:29:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/edit
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" [0m
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/edges/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:29:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-14 14:29:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/edit
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" [0m
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/edges/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:29:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#update (for 127.0.0.1 at 2010-06-14 14:30:15) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"+jqJJskx1rrOmLzV57RSpyRTHXF36+PdQnXGhp+UpwE=", "id"=>"1", "edge"=>{"to"=>"Sherman Hall, Brandeis University", "direction"=>"Go straight"}}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Redirected to http://localhost:3000/edges/1
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/edges/1]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 14:30:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #3 of app/views/edges/show.html.erb:
+1: <p>
+2:   <b>From:</b>
+3:   <%=h @edge.point.name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/edges/show.html.erb:3
+    app/controllers/edges_controller.rb:18:in `show'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EdgesController#update (for 127.0.0.1 at 2010-06-14 14:30:18) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"+jqJJskx1rrOmLzV57RSpyRTHXF36+PdQnXGhp+UpwE=", "id"=>"1", "edge"=>{"point_id"=>"561116994", "to"=>"Sherman Hall, Brandeis University", "direction"=>"Go straight"}}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+  [4;36;1mEdge Update (0.3ms)[0m   [0;1mUPDATE "edges" SET "updated_at" = '2010-06-14 18:30:19', "point_id" = 561116994 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/edges/1
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/edges/1]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 14:30:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/edges/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 14:30:42) [GET]
+  [4;35;1mEdge Load (0.5ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-14 14:30:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (0.6ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/edit
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" [0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/edges/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#update (for 127.0.0.1 at 2010-06-14 14:30:46) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"+jqJJskx1rrOmLzV57RSpyRTHXF36+PdQnXGhp+UpwE=", "id"=>"1", "edge"=>{"point_id"=>"376883159", "to"=>"Sherman Hall, Brandeis University", "direction"=>"Go straight"}}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mEdge Update (0.3ms)[0m   [0mUPDATE "edges" SET "updated_at" = '2010-06-14 18:30:46', "point_id" = 376883159 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/edges/1
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/edges/1]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 14:30:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+  [4;35;1mPoint Load (0.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/edges/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 14:30:48) [GET]
+  [4;36;1mEdge Load (0.5ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-14 14:30:50) [GET]
+Rendering template within layouts/edges
+Rendering edges/new
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" [0m
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/edges/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#create (for 127.0.0.1 at 2010-06-14 14:30:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"+jqJJskx1rrOmLzV57RSpyRTHXF36+PdQnXGhp+UpwE=", "edge"=>{"point_id"=>"947431166", "to"=>"Hell", "direction"=>"Eat"}}
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;36;1mEdge Create (0.3ms)[0m   [0;1mINSERT INTO "edges" ("created_at", "point_id", "from", "updated_at", "to", "direction") VALUES('2010-06-14 18:30:58', 947431166, NULL, '2010-06-14 18:30:58', 'Hell', 'Eat')[0m
+Redirected to http://localhost:3000/edges/2
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/edges]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 14:30:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 2) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/edges/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 14:30:59) [GET]
+  [4;35;1mEdge Load (0.5ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:30:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-14 14:31:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 2) [0m
+Rendering template within layouts/edges
+Rendering edges/edit
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" [0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/edges/2/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:31:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 14:31:04) [GET]
+  [4;36;1mEdge Load (0.6ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:31:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-14 14:31:05) [GET]
+Rendering template within layouts/edges
+Rendering edges/new
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" [0m
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/edges/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:31:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#create (for 127.0.0.1 at 2010-06-14 14:31:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"+jqJJskx1rrOmLzV57RSpyRTHXF36+PdQnXGhp+UpwE=", "edge"=>{"to"=>"Jehuda", "direction"=>"Good Question"}}
+Rendering template within layouts/edges
+Rendering edges/new
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" [0m
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:31:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 14:31:24) [GET]
+  [4;35;1mEdge Load (0.5ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;36;1mPoint Load (0.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:31:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 14:38:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/edges/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:38:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-14 14:38:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/edit
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" [0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/edges/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:38:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#update (for 127.0.0.1 at 2010-06-14 14:38:19) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"+jqJJskx1rrOmLzV57RSpyRTHXF36+PdQnXGhp+UpwE=", "id"=>"1", "edge"=>{"point_id"=>"561116994", "to"=>"Sherman Hall, Brandeis University", "direction"=>"Go straight"}}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;36;1mEdge Update (0.3ms)[0m   [0;1mUPDATE "edges" SET "updated_at" = '2010-06-14 18:38:19', "point_id" = 561116994 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/edges/1
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/edges/1]
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-14 14:38:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/edges
+Rendering edges/show
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/edges/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:38:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-14 14:38:21) [GET]
+  [4;35;1mEdge Load (0.6ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/edges
+Rendering edges/index
+  [4;36;1mPoint Load (0.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/edges]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 14:38:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

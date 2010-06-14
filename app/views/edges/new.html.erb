@@ -3,9 +3,11 @@
 <% form_for(@edge) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :from %><br />
-    <%= f.text_field :from %>
+  <p> From? <br />
+	<% for fpoint in Point.all do %>
+		<%= f.radio_button(:point_id, fpoint.id) %> <%= f.label fpoint.name%>
+		<br />
+    <% end %>
   </p>
   <p>
     <%= f.label :to %><br />
