@@ -9,10 +9,13 @@
 		<br />
     <% end %>
   </p>
-  <p>
-    <%= f.label :to %><br />
-    <%= f.text_field :to %>
-  </p>
+
+	<p> To? <br />
+	<% for tpoint in Point.all do %>
+		<%= f.radio_button(:to_point_id, tpoint.id) %> <%= f.label tpoint.name%>
+		<br />
+ 	<% end %>
+	</p>
   <p>
     <%= f.label :direction %><br />
     <%= f.text_field :direction %>

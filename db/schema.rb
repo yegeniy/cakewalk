@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100612191202) do
+ActiveRecord::Schema.define(:version => 20100614192252) do
 
   create_table "edges", :force => true do |t|
     t.string   "from"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20100612191202) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "point_id"
+    t.integer  "to_point_id"
   end
 
   create_table "markers", :force => true do |t|
