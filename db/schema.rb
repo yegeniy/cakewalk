@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100614192252) do
+ActiveRecord::Schema.define(:version => 20100614200703) do
 
   create_table "edges", :force => true do |t|
     t.string   "from"
@@ -28,6 +28,13 @@ ActiveRecord::Schema.define(:version => 20100614192252) do
     t.string  "left",  :limit => 100
   end
 
+  create_table "paths", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "points", :force => true do |t|
     t.string "name",     :limit => 50
     t.string "address",  :limit => 100
@@ -37,6 +44,15 @@ ActiveRecord::Schema.define(:version => 20100614192252) do
     t.string "zip",      :limit => 9
     t.string "lat",      :limit => 20
     t.string "lng",      :limit => 20
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "hashed_password"
+    t.string   "salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "isadmin"
   end
 
 end
