@@ -5230,3 +5230,44 @@ Migrating to CreatePaths (20100614200703)
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("paths")[0m
   [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("points")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-15 15:03:07) [GET]
+  [4;36;1mPath Load (26.1ms)[0m   [0;1mSELECT * FROM "paths" [0m
+Rendering template within layouts/paths
+Rendering paths/index
+Completed in 356ms (View: 260, DB: 26) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-15 15:03:09) [GET]
+Rendering template within layouts/paths
+Rendering paths/new
+
+ActionView::TemplateError (undefined method `edge_id' for #<Path:0x24d0308>) on line #18 of app/views/paths/new.html.erb:
+15: 
+16:   <p> Add an edge <br />
+17:     <%= f.label :edge_id %><br />
+18:     <%= f.text_field :edge_id %>
+19:   </p>
+20: 
+21:   <p>
+
+    app/views/paths/new.html.erb:18
+    app/views/paths/new.html.erb:3
+    app/controllers/paths_controller.rb:29:in `new'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (165.2ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)

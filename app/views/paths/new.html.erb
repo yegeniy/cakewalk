@@ -11,6 +11,14 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
+
+
+  <p> Add an edge <br />
+    <% Edge.each_with_index do |edge, index|%>
+      <% # f.label :edge.point_id %>
+      <% # f.text_field :%>
+  </p>
+
   <p>
     <%= f.submit 'Create' %>
   </p>
