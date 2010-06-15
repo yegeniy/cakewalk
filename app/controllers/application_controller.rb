@@ -19,7 +19,7 @@ protected
   end
   
   def testadmin
-    unless User.find_by_id(session[:user_id]).getadmin ==true
+    unless User.find_by_id(session[:user_id]).getadmin ==1
       flash[:notice] = "You are not an admin...."
       redirect_to :controller => 'admin', :action => 'login'
     end
@@ -29,4 +29,3 @@ protected
   end    
    
 end
-

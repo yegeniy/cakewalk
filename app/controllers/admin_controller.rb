@@ -3,8 +3,8 @@ class AdminController < ApplicationController
   # just display the form and wait for user to
   # enter a name and password
 
-before_filter :testadmin, :except => ["login", "logout"]
-before_filter :requirelogin, :except => "login"
+#before_filter :testadmin, :except => ["login", "logout"]
+before_filter :requirelogin, :except => ["login", "logout"]
 
   def login
     if request.post?
@@ -12,7 +12,7 @@ before_filter :requirelogin, :except => "login"
       if user
         isadmin=user.isadmin?
         session[:user_id] = user.id
-        if(isadmin)
+        if(isadmin==true)
           redirect_to(:action => "welcome")
         else
           flash.now[:notice] = "You are not an administrator..." 
