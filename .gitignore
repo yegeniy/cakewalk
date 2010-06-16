@@ -1,5 +1,4 @@
-
 # Ignores temporary emacs files 
 *~
-# ignores.log files
-*.log
+# ignores .log files in the log/ directory
+log/*.log
