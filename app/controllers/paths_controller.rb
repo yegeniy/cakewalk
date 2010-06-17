@@ -26,6 +26,10 @@ class PathsController < ApplicationController
   def new
     @path = Path.new
 
+    # only adds 2 edges to a path
+    @edges = Edge.all
+    2.times { @path.edges.build }
+
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @path }

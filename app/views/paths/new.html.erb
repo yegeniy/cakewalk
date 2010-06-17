@@ -1,3 +1,5 @@
+<!-- Not Completed / Working -->
+
 <h1>New path</h1>
 
 <% form_for(@path) do |f| %>
@@ -11,21 +13,28 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
+  <%=begin%>
+  <% for edge in @path.edges %>
+    <% fields_for "...", edge do |edge_form| %>
+    <p>
+      Edge: <%# collection_select( :path, :path_id, Edge.all, :id, :name, {:selected => lambda {|x| params[:show_id]}}) %>
+    </p>
+    <% end %>
+  <% end %>
+  <%=end%>
 
 
   <p>
     <%= f.submit 'Create' %>
   </p>
-<% end %>
-
-
-  <% form_for :edge do |f_edge| %>
-    <% Edge.all.each do |edge| %>
-      <%= f_edge.radio_button(:edge_id, edge.id) -%> 
-      <%= f_edge.label "From #{Point.find_by_id(edge.point_id).name} -> #{Point.find_by_id(edge.to_point_id).name}" %>
+  <%=begin%>
+  <% Edge.all.each do |edge| %>
+    <%= f_edge.radio_button(:edge_id, edge.id) -%> 
+    <%= f_edge.label "From #{Point.find_by_id(edge.point_id).name} -> #{Point.find_by_id(edge.to_point_id).name}" %>
     <br />
-    <% end %>
   <% end %>
+  <%=end%>
+<% end %>
 
 
 <%= link_to 'Back', paths_path %>
