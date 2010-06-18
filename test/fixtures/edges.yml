@@ -1,11 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  from: MyString
-  to: MyString
-  direction: MyString
+  path_id: 1
+  point_id: 1
+  endpoint_id: 1
+  order: 1
 
 two:
-  from: MyString
-  to: MyString
-  direction: MyString
+  path_id: 1
+  point_id: 1
+  endpoint_id: 1
+  order: 1
