@@ -3,7 +3,7 @@ class PathsController < ApplicationController
   # GET /paths.xml
   def index
     @paths = Path.all
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @paths }
@@ -20,11 +20,16 @@ class PathsController < ApplicationController
       format.xml  { render :xml => @path }
     end
   end
-
+  
+  N_EDGES = 2;
   # GET /paths/new
   # GET /paths/new.xml
   def new
     @path = Path.new
+    
+    # Adds edges to @path
+
+    N_EDGES.times{ @path.edges.build }
 
     respond_to do |format|
       format.html # new.html.erb

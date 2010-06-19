@@ -11,6 +11,11 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
+  <% for edge in @path.edges %>
+    <% fields_for "path[edge_attributes][]", edge do |edge_form| %>
+       <p> Edge id:<%= edge_form.text_field :point_id %></p>
+    <% end %>
+  <% end %>
   <p>
     <%= f.submit 'Create' %>
   </p>
