@@ -4,21 +4,11 @@
   <%= f.error_messages %>
 
   <p> From? <br />
-	<% for fpoint in Point.all do %>
-		<%= f.radio_button(:point_id, fpoint.id) %> <%= f.label fpoint.name%>
-		<br />
-    <% end %>
+    <%= collection_select(:edge, :point_id, Point.find(:all), :id, :name, {:prompt => true}) %>
   </p>
-
-	<p> To? <br />
-	<% for tpoint in Point.all do %>
-		<%= f.radio_button(:to_point_id, tpoint.id) %> <%= f.label tpoint.name%>
-		<br />
- 	<% end %>
-	</p>
-  <p>
-    <%= f.label :direction %><br />
-    <%= f.text_field :direction %>
+  
+  <p> To? <br />
+    <%= collection_select(:edge, :endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) %>
   </p>
   <p>
     <%= f.submit 'Create' %>
