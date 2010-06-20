@@ -4,15 +4,18 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Options</th>
   </tr>
 
 <% @paths.each do |path| %>
   <tr>
     <td><%=h path.name %></td>
     <td><%=h path.description %></td>
-    <td><%= link_to 'Show', path %></td>
-    <td><%= link_to 'Edit', edit_path_path(path) %></td>
-    <td><%= link_to 'Destroy', path, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td>
+      <%= link_to 'Show', path %>
+      <%= link_to 'Edit', edit_path_path(path) %>
+      <%= link_to 'Destroy', path, :confirm => 'Are you sure?', :method => :delete %>
+    </td>
   </tr>
 <% end %>
 </table>

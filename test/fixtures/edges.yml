@@ -1,11 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# Fill these in with real values
+s_r:
+  path_id: 1
+  point_id: 1
+  endpoint_id: 1
+  position: 1
 
-one:
-  from: MyString
-  to: MyString
-  direction: MyString
+r_g:
+  path_id: 1
+  point_id: 1
+  endpoint_id: 1
+  position: 1
 
-two:
-  from: MyString
-  to: MyString
-  direction: MyString
+s_g:
+  path_id: 1
+  point_id: 1
+  endpoint_id: 1
+  position: 1

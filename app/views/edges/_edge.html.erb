@@ -1,0 +1,14 @@
+<p>
+  <b>From:</b>
+  <%=h Point.find(@edge.point_id).name %> (<%=h @edge.point_id %>)
+</p>
+
+<p>
+  <b>To:</b>
+  <%=h Point.find(@edge.endpoint_id).name %> (<%=h @edge.endpoint_id %>)
+</p>
+
+<p>
+  <b>Direction:</b>
+  <%= @edge.direction %>
+</p>

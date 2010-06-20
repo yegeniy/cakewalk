@@ -1,10 +1,11 @@
-
 class UsersController < ApplicationController
+
+layout "app"	
   # GET /users
   # GET /users.xml
-
- before_filter :requirelogin
- before_filter :testadmin, :except => ["new", "edit", "create", "update"]
+  
+  #before_filter :testadmin, :except => ["new", "edit", "create", "update"]
+ 
   def index
     @users = User.find(:all, :order => :name)
 
@@ -38,7 +39,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
   end
 
   # POST /users

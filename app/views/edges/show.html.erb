@@ -1,17 +1,4 @@
-<p>
-  <b>From:</b>
-  <%=h @edge.point.name %>
-</p>
-
-<p>
-  <b>To:</b>
-  <%=h @edge.to_point.name %>
-</p>
-
-<p>
-  <b>Direction:</b>
-  <%=h @edge.direction %>
-</p>
+<%= render(:partial => "edge") %>
 
 
 <%= link_to 'Edit', edit_edge_path(@edge) %> |
