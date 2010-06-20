@@ -1,5 +1,5 @@
 
 # Ignores temporary emacs files 
 *~
-# ignores.log files
-*.log
+#FIXME: ignore .log files
+log/development.log

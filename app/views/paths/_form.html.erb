@@ -1,3 +1,17 @@
+<div class="comment">
+  ========================<br />
+  We want this:
+  <h4>EDGE:</h4>
+  <p> From? <br />
+    <%= collection_select(:edge, :point_id, Point.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  
+  <p> To? <br />
+    <%= collection_select(:edge, :endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  ========================
+</div>
+
 <% form_for(@path) do |f| %>
   <%= f.error_messages %>
 
@@ -9,15 +23,20 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
-
-
   <h3>Edges</h3>
   <% f.fields_for :edges do |builder| %>
-    <%=builder.label :path_id, "Path ID" %><br />
-    <% builder.render(:partial => 'edges/form.html.erb') %>
-
+    <%=builder.label :point_id, "Point ID:" -%>
+    <%#builder.text_field :point_id -%>
+    <%=builder.collection_select(:point_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
+    
+    <%=builder.label :endpoint_id, "Endpoint ID:" -%>
+    <%#builder.text_field :endpoint_id -%>
+    <%=builder.collection_select(:endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
+    
+    
   <% end %>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Submit' %>
   </p>
+
 <% end %>
