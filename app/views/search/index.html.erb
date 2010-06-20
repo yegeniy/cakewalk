@@ -1,21 +1,37 @@
-<title>Home</title>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+	<meta http-equiv="content-type" name="viewport" content="initial-scale=1.0, user-scalable=no"/> 
 
-<h2> Search for a path </h2>
+	<title>Search</title><script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
-<% form_tag :action => 'result' do %>
+	<%= javascript_include_tag 'map' %>
+	<script type="text/javascript">
+	function temp() {
+		initGSearch(document.getElementById("map_canvas"));
+	}
+	</script>
+
+</head>
+<body  onLoad="temp()">
+	<h2> Search for a path </h2>
+
+	<% form_tag :action=> "directions" do %>
 	<fieldset>
 		<legend> Where do want to go from? </legend>
-		
+
 		<p>
 			<label for="start"> Start: </label>
-			<%= text_field_tag :start, params[:start] %>
+			<%= text_field_tag :start, @start %>
 		</p>
-		
+
 		<p>
 			<label for="end"> End: </label>
-			<%= text_field_tag :end, params[:end] %>
+			<%= text_field_tag :end, @end %>
 		</p>
-		
+
 		<p><%= submit_tag "Search!" %></p>
 	</fieldset>
-<% end %>
+	<% end %>
+
+	<div id="map_canvas" style="float:left;width:70%; height:100%"></div>
+</body>
