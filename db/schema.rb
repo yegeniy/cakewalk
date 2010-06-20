@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100618234021) do
+ActiveRecord::Schema.define(:version => 20100620163907) do
 
   create_table "edges", :force => true do |t|
     t.integer  "path_id"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20100618234021) do
     t.string "zip",      :limit => 9
     t.string "lat",      :limit => 20
     t.string "lng",      :limit => 20
+    t.string "comment"
   end
 
   create_table "users", :force => true do |t|
