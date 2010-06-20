@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100620163907) do
+ActiveRecord::Schema.define(:version => 20100620194655) do
 
   create_table "edges", :force => true do |t|
     t.integer  "path_id"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20100620163907) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "direction"
   end
 
   create_table "markers", :force => true do |t|

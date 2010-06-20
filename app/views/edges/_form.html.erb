@@ -8,6 +8,11 @@
   <p> To? <br />
     <%= collection_select(:edge, :endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) %>
   </p>
+  
+  <p> 
+    Directions: <%= text_field(:edge, :direction) %>
+  </p>
+
   <p>
     <%= f.submit 'Create' %>
   </p>

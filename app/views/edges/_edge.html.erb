@@ -7,3 +7,8 @@
   <b>To:</b>
   <%=h Point.find(@edge.endpoint_id).name %> (<%=h @edge.endpoint_id %>)
 </p>
+
+<p>
+  <b>Direction:</b>
+  <%= @edge.direction %>
+</p>
