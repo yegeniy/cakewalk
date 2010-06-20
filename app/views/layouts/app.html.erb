@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Cakewalk</title>
+  <%= stylesheet_link_tag 'scaffold', 'test' %>
+</head>
+<body>
+
+<div id="container2">
+	<div id="user_nav2">
+		<%= link_to "Home", home_path%>
+		<%= link_to "Add a Point", addpoint_path%>
+		<%= link_to "Edges", edges_path%>
+		<%= link_to "Paths", paths_path%>
+		<%= link_to "Search", searchs_path%>
+	</div>
+	
+	<div id="user_nav">
+		<% if session[:user_id] %>
+			<%= link_to "Edit Profile", edit_path%>
+			<%= link_to "Logout", logout_path%>
+			
+		<% else%>
+			<%= link_to "Register", register_path %>
+			<%= link_to "Login", login_path%>	
+		<%end%>
+	</div>
+					
+</div>		
+<div id="container">
+	
+	 <%- flash.each do |name, msg| -%>
+	 <%= content_tag :div, msg, :id => "flash_#{name}" %>
+	 <%- end -%>
+	<%= yield :layout %>
+</div>					
+
+</body>
+</html>
