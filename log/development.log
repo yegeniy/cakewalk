@@ -18733,3 +18733,88 @@ Processing SearchController#directions (for 127.0.0.1 at 2010-06-20 16:42:51) [P
 Rendering search/directions
 Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
 >>>>>>> view_map
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-20 17:56:19) [GET]
+Rendering template within layouts/app
+Rendering home/index
+Completed in 33ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-20 17:56:24) [GET]
+Rendering template within layouts/app
+Rendering search/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-20 17:56:36) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"3u78c7DyntTkDuM22KQi0VOkn9Ln/fNQDE5z9colOKY=", "end"=>"waltham ma", "start"=>"boston ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-20 17:56:51) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"3u78c7DyntTkDuM22KQi0VOkn9Ln/fNQDE5z9colOKY=", "end"=>"waltham ma", "start"=>"boston ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-20 17:58:10) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"3u78c7DyntTkDuM22KQi0VOkn9Ln/fNQDE5z9colOKY=", "end"=>"waltham ma", "start"=>"boston ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 22ms (View: 21, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-20 17:59:24) [GET]
+Rendering template within layouts/search
+Rendering search/directions
+
+ActionView::TemplateError (can't convert nil into String) on line #11 of app/views/search/directions.html.erb:
+8: <%= javascript_include_tag 'map' %>
+9: <script type="text/javascript"> 
+10: 
+11: 	var start = <%= "'" + params[:start] + "'"%>
+12: 	var end = <%= "'" + params[:end] + "'"%>
+13: 
+14: 	function temp(){
+
+    app/views/search/directions.html.erb:11:in `+'
+    app/views/search/directions.html.erb:11
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.7ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-20 17:59:28) [GET]
+Rendering template within layouts/search
+Rendering search/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-20 17:59:30) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"3u78c7DyntTkDuM22KQi0VOkn9Ln/fNQDE5z9colOKY=", "end"=>"waltham ma", "start"=>"boston ma"}
+Rendering template within layouts/search
+Rendering search/directions
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search/directions]
