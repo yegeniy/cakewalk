@@ -5,6 +5,7 @@
     <th>From</th>
     <th>To</th>
     <th>Direction</th>
+    <th> Options </th>
   </tr>
 
 <% @edges.each do |edge| %>
@@ -12,9 +13,9 @@
     <td><%=h edge.point.name %></td>
     <td><%=h edge.to_point.name %></td>
     <td><%=h edge.direction %></td>
-    <td><%= link_to 'Show', edge %></td>
-    <td><%= link_to 'Edit', edit_edge_path(edge) %></td>
-    <td><%= link_to 'Destroy', edge, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', edge %>
+    	<%= link_to 'Edit', edit_edge_path(edge) %>
+    	<%= link_to 'Destroy', edge, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
