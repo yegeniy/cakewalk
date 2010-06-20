@@ -1,0 +1,23 @@
+<% form_for(@path) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+
+
+  <h3>Edges</h3>
+  <% f.fields_for :edges do |builder| %>
+    <%=builder.label :path_id, "Path ID" %><br />
+    <% builder.render(:partial => 'edges/form.html.erb') %>
+
+  <% end %>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

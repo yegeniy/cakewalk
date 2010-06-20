@@ -1,13 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
+# Fill these in with real values
+s_r:
   path_id: 1
   point_id: 1
   endpoint_id: 1
-  order: 1
+  position: 1
 
-two:
+r_g:
   path_id: 1
   point_id: 1
   endpoint_id: 1
-  order: 1
+  position: 1
+
+s_g:
+  path_id: 1
+  point_id: 1
+  endpoint_id: 1
+  position: 1

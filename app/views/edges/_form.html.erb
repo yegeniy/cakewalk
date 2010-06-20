@@ -1,0 +1,14 @@
+<% form_for(@edge) do |f| %>
+  <%= f.error_messages %>
+
+  <p> From? <br />
+    <%= collection_select(:edge, :point_id, Point.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  
+  <p> To? <br />
+    <%= collection_select(:edge, :endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

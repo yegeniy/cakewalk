@@ -1,14 +1,4 @@
-<p>
-  <b>From:</b>
-  <%=h @edge.point_id %>
-</p>
-
-<p>
-  <b>To:</b>
-  <%=h @edge.endpoint_id %>
-</p>
-
-
+<%= render(:partial => "edge") %>
 
 
 <%= link_to 'Edit', edit_edge_path(@edge) %> |

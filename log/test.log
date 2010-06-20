@@ -1,0 +1,267 @@
+  [4;36;1mPoint Create (0.8ms)[0m   [0;1mINSERT INTO "points" ("name", "address", "city", "address2", "zip", "lng", "lat", "state") VALUES(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mPoint Create (0.8ms)[0m   [0;1mINSERT INTO "points" ("name", "address", "city", "address2", "zip", "lng", "lat", "state") VALUES(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mPath Create (0.8ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:17:57', '2010-06-20 15:17:57', NULL)[0m
+  [4;36;1mPath Create (0.9ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:19:32', '2010-06-20 15:19:32', NULL)[0m
+  [4;36;1mPath Create (1.0ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:25:07', '2010-06-20 15:25:07', NULL)[0m
+  [4;35;1mPath Create (0.7ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:25:07', '2010-06-20 15:25:07', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPath Create (0.8ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:25:38', '2010-06-20 15:25:38', NULL)[0m
+  [4;35;1mPath Create (0.8ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:25:38', '2010-06-20 15:25:38', NULL)[0m
+  [4;36;1mPoint Load (1.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPath Create (0.8ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:34:00', '2010-06-20 15:34:00', NULL)[0m
+  [4;35;1mPath Create (0.8ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:34:00', '2010-06-20 15:34:00', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPath Create (0.6ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:34:00', '2010-06-20 15:34:00', NULL)[0m
+  [4;35;1mPoint Load (1.7ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (2.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPath Create (0.8ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:52:18', '2010-06-20 15:52:18', NULL)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:52:18', '2010-06-20 15:52:18', NULL)[0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 15:52:18', 980190963, '2010-06-20 15:52:18', 330523542)[0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:52:18', '2010-06-20 15:52:18', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPath Create (0.7ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:53:00', '2010-06-20 15:53:00', NULL)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPath Create (0.7ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:53:00', '2010-06-20 15:53:00', NULL)[0m
+  [4;36;1mPoint Load (1.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 15:53:00', 980190963, '2010-06-20 15:53:00', 330523542)[0m
+  [4;35;1mPoint Load (1.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPath Create (0.7ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:54:51', '2010-06-20 15:54:51', NULL)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:54:51', '2010-06-20 15:54:51', NULL)[0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (2.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.5ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 15:54:51', 980190963, '2010-06-20 15:54:51', 330523542)[0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPath Create (0.7ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:57:21', '2010-06-20 15:57:21', NULL)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPath Create (0.7ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 15:57:21', '2010-06-20 15:57:21', NULL)[0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 15:57:21', 980190963, '2010-06-20 15:57:21', 330523542)[0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPath Create (0.9ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:19:36', '2010-06-20 16:19:36', NULL)[0m
+  [4;35;1mPoint Load (1.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.6ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPath Create (0.8ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:19:36', '2010-06-20 16:19:36', NULL)[0m
+  [4;36;1mPoint Load (1.6ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.7ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.5ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:19:36', 980190963, '2010-06-20 16:19:36', 330523542)[0m
+  [4;35;1mSQL (20.9ms)[0m   [0mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;36;1mPoint Load (1.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (2.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPath Create (0.8ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:22:01', '2010-06-20 16:22:01', NULL)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:22:01', '2010-06-20 16:22:01', NULL)[0m
+  [4;36;1mPoint Load (1.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:22:01', 980190963, '2010-06-20 16:22:01', 330523542)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPath Create (0.6ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:22:01', '2010-06-20 16:22:01', NULL)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mEdge Create (0.4ms)[0m   [0mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:22:01', 980190963, '2010-06-20 16:22:01', 330523542)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.7ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:28:21', '2010-06-20 16:28:21', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:28:21', '2010-06-20 16:28:21', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.5ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:28:21', 980190963, '2010-06-20 16:28:21', 330523542)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.7ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:28:21', '2010-06-20 16:28:21', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:28:21', 980190963, '2010-06-20 16:28:21', 330523542)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.8ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:28:53', '2010-06-20 16:28:53', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:28:53', '2010-06-20 16:28:53', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:28:53', 980190963, '2010-06-20 16:28:53', 330523542)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:28:53', '2010-06-20 16:28:53', NULL)[0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:28:53', 980190963, '2010-06-20 16:28:53', 330523542)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mEdge Create (0.3ms)[0m   [0mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 330523542, '2010-06-20 16:28:53', 980190963, '2010-06-20 16:28:53', 438522163)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.7ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:29:31', '2010-06-20 16:29:31', NULL)[0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:29:32', '2010-06-20 16:29:32', NULL)[0m
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:29:32', 980190963, '2010-06-20 16:29:32', 330523542)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES(NULL, '2010-06-20 16:29:32', '2010-06-20 16:29:32', NULL)[0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mEdge Create (0.4ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 362332115, '2010-06-20 16:29:32', 980190963, '2010-06-20 16:29:32', 330523542)[0m
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m
+  [4;35;1mEdge Create (0.3ms)[0m   [0mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id") VALUES(NULL, 330523542, '2010-06-20 16:29:32', 980190963, '2010-06-20 16:29:32', 438522163)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;35;1mEdge Load (1.4ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges".path_id = 980190963) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 362332115) [0m
+  [4;35;1mPoint Load (1.1ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 330523542) [0m
+  [4;36;1mPoint Load (1.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 438522163) [0m

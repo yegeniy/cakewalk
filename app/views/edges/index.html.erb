@@ -8,8 +8,8 @@
 
 <% @edges.each do |edge| %>
   <tr>
-    <td><%=h edge.point_id %></td>
-    <td><%=h edge.endpoint_id %></td>
+    <td><%=h Point.find(edge.point_id).name %></td>
+    <td><%=h Point.find(edge.endpoint_id).name %></td>
     <td><%= link_to 'Show', edge %></td>
     <td><%= link_to 'Edit', edit_edge_path(edge) %></td>
     <td><%= link_to 'Destroy', edge, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -1,24 +1,5 @@
-<h1>New path</h1>
+<h1>"New path"</h1>
 
-<% form_for(@path) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <% for edge in @path.edges %>
-    <% fields_for "path[edge_attributes][]", edge do |edge_form| %>
-       <p> Edge id:<%= edge_form.text_field :point_id %></p>
-    <% end %>
-  <% end %>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+<%= render :partial => 'form' %>
 
 <%= link_to 'Back', paths_path %>
