@@ -8,6 +8,13 @@
   <%=h @path.description %>
 </p>
 
+<p>
+  <b>Edges:</b>
+  <% @path.edges.each do |path_edge| %>
+    <%=h Point.find(path_edge.point_id).name %> to <%=h Point.find(path_edge.endpoint_id).name %><br />
+  <% end %>
+</p>
+
 
 <%= link_to 'Edit', edit_path_path(@path) %> |
 <%= link_to 'Back', paths_path %>
