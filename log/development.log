@@ -18818,6 +18818,7 @@ Processing SearchController#directions (for 127.0.0.1 at 2010-06-20 17:59:30) [P
 Rendering template within layouts/search
 Rendering search/directions
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search/directions]
+<<<<<<< HEAD
 DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
 
 
@@ -18891,3 +18892,621 @@ Rendering paths/new
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
 Rendered paths/_form (80.5ms)
 Completed in 163ms (View: 95, DB: 2) | 200 OK [http://localhost/paths/new]
+=======
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-21 12:12:49) [GET]
+Rendering template within layouts/app
+Rendering home/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-21 12:12:51) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-21 12:25:56) [GET]
+Rendering template within layouts/app
+Rendering home/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-21 12:25:59) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:26:09) [GET]
+  Parameters: {"m"=>{"comment"=>"to there", "name"=>"From here", "lng"=>"-71.25896286968782", "lat"=>"42.368358013355966"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:31:04) [GET]
+  [4;36;1mEdge Load (1.2ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mPoint Load (0.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+Completed in 72ms (View: 36, DB: 2) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-21 12:31:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEdge Load (0.2ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 3) [0m
+Rendering template within layouts/app
+Rendering edges/edit
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/edges/3/edit]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#update (for 127.0.0.1 at 2010-06-21 12:31:14) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zZtVc1KLTBi3s8BlIiTKV0QuBzlmtT5LXjMyn+o7he4=", "id"=>"3", "edge"=>{"point_id"=>"376883159", "endpoint_id"=>"376883159"}}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 3) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mEdge Update (0.4ms)[0m   [0mUPDATE "edges" SET "endpoint_id" = 376883159, "updated_at" = '2010-06-21 16:31:14' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/edges/3
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/edges/3]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-21 12:31:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 3) [0m
+Rendering template within layouts/app
+Rendering edges/show
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+Rendered edges/_edge (9.2ms)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/edges/3]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:31:23) [GET]
+  [4;35;1mEdge Load (0.8ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+Completed in 91ms (View: 25, DB: 2) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:35:18) [GET]
+  [4;36;1mEdge Load (0.8ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mPoint Load (0.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 561116994) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 947431166) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 376883159) [0m
+Completed in 31ms (View: 24, DB: 2) | 200 OK [http://localhost/edges]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "edges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "path_id" integer, "point_id" integer, "endpoint_id" integer, "position" integer, "created_at" datetime, "updated_at" datetime, "direction" varchar(255)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "markers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal, "lng" decimal, "found" varchar(100), "left" varchar(100)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "paths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50), "address" varchar(100), "address2" varchar(100), "city" varchar(50), "state" varchar(20), "zip" varchar(9), "lat" varchar(20), "lng" varchar(20), "comment" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hashed_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime, "isadmin" boolean) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100620194655')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100609011931')[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100609173256')[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100609183518')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611203245')[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100612191202')[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100614192252')[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100614200703')[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100618060351')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100618061135')[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100618234021')[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100620163907')[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:35:57) [GET]
+  [4;35;1mEdge Load (0.4ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:36:20) [GET]
+  [4;36;1mEdge Load (0.4ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-21 12:36:21) [GET]
+  [4;35;1mPath Load (0.4ms)[0m   [0mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:36:22) [GET]
+  [4;36;1mEdge Load (0.4ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-21 12:42:05) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:17) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:19) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:19) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:20) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:20) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:20) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:21) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:21) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:21) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:21) [GET]
+  Parameters: {"m"=>{"comment"=>"its in the library", "name"=>"here", "lng"=>"-71.25825476650789", "lat"=>"42.36821533150728"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-21 12:42:30) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:42:42) [GET]
+  Parameters: {"m"=>{"comment"=>"Its got books!", "name"=>"library", "lng"=>"-71.25799727444246", "lat"=>"42.36837386687472"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-06-21 12:48:40) [GET]
+  [4;36;1mPoint Create (0.4ms)[0m   [0;1mINSERT INTO "points" ("name", "address", "city", "comment", "address2", "zip", "lng", "lat", "state") VALUES(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Completed in 21ms (View: 2, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-21 12:49:41) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:49:52) [GET]
+  Parameters: {"m"=>{"comment"=>"good question", "name"=>"Nowhere", "lng"=>"-71.25881266598299", "lat"=>"42.368151917248284"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:49:54) [GET]
+  Parameters: {"m"=>{"comment"=>"good question", "name"=>"Nowhere", "lng"=>"-71.25881266598299", "lat"=>"42.368151917248284"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-21 12:50:22) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/operate_marker/map]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-06-21 12:50:35) [GET]
+  Parameters: {"m"=>{"comment"=>"Good question", "name"=>"Nowhere", "lng"=>"-71.25857663158968", "lat"=>"42.368611669175664"}}
+  [4;36;1mPoint Create (0.4ms)[0m   [0;1mINSERT INTO "points" ("name", "address", "city", "comment", "address2", "zip", "lng", "lat", "state") VALUES('Nowhere', NULL, NULL, 'Good question', NULL, NULL, '-71.25857663158968', '42.368611669175664', NULL)[0m
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/operate_marker/create?m[name]=Nowhere&m[comment]=Good%20question&m[lng]=-71.25857663158968&m[lat]=42.368611669175664]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:50:42) [GET]
+  [4;35;1mEdge Load (0.4ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-21 12:50:44) [GET]
+Rendering template within layouts/app
+Rendering edges/new
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered edges/_form (13.8ms)
+Completed in 86ms (View: 21, DB: 0) | 200 OK [http://localhost/edges/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-21 12:51:51) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 12:52:12) [GET]
+  Parameters: {"m"=>{"comment"=>"Its got books!", "name"=>"library", "lng"=>"-71.2583835125406", "lat"=>"42.36843728090965"}}
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 12:52:15) [GET]
+  [4;36;1mEdge Load (0.5ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+Completed in 72ms (View: 6, DB: 0) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-21 12:52:16) [GET]
+Rendering template within layouts/app
+Rendering edges/new
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendered edges/_form (18.5ms)
+Completed in 31ms (View: 25, DB: 0) | 200 OK [http://localhost/edges/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#new (for 127.0.0.1 at 2010-06-21 12:54:47) [GET]
+Rendering template within layouts/app
+Rendering edges/new
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered edges/_form (16.8ms)
+Completed in 39ms (View: 31, DB: 0) | 200 OK [http://localhost/edges/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#create (for 127.0.0.1 at 2010-06-21 12:54:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zZtVc1KLTBi3s8BlIiTKV0QuBzlmtT5LXjMyn+o7he4=", "edge"=>{"point_id"=>"2", "direction"=>"", "endpoint_id"=>"2"}}
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mEdge Create (0.5ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id", "direction") VALUES(NULL, 2, '2010-06-21 16:54:51', NULL, '2010-06-21 16:54:51', 2, '')[0m
+Redirected to http://localhost:3000/edges/1
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-06-21 12:54:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (0.4ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/app
+Rendering edges/show
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Rendered edges/_edge (8.7ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/edges/1]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-21 12:54:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEdge Load (0.2ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/app
+Rendering edges/edit
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Completed in 82ms (View: 75, DB: 1) | 200 OK [http://localhost/edges/1/edit]
+>>>>>>> 472d50a6e4cc09b177dc1b956a60337239807806
