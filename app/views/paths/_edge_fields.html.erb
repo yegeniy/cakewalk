@@ -8,6 +8,12 @@
   <%=f.label :direction, "Direction:"-%>
   <%=f.text_field :direction -%><br />
 
+  <%#= f.check_box :_destroy %> 
+  <%#= f.label :_destroy, "Remove Edge" %>
   <%=f.hidden_field :_destroy -%>
-  <%=link_to_function "remove above edge", "remove_fields(this)" -%><br />
+  <%=link_to_function "remove above edge", "remove_fields(this)" -%>
+  <%#=link_to_remove_fields "remove above edge", f -%>
+
+  <br />
+
 </p>

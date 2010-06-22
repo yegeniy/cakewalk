@@ -19884,3 +19884,617 @@ Rendered paths/_edge_fields (87.3ms)
 Rendered paths/_edge_fields (21.9ms)
 Rendered paths/_form (154.6ms)
 Completed in 339ms (View: 162, DB: 3) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 13:34:19) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (2.6ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (51.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.4ms)
+Rendered paths/_form (159.1ms)
+Completed in 528ms (View: 404, DB: 3) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 13:34:26) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.9ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (48.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.3ms)
+Rendered paths/_form (81.1ms)
+Completed in 153ms (View: 85, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:13:42) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (2.1ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (52.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (127.3ms)
+Rendered paths/_form (215.8ms)
+Completed in 288ms (View: 220, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:13:55) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (53.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.5ms)
+Rendered paths/_form (98.2ms)
+Completed in 170ms (View: 102, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:14:45) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.9ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (49.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.9ms)
+Rendered paths/_form (83.5ms)
+Completed in 157ms (View: 88, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:15:07) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"asdf", "edges_attributes"=>{"0"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"fdas", "endpoint_id"=>"2"}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>"fdas"}}
+  [4;36;1mPoint Load (1.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.9ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (12.0ms)
+Rendered paths/_form (58.2ms)
+Completed in 304ms (View: 63, DB: 3) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:15:13) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"asdf", "edges_attributes"=>{"0"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"fdas", "endpoint_id"=>"2"}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>"fdas"}}
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.5ms)
+Rendered paths/_form (56.7ms)
+Completed in 180ms (View: 61, DB: 3) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:15:17) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"asdf", "edges_attributes"=>{"0"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"fdas", "endpoint_id"=>"2"}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>"fdas"}}
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.4ms)
+Rendered paths/_form (56.7ms)
+Completed in 177ms (View: 61, DB: 3) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:15:24) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"asdf", "edges_attributes"=>{"0"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"fdas", "endpoint_id"=>"2"}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>"fdas"}}
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.9ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (12.4ms)
+Rendered paths/_form (58.1ms)
+Completed in 303ms (View: 62, DB: 3) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:15:28) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"asdf", "edges_attributes"=>{"0"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"fdas", "endpoint_id"=>"2"}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>"fdas"}}
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.4ms)
+Rendered paths/_form (56.4ms)
+Completed in 174ms (View: 61, DB: 3) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:18:14) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"asdf", "edges_attributes"=>{"0"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"fdas", "endpoint_id"=>"2"}, "1"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"fdsa", "endpoint_id"=>"2"}}, "description"=>"fdas"}}
+  [4;36;1mPoint Load (1.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mPath Create (29.9ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES('asdf', '2010-06-22 18:18:15', '2010-06-22 18:18:15', 'fdas')[0m
+  [4;35;1mEdge Create (0.4ms)[0m   [0mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id", "direction") VALUES(NULL, 2, '2010-06-22 18:18:15', 2, '2010-06-22 18:18:15', 2, 'fdas')[0m
+  [4;36;1mEdge Create (0.3ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id", "direction") VALUES(NULL, 2, '2010-06-22 18:18:15', 2, '2010-06-22 18:18:15', 2, 'fdsa')[0m
+Redirected to http://localhost:3000/paths/2
+Completed in 165ms (DB: 32) | 302 Found [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#show (for 127.0.0.1 at 2010-06-22 14:18:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPath Load (0.9ms)[0m   [0mSELECT * FROM "paths" WHERE ("paths"."id" = 2) [0m
+Rendering template within layouts/app
+Rendering paths/show
+  [4;36;1mEdge Load (1.9ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges".path_id = 2) [0m
+  [4;35;1mPoint Load (1.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Completed in 271ms (View: 227, DB: 4) | 200 OK [http://localhost/paths/2]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 14:18:18) [GET]
+  [4;35;1mPath Load (1.4ms)[0m   [0mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 73ms (View: 37, DB: 1) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#destroy (for 127.0.0.1 at 2010-06-22 14:18:22) [DELETE]
+  Parameters: {"authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "id"=>"2"}
+  [4;36;1mPath Load (0.9ms)[0m   [0;1mSELECT * FROM "paths" WHERE ("paths"."id" = 2) [0m
+  [4;35;1mPath Destroy (0.7ms)[0m   [0mDELETE FROM "paths" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/paths
+Completed in 47ms (DB: 2) | 302 Found [http://localhost/paths/2]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 14:18:22) [GET]
+  [4;36;1mPath Load (0.9ms)[0m   [0;1mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 41ms (View: 6, DB: 1) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 14:21:05) [GET]
+  [4;35;1mPath Load (0.8ms)[0m   [0mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 41ms (View: 6, DB: 1) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:21:06) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.9ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (50.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (12.0ms)
+Rendered paths/_form (208.1ms)
+Completed in 282ms (View: 212, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:56:45) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.9ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (50.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.2ms)
+Rendered paths/_form (91.1ms)
+Completed in 350ms (View: 242, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:56:50) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>""}}
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (48.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.7ms)
+Rendered paths/_form (85.0ms)
+Completed in 182ms (View: 89, DB: 2) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:56:54) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>""}}
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (48.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (12.3ms)
+Rendered paths/_form (199.2ms)
+Completed in 296ms (View: 203, DB: 2) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 14:56:59) [GET]
+  [4;36;1mPath Load (0.8ms)[0m   [0;1mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 53ms (View: 19, DB: 1) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:57:02) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;35;1mPoint Load (1.8ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (48.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.3ms)
+Rendered paths/_form (81.4ms)
+Completed in 152ms (View: 86, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 14:57:08) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>""}}
+Rendering template within layouts/app
+Rendering paths/new
+  [4;35;1mPoint Load (1.8ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (47.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.4ms)
+Rendered paths/_form (84.0ms)
+Completed in 178ms (View: 88, DB: 2) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 14:57:57) [GET]
+  [4;35;1mPath Load (0.9ms)[0m   [0mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 43ms (View: 7, DB: 1) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:57:59) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (49.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.4ms)
+Rendered paths/_form (93.2ms)
+Completed in 164ms (View: 97, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:58:08) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (48.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.4ms)
+Rendered paths/_form (81.4ms)
+Completed in 153ms (View: 86, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 14:58:11) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (49.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.3ms)
+Rendered paths/_form (93.8ms)
+Completed in 165ms (View: 98, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:00:13) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (52.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (13.4ms)
+Rendered paths/_form (98.6ms)
+Completed in 169ms (View: 103, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 15:00:18) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>""}}
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (165.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.4ms)
+Rendered paths/_form (204.1ms)
+Completed in 301ms (View: 208, DB: 2) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 15:00:49) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>""}}
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (2.6ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (55.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.6ms)
+Rendered paths/_form (105.9ms)
+Completed in 204ms (View: 109, DB: 3) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 15:00:52) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}, "1"=>{"point_id"=>"", "_destroy"=>"", "direction"=>"", "endpoint_id"=>""}}, "description"=>""}}
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (50.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.9ms)
+Rendered paths/_form (89.4ms)
+Completed in 185ms (View: 94, DB: 2) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 15:01:08) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"", "endpoint_id"=>"2"}, "1"=>{"point_id"=>"2", "_destroy"=>"", "direction"=>"", "endpoint_id"=>"2"}}, "description"=>""}}
+  [4;36;1mPoint Load (1.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mPath Create (1.3ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES('', '2010-06-22 19:01:08', '2010-06-22 19:01:08', '')[0m
+  [4;35;1mEdge Create (0.4ms)[0m   [0mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id", "direction") VALUES(NULL, 2, '2010-06-22 19:01:08', 3, '2010-06-22 19:01:08', 2, '')[0m
+  [4;36;1mEdge Create (1.3ms)[0m   [0;1mINSERT INTO "edges" ("position", "point_id", "created_at", "path_id", "updated_at", "endpoint_id", "direction") VALUES(NULL, 2, '2010-06-22 19:01:08', 3, '2010-06-22 19:01:08', 2, '')[0m
+Redirected to http://localhost:3000/paths/3
+Completed in 337ms (DB: 4) | 302 Found [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#show (for 127.0.0.1 at 2010-06-22 15:01:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPath Load (0.9ms)[0m   [0mSELECT * FROM "paths" WHERE ("paths"."id" = 3) [0m
+Rendering template within layouts/app
+Rendering paths/show
+  [4;36;1mEdge Load (1.9ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges".path_id = 3) [0m
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Completed in 134ms (View: 91, DB: 4) | 200 OK [http://localhost/paths/3]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 15:01:10) [GET]
+  [4;35;1mPath Load (1.4ms)[0m   [0mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 60ms (View: 24, DB: 1) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:01:14) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (171.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (14.4ms)
+Rendered paths/_form (207.3ms)
+Completed in 278ms (View: 212, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:04:07) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.9ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (51.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (12.1ms)
+Rendered paths/_form (95.8ms)
+Completed in 168ms (View: 100, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-06-22 15:04:11) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "path"=>{"name"=>"", "edges_attributes"=>{"0"=>{"point_id"=>"", "_destroy"=>"1", "direction"=>"", "endpoint_id"=>""}, "1"=>{"point_id"=>"", "_destroy"=>"1", "direction"=>"", "endpoint_id"=>""}}, "description"=>""}}
+  [4;36;1mPath Create (0.7ms)[0m   [0;1mINSERT INTO "paths" ("name", "created_at", "updated_at", "description") VALUES('', '2010-06-22 19:04:11', '2010-06-22 19:04:11', '')[0m
+Redirected to http://localhost:3000/paths/4
+Completed in 72ms (DB: 1) | 302 Found [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#show (for 127.0.0.1 at 2010-06-22 15:04:12) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPath Load (1.0ms)[0m   [0mSELECT * FROM "paths" WHERE ("paths"."id" = 4) [0m
+Rendering template within layouts/app
+Rendering paths/show
+  [4;36;1mEdge Load (0.5ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges".path_id = 4) [0m
+Completed in 71ms (View: 31, DB: 1) | 200 OK [http://localhost/paths/4]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 15:04:13) [GET]
+  [4;35;1mPath Load (2.1ms)[0m   [0mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 198ms (View: 35, DB: 2) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#destroy (for 127.0.0.1 at 2010-06-22 15:04:19) [DELETE]
+  Parameters: {"authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "id"=>"3"}
+  [4;36;1mPath Load (0.9ms)[0m   [0;1mSELECT * FROM "paths" WHERE ("paths"."id" = 3) [0m
+  [4;35;1mPath Destroy (0.8ms)[0m   [0mDELETE FROM "paths" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/paths
+Completed in 48ms (DB: 2) | 302 Found [http://localhost/paths/3]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 15:04:19) [GET]
+  [4;36;1mPath Load (1.7ms)[0m   [0;1mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 60ms (View: 25, DB: 2) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#destroy (for 127.0.0.1 at 2010-06-22 15:04:21) [DELETE]
+  Parameters: {"authenticity_token"=>"uS2yYDKIyMnZCen+aaLQ+86gSaoKRVHkED1hx7APr9A=", "id"=>"4"}
+  [4;35;1mPath Load (1.0ms)[0m   [0mSELECT * FROM "paths" WHERE ("paths"."id" = 4) [0m
+  [4;36;1mPath Destroy (0.6ms)[0m   [0;1mDELETE FROM "paths" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/paths
+Completed in 47ms (DB: 2) | 302 Found [http://localhost/paths/4]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-06-22 15:04:21) [GET]
+  [4;35;1mPath Load (0.8ms)[0m   [0mSELECT * FROM "paths" [0m
+Rendering template within layouts/app
+Rendering paths/index
+Completed in 40ms (View: 6, DB: 1) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:09:08) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (53.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (13.3ms)
+Rendered paths/_form (218.9ms)
+Completed in 289ms (View: 223, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:09:15) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (49.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (13.2ms)
+Rendered paths/_form (85.8ms)
+Completed in 158ms (View: 90, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:10:23) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (50.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.3ms)
+Rendered paths/_form (93.8ms)
+Completed in 166ms (View: 98, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:15:23) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (48.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.9ms)
+Rendered paths/_form (84.4ms)
+Completed in 162ms (View: 89, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-22 15:16:20) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (48.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (11.6ms)
+Rendered paths/_form (82.5ms)
+Completed in 154ms (View: 86, DB: 2) | 200 OK [http://localhost/paths/new]
