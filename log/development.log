@@ -19510,3 +19510,97 @@ Rendering edges/edit
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
 Completed in 82ms (View: 75, DB: 1) | 200 OK [http://localhost/edges/1/edit]
 >>>>>>> 472d50a6e4cc09b177dc1b956a60337239807806
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-21 23:21:26) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (2.2ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+
+ActionView::TemplateError (undefined method `merge' for "Remove Edge":String) on line #26 of app/views/paths/_form.html.erb:
+23:     <%=builder.text_field :direction -%><br />
+24:     
+25:     <%=builder.check_box :_destroy -%>
+26:     <%=builder.text_field :_destroy, "Remove Edge" -%><br />
+27:    
+28:   <% end %>
+29:   <p>
+
+    app/views/paths/_form.html.erb:26
+    app/views/paths/_form.html.erb:13
+    app/views/paths/_form.html.erb:1
+    app/views/paths/new.html.erb:3
+    app/controllers/paths_controller.rb:35:in `new'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (201.7ms)
+Rendered rescues/_request_and_response (4.6ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-21 23:22:03) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (2.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_form (86.7ms)
+Completed in 329ms (View: 260, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-06-21 23:25:58) [GET]
+Rendering template within layouts/app
+Rendering paths/new
+  [4;36;1mPoint Load (2.1ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (63.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendered paths/_edge_fields (13.8ms)
+Rendered paths/_form (116.2ms)
+Completed in 205ms (View: 134, DB: 2) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 23:26:15) [GET]
+  [4;36;1mEdge Load (1.8ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+  [4;35;1mPoint Load (1.6ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Completed in 163ms (View: 126, DB: 3) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#edit (for 127.0.0.1 at 2010-06-21 23:26:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEdge Load (1.1ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 1) [0m
+Rendering template within layouts/app
+Rendering edges/edit
+  [4;36;1mPoint Load (1.8ms)[0m   [0;1mSELECT * FROM "points" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" [0m
+Completed in 239ms (View: 75, DB: 3) | 200 OK [http://localhost/edges/1/edit]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-06-21 23:26:24) [GET]
+  [4;36;1mEdge Load (2.0ms)[0m   [0;1mSELECT * FROM "edges" [0m
+Rendering template within layouts/app
+Rendering edges/index
+  [4;35;1mPoint Load (1.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+Completed in 100ms (View: 64, DB: 3) | 200 OK [http://localhost/edges]

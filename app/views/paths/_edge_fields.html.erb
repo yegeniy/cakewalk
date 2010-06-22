@@ -1,0 +1,13 @@
+<p>
+  <%=f.label :point_id, "Point ID:" -%>
+  <%=f.collection_select(:point_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
+
+  <%=f.label :endpoint_id, "Endpoint ID:" -%>
+  <%=f.collection_select(:endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
+
+  <%=f.label :direction, "Direction:"-%>
+  <%=f.text_field :direction -%><br />
+
+  <%=f.check_box :_destroy -%>
+  <%=f.label :_destroy, "Remove Edge" -%><br />
+</p>
