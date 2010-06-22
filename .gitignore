@@ -2,4 +2,4 @@
 # Ignores temporary emacs files 
 *~
 #FIXME: ignore .log files
-log/
+log
