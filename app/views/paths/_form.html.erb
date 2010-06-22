@@ -9,7 +9,7 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
-  <h3>Add Edges</h3>
+  <h5>Add Edges</h5>
   <% f.fields_for :edges do |builder| %>
     <%= render 'edge_fields', :f => builder %>
   <% end %>

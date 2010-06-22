@@ -1,3 +1,10 @@
+function remove_fields (link) {
+    $(link).previous("input[type=hidden]").value = "1";
+    $(link).up(".fields").hide();
+}
+
+
+
 var centerLatitude = 42.368078;
 var centerLongitude = -71.257064;
 var startZoom = 16;
