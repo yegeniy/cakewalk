@@ -11,6 +11,7 @@ ActionController::Routing::Routes.draw do |map|
   map.login "login", :controller => "admin", :action=> "login"
   map.logout "logout", :controller => "admin", :action=> "logout"
   map.edit "edit", :controller => "users", :action=>"edit"
+  map.connect "create", :controller => "operate_marker", :action => "create"
   map.root :controller => "home"
   # The priority is based upon order of creation: first created -> highest priority.
 
