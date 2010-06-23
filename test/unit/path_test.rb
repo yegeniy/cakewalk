@@ -29,9 +29,12 @@ class PathTest < ActiveSupport::TestCase
   end
   
   test "searching paths" do 
-	p1 = points(:point_sherman)
-	p2 = points(:point_rose)
-	p3 = points(:point_golding)
+	p1 = Point.new(:name => "moo")
+	p2 = Point.new(:name => "Bob")
+	p3 = Point.new(:name => "Joe")
+	p1.save
+	p2.save
+	p3.save
 	assert 3, Point.all
 	e1 = Edge.new(:id => 1, :point_id => p1.id,:endpoint_id => p2.id);
 	e1.save
@@ -45,7 +48,8 @@ class PathTest < ActiveSupport::TestCase
 	path1.edges << e2;
 	assert 2, path1.edges
 	
-	array_edges = path1.find_path(p1,p3)
+	array_edges = path1.search_path("test", "test2")
+	puts array_edges
     assert !array_edges.empty?
 end
 

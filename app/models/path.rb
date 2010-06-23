@@ -12,4 +12,17 @@ class Path < ActiveRecord::Base
   end
 =end
 
+
+  def search_path(start, finish)
+	@path = Path.all
+	puts @path.class
+	#for p in @path
+		if start == Path.first.edges.first.point.name && finish == Path.first.edges.last.endpoint.name
+			return path.edges
+			break
+		end
+	end		
+	
+	
+  end
 end

@@ -76,18 +76,7 @@ layout "app"
       end
     end
   end
-
-  def find_path 
-  
-	@path = Path.all
-	start, finish = params[:id]
-	puts start
-	puts finish
-	
-  end
-  
-  
-  
+    
   
   # DELETE /paths/1
   # DELETE /paths/1.xml
