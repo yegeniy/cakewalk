@@ -27,6 +27,27 @@ class PathTest < ActiveSupport::TestCase
     path.save!
     assert path.valid?
   end
+  
+  test "searching paths" do 
+	p1 = points(:point_sherman)
+	p2 = points(:point_rose)
+	p3 = points(:point_golding)
+	assert 3, Point.all
+	e1 = Edge.new(:id => 1, :point_id => p1.id,:endpoint_id => p2.id);
+	e1.save
+	e2 = Edge.new(:id => 2, :point_id => p2.id,:endpoint_id => p3.id);
+	e2.save
+	assert 2,Edge.count
+	
+	path1 = Path.new(:name => "test1", :description => "blah");
+	path1.save();
+	path1.edges << e1;
+	path1.edges << e2;
+	assert 2, path1.edges
+	
+	array_edges = path1.find_path(p1,p3)
+    assert !array_edges.empty?
+end
 
 =begin
   #FIXME: Error: ActiveRecord::RecordInvalid: Validation failed: Endpoint can't be blank
@@ -39,6 +60,7 @@ class PathTest < ActiveSupport::TestCase
     assert !(path.points << point_sherman)
     #point_sherman.belongs_to path
   end
+  
 =end
 
   #FIXME: Add as edge, not point
