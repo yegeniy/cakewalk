@@ -1,5 +1,6 @@
 class PathsController < ApplicationController
-layout "app"	
+#layout "app"
+#layout "paths", :only => 'new'
   # GET /paths
   # GET /paths.xml
   def index
