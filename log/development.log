@@ -19510,3 +19510,283 @@ Rendering edges/edit
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" [0m
 Completed in 82ms (View: 75, DB: 1) | 200 OK [http://localhost/edges/1/edit]
 >>>>>>> 472d50a6e4cc09b177dc1b956a60337239807806
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-22 13:37:21) [GET]
+Rendering template within layouts/app
+Rendering search/index
+Completed in 100ms (View: 98, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:38:48) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:39:13) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:39:25) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:39:37) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:41:46) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:42:05) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:47:05) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:55:16) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:55:33) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:55:37) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:55:53) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:58:40) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 13:59:42) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:00:55) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:02:03) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:03:07) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 68ms (View: 66, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:04:28) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:04:43) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:06:09) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:06:34) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:06:59) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:07:37) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:09:39) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:10:32) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:10:54) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:11:12) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/app
+Rendering search/directions
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-06-22 14:12:57) [GET]
+Rendering template within layouts/app
+Rendering operate_marker/map
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:13:10) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+
+ActionView::MissingTemplate (Missing layout layouts/app.erb in view path app/views):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:13:27) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/search
+Rendering search/directions
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:14:01) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/search
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-22 14:14:19) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"hdImCRHmOzuXxUtZZBdLcg78M3PLjYQmW7pEaNMO2M8=", "end"=>"waltham ma", "start"=>"brandeis university ma"}
+Rendering template within layouts/search
+Rendering search/directions
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/search/directions]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-23 11:31:09) [GET]
+Rendering template within layouts/search
+Rendering search/index
+Completed in 102ms (View: 100, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:6)
+
+
+Processing SearchController#directions (for 127.0.0.1 at 2010-06-23 11:31:19) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"iQbWj7EpJxYUIdoaZcrXUFVvqSXfjbwN5q0gip26hZ4=", "end"=>"boston ma", "start"=>"415 south st waltham ma"}
+Rendering template within layouts/search
+Rendering search/directions
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search/directions]

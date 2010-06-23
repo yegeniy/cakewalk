@@ -1,22 +1,17 @@
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head>
 	<meta http-equiv="content-type" name="viewport" content="initial-scale=1.0, user-scalable=no"/> 
 	
-	<title>Search Results</title>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-
 <%= javascript_include_tag 'map' %>
 <script type="text/javascript"> 
 
-	var start = <%= "'" + params[:start] + "'"%>
-	var end = <%= "'" + params[:end] + "'"%>
+	var start = <%=h "'" + params[:start] + "'"%>
+	var end = <%=h "'" + params[:end] + "'"%>
 
 	function temp(){
 		initGSearch(document.getElementById("map_canvas"));
 		getDirections(start, end);
 	}</script>
-</head>
 <body onLoad="temp()">
-	<div id="map_canvas" style="float:left;width:70%; height:100%"></div>
-	<div id="directionsPanel" style="float:right;width:30%;height 100%"></div>
+	<div id="map_canvas" style="float:left;width:500px; height:400px"></div>
+	<div id="directionsPanel" style=""float:right;width:30%;height:40%;"></div>
 </body>
