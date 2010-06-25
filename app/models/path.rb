@@ -18,8 +18,8 @@ class Path < ActiveRecord::Base
 	#p = @path.last
     for p in @path	 
 	   if !p.edges.nil?
-	      puts p.edges.length
-		  puts p.edges.first.point.name
+	      #puts p.edges.length
+		  #puts p.edges.first.point.name
 		if start == p.edges.first.point.name && finish == p.edges.last.endpoint.name
 			return path.edges
 			break

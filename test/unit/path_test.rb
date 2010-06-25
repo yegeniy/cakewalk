@@ -64,31 +64,48 @@ class PathTest < ActiveSupport::TestCase
 end
  test "chejjf" do 
  
-    p1 = Point.new(:name => "mookfjif")
-	p2 = Point.new(:name => "Bofrfk")
-	p3 = Point.new(:name => "Joekfj")
-	p4 = Point.new(:name => "charu")
-	p1.save!
-	p2.save!
-	p3.save!
-	p4.save!
- 
-	path1 = Path.new(:name => "test1", :description => "blah")
-	path1.save();
-	
-	e1 = Edge.new(:point_id => p1.id,:endpoint_id => p2.id)
-	e1.save
-	e2 = Edge.new(:point_id => p2.id,:endpoint_id => p3.id)
-	e2.save
-	path1.edges << e1
-	path1.edges << e2
-	assert 1, Path.all.length	
-	#assert nil, path1.edges.first
-	array_edges = path1.search_path("moo", "Bob")
-	puts array_edges
-    assert !array_edges.empty?
+     p1 = Point.new(:name => "Rose Art Museum")
+       p2 = Point.new(:name => "Sherman Hall")
+       p3 = Point.new(:name => "Volen Center")
+       p4 = Point.new(:name => "Usdan Center")
+       p1.save!
+       p2.save!
+       p3.save!
+       p4.save!
 
-end 
+       path1 = Path.new(:name => "Volen to Sherman", :description => "moo")
+       path1.save()
+
+       e1 = Edge.new(:point_id => p3.id, :endpoint_id => p2.id, :direction => "Go Straight")
+       e1.save()
+
+       path1.edges << e1
+
+       path2= Path.new(:name=> "Volen Center to Rose Art", :description => "test")
+       path2.save()
+
+       e1 = Edge.new(:point_id => p3.id,:endpoint_id => p2.id, :direction => "Go Straight")
+       e1.save()
+
+       e2= Edge.new(:point_id => p2.id, :endpoint_id => p1.id, :direction => "Go Left")
+       e2.save()
+
+       path2.edges << e1
+       path2.edges << e2
+
+       assert 2, path1.edges.length
+       assert 2, Path.all.length
+
+       #assert nil, path1.edges.first
+       available_paths = path1.search_path(p1.name, p2.name)
+	   puts "Available Paths TEST" 
+	   edge = available_paths[0].edges[0]
+	   puts "From #{edge.point.name} #{edge.direction} To  #{edge.endpoint.name}"
+	  # puts #{available_paths[0].edges[0].point.name direction}"
+   assert !available_paths.empty?
+
+end
+
 
 
 
