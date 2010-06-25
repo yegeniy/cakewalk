@@ -15,18 +15,18 @@ class Path < ActiveRecord::Base
 
   def search_path(start, finish)
 	@path = Path.all
+	available = []
 	#p = @path.last
     for p in @path	 
 	   if !p.edges.nil?
 	      #puts p.edges.length
 		  #puts p.edges.first.point.name
-		if start == p.edges.first.point.name && finish == p.edges.last.endpoint.name
-			return path.edges
-			break
+		if start == p.edges.first.point.name && finish == p.edges.last.endpoint.name 
+			available.push(p.edges)
 		end
 	 end
 	end		
 	
-	
+	return available
   end
 end

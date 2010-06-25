@@ -97,11 +97,16 @@ end
        assert 2, Path.all.length
 
        #assert nil, path1.edges.first
-       available_paths = path1.search_path(p1.name, p2.name)
+       available_paths = path1.search_path(p3.name, p1.name)
 	   puts "Available Paths TEST" 
-	   edge = available_paths[0].edges[0]
-	   puts "From #{edge.point.name} #{edge.direction} To  #{edge.endpoint.name}"
-	  # puts #{available_paths[0].edges[0].point.name direction}"
+	   #assert 2, available_paths.length
+	   for edge in available_paths
+	        for i in edge
+			puts "From #{i.point.name} #{i.direction} To  #{i.endpoint.name}"
+			end
+			#puts "From #{edge[1].point.name} #{edge[1].direction} To  #{edge[1].endpoint.name}"
+	   end
+	  
    assert !available_paths.empty?
 
 end
