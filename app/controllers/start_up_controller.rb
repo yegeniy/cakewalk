@@ -1,2 +1,0 @@
-class StartUpController < ApplicationController
-end

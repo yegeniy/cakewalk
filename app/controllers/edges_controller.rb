@@ -1,6 +1,6 @@
 class EdgesController < ApplicationController
 
-  layout "app"	
+	
   # GET /edges
   # GET /edges.xml
   def index
