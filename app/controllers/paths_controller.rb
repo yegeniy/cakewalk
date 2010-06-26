@@ -43,6 +43,15 @@ class PathsController < ApplicationController
     @path = Path.find(params[:id])
   end
 
+  def search
+    
+	puts params[:id].class
+	puts params[:id].length
+	puts params[:id]['start']
+   end  
+  
+  
+  
   # POST /paths
   # POST /paths.xml
   def create

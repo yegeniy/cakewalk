@@ -12,6 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout "logout", :controller => "admin", :action=> "logout"
   map.edit "edit", :controller => "users", :action=>"edit"
   map.connect "create", :controller => "operate_marker", :action => "create"
+  map.connect "paths/search", :controller => "path", :action => "search"
   map.root :controller => "home"
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -54,5 +55,6 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   
   map.connect ':controller/:action/:id'
+  
   map.connect ':controller/:action/:id.:format'
 end
