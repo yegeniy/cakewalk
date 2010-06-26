@@ -62,7 +62,7 @@ class PathTest < ActiveSupport::TestCase
 	assert 2, path1.edges
 	
 end
- test "chejjf" do 
+ test "search multiple paths" do 
  
 	   p1 = Point.new(:name => "Rose Art Museum")
        p2 = Point.new(:name => "Sherman Hall")
@@ -88,7 +88,7 @@ end
        path1.edges << e1
 	   path1.edges << e2
 
-       path2= Path.new(:name=> "Volen Center to Rose Art", :description => "test")
+       path2= Path.new(:name=> "Volen Center to Usdan", :description => "via Rose art museum")
        path2.save()
 
        e1 = Edge.new(:point_id => p3.id,:endpoint_id => p2.id, :direction => "Go Straight")
@@ -116,7 +116,7 @@ end
 	   path3.edges << e2
 	  
 
-       path4 = Path.new(:name => "LTS TO USDAN", :description => "moo")
+       path4 = Path.new(:name => "Goldfarb to sherman ", :description => "moo")
        path4.save()
 
        e1 = Edge.new(:point_id => p5.id, :endpoint_id => p1.id, :direction => "Go Straight")
@@ -135,15 +135,15 @@ end
 	   path4.edges << e1
 	   path4.edges << e2
 	   path4.edges << e3
+	   path4.edges << e4
      	  
 	   
-	   #path3=Path.new(:name=>"
-
+	   
        #assert 2, path1.edges.length
        #assert 2, Path.all.length
 
        #assert nil, path1.edges.first
-       available_paths = path4.search_path(p1.name, p2.name)
+       available_paths = path4.search_path(p4.name, p2.name)
 	   puts "Available Paths TEST" 
 	   puts available_paths
 	   #assert 2, available_paths.length
