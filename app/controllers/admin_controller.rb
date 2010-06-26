@@ -1,8 +1,8 @@
 class AdminController < ApplicationController
-layout "app"
+
   # just display the form and wait for user to
   # enter a name and password
-
+#ssl_required :login, :index, :logout
 #before_filter :testadmin, :except => ["login", "logout"]
 before_filter :requirelogin, :except => ["login", "logout"]
 

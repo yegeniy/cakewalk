@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
 
-layout "app"	
   # GET /users
   # GET /users.xml
   
   #before_filter :testadmin, :except => ["new", "edit", "create", "update"]
- 
+  #ssl_required :new, :create, :show, :index, :edit, :update, :destroy
   def index
     @users = User.find(:all, :order => :name)
 

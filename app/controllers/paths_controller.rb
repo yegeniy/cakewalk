@@ -1,5 +1,5 @@
 class PathsController < ApplicationController
-layout "app"	
+	
   # GET /paths
   # GET /paths.xml
   def index

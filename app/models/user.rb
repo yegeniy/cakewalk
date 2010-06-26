@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
 
   validate :password_non_blank
   
+  attr_accessible :name, :password
+  
   def self.authenticate(name, password)
     user = self.find_by_name(name)
     if user
