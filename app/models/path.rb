@@ -13,7 +13,9 @@ class Path < ActiveRecord::Base
 =end
 
 
-  def search_path(start, finish)
+  def search(start, finish)
+    puts start
+	puts finish
 	@path = Path.all
 	available = []
 	for p in @path	 
@@ -60,7 +62,8 @@ class Path < ActiveRecord::Base
 			end		
 		end
     end
-	 
+	#puts "available"
+	#puts available 
 	return available
   end
 end
