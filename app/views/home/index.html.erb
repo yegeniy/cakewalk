@@ -1,0 +1,45 @@
+<% content_for :head do%>
+	<%= javascript_include_tag 'search_path' %>
+<% end %>
+	<div id=page>
+		<div id="wrapper">
+			<div id="content">
+				<p> Hi, Welcome to the Cakewalk Home Page! </p>
+				<label for="category">From</label>
+				<input type="text" id="start" name="m[start]" style="width:25%;"/>'
+				<label for="category">To </label>
+				<input type="text" id="finish" name="m[finish]" style="width:25%;"/>'
+				<button id="execute-search"> Get me there!!! </button>
+
+				<div>
+
+					<br />
+					<!-- div to display the results -->
+					<div class="results" id="search-results"></div>
+				</div>
+			</div>
+
+			<div id="sidebar2" class="sidebar">
+				<ul>
+					<li>
+						<ul>
+							<h2> Top Tours </h2>
+							<li> Aliquam libero</li>
+							<li> Consectetuer adipiscing elit</li>
+							<li> Metus aliquam pellentesque</li>
+							<li> Suspendisse iaculis mauris</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<h2> Top Tours </h2>
+							<li> Aliquam libero</li>
+							<li> Consectetuer adipiscing elit</li>
+							<li> Metus aliquam pellentesque</li>
+							<li> Suspendisse iaculis mauris</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
