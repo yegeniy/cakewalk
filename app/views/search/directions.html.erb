@@ -8,6 +8,7 @@
 		var start = <%=h "'" + params[:start] + "'"%>
 		var end = <%=h "'" + params[:end] + "'"%>
 
+<<<<<<< HEAD
 		function temp(){
 			initGSearch(document.getElementById("map_canvas"));
 			getDirections(start, end);
@@ -16,5 +17,19 @@
 	</script>
 <% end %>	
 
+=======
+	
+
+	function temp(){
+		initGSearch(document.getElementById("map_canvas"));
+		getDirections(start, end);
+	}</script>
+</head>
+
+
+
+
+<body onLoad="temp()">
+>>>>>>> search_test
 	<div id="map_canvas" style="float:left;width:500px; height:400px"></div>
 	<div id="directionsPanel" style="float:right;width:30%;height:40%;"></div>

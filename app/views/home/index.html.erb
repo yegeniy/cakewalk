@@ -6,10 +6,31 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Cakewalk</title>
   <%= stylesheet_link_tag 'scaffold', 'test' %>
+  <script type="text/javascript">
+</script>
+<%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag :defaults %>
+<%= javascript_include_tag 'jrails' %>
+<%= javascript_include_tag 'search_path' %>
 </head>
 <body>
 <br />
 <p> Hi, Welcome to the Cakewalk Home Page! </p>
 </div>	
+
+<label for="category">From</label>
+<input type="text" id="start" name="m[start]" style="width:25%;"/>'
+<label for="category">To </label>
+<input type="text" id="finish" name="m[finish]" style="width:25%;"/>'
+<button id="execute-search"> Get me there!!! </button>
+
+<div>
+
+<br />
+<!-- div to display the results -->
+<div class="results" id="search-results"></div>
+<p>
+
+
 </body>
 </html>

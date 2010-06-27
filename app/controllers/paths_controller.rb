@@ -43,6 +43,32 @@ class PathsController < ApplicationController
     @path = Path.find(params[:id])
   end
 
+  def search_path
+    
+	a =  params[:m]
+	
+	result = []
+	@path = Path.new
+	available_paths = @path.search(a["start"],a["finish"])
+	for edge in available_paths
+	        dir = []
+	        for i in edge
+			  puts i.class
+			  dir.push("From #{i.point.name} #{i.direction} To  #{i.endpoint.name}")
+			  
+			end
+			result.push(dir)
+			#puts "From #{edge[1].point.name} #{edge[1].direction} To  #{edge[1].endpoint.name}"
+	   end
+	   	
+	 respond_to do |format|
+            
+        #format.html { redirect_to(@path) }
+        format.json  { render :json => result }
+   end  
+  end
+  
+  
   # POST /paths
   # POST /paths.xml
   def create
@@ -76,7 +102,8 @@ class PathsController < ApplicationController
       end
     end
   end
-
+    
+  
   # DELETE /paths/1
   # DELETE /paths/1.xml
   def destroy
