@@ -25014,3 +25014,45 @@ ActionController::RoutingError (No route matches "/stylesheets/images/img01.jpg"
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-28 12:48:07) [GET]
+Rendering template within layouts/application
+Rendering search/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-28 12:48:57) [GET]
+Rendering template within layouts/application
+Rendering search/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-28 12:49:15) [GET]
+Rendering template within layouts/application
+Rendering search/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-28 12:52:18) [GET]
+Rendering template within layouts/application
+Rendering search/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-28 12:52:27) [GET]
+Rendering template within layouts/application
+Rendering search/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/search]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/Work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2010-06-28 12:53:10) [GET]
+Rendering template within layouts/application
+Rendering search/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/search]

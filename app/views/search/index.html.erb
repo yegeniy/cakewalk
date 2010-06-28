@@ -24,12 +24,19 @@
 	<h2> Search for a path </h2>
 
 	<fieldset>
+		<% 2.times do %>
+			&nbsp
+		<% end %>
 		<label for="category">From</label>
 		<input type="text" id="start" />
+		<% 5.times do %>
+			&nbsp
+		<% end %>
 		<label for="category">To</label>
 		<input type="text" id="end" />
 		<button id="search" onClick="directions()"> Search! </button>
 	</fieldset>
+	<br />
 
 	
 	
