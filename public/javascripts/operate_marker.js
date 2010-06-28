@@ -104,6 +104,23 @@ return false;
 }
 
 
+var geocoder = new GClientGeocoder();
+
+function showAddress() {
+	var address = document.getElementById("center").value;
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert(address + " not found");
+            } else {
+              map.setCenter(point, 13);
+			}
+		}
+	);
+	}
+}
 
 window.onload = init;
 window.onunload = GUnload;
