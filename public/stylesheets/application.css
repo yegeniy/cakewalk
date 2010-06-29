@@ -1,4 +1,3 @@
-
 /*
 Design by Free CSS Templates
 http://www.freecsstemplates.org
@@ -81,7 +80,7 @@ img.right {
 	padding: 80px 0 0 0;
 	text-transform: lowercase;
 	font-weight: normal;
-	font-size: 5em;
+	font-size: 3em;
 }
 
 #logo p {
@@ -132,19 +131,6 @@ img.right {
 	color: #DDBB04;
 }
 
-#user_nav li {
-	border:medium none;
-	color:#DDBB04;
-	display:block;
-	float:left;
-	font-family:Arial,Helvetica,sans-serif;
-	font-size:11px;
-	margin:0 3px 0 0;
-	padding:12px 15px 10px;
-	text-decoration:none;
-	text-transform:uppercase;
-}
-
 #menu a:hover {
 	margin: 0 3px 0 0;
 	background: #191E1A;
@@ -152,12 +138,35 @@ img.right {
 	color: #FFFFFF;
 }
 
-#menu .current_page_item a {
-	background: none;
+#user_nav a {
+	display: block;
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 12px 15px 10px 15px;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #DDBB04;
+}
+
+#user_nav a:hover {
 	margin: 0 3px 0 0;
 	background: #191E1A;
 	border-bottom: 3px solid #DDBB04;
 	color: #FFFFFF;
+}
+
+#user_nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float:right;
+}
+
+#user_nav li {
+	display: inline;
 }
 
 /* Wrapper */
@@ -177,13 +186,33 @@ img.right {
 	padding: 11px 24px;
 }
 
+/* Latest Post */
+
+#latest-post {
+	border: 1px dashed #8D8D8D;
+}
 
 /* Content */
 
 #content {
 	float: left;
-	width: 498px;
+	width:600px;
 	padding-right: 20px;
+}
+
+.post {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	line-height: 200%;
+}
+
+.post h1 {
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.post h2 {
+	font-size: 24px;
 }
 
 .title {
@@ -233,11 +262,13 @@ img.right {
 }
 /* Sidebars */
 
+#sidebar1 {
+	padding-right: 20px;
+}
 
 .sidebar {
-	float: right;
-	width: 200px;
-	padding-right: 20px;
+	float: left;
+	width: 350px;
 	padding: 0 0 0 21px;
 }
 

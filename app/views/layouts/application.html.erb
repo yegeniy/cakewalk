@@ -13,6 +13,9 @@
 	<%= javascript_include_tag 'jrails' %>
 	<%= stylesheet_link_tag 'application' %>
 	<%= yield :head %>
+
+	<%= javascript_include_tag 'google_analytics'%>
+
 </head>
 <body>
 	<%- flash.each do |name, msg| -%>
@@ -24,36 +27,44 @@
 			<p> Making getting there easier </p>
 			<div id="headimage" style="float:right; margin-right:10%;margin-top:5%;"><%= image_tag "portal-cake.jpg", :size => '100x100', :alt => 'The cake is a lie'%> </div>
 		</div>
+		<div id="menu-bg">
+			<div id="menu">
+				<ul id="main">
+					<li><%= link_to "Home", home_path%> </li>
+					<li><%= link_to "Add a Point", addpoint_path%> </li>
+					<li><%= link_to "Edges", edges_path%> </li>
+					<li><%= link_to "Paths", paths_path%> </li>
+					<li><%= link_to "Search", searchs_path%> </li>
+				</div>
+
+				<ul id="user_nav" style="float:right;margin-right: 5%;">
+					<% if session[:user_id] %>
+					<li><%= link_to "Edit Profile", edit_path%></li>
+					<li><%= link_to "Logout", logout_path%></li>
+
+					<% else%>
+					<li><%= link_to "Register", register_path %></li>
+					<li><%= link_to "Login", login_path%></li>	
+					<%end%>
+				</div>
+
+			</div>
+		</div>	
 	</div>
-	<div id="menu-bg">
-		<div id="menu">
-			<ul id="main">
-				<li><%= link_to "Home", home_path%> </li>
-				<li><%= link_to "Add a Point", addpoint_path%> </li>
-				<li><%= link_to "Edges", edges_path%> </li>
-				<li><%= link_to "Paths", paths_path%> </li>
-				<li><%= link_to "Search", searchs_path%> </li>
-			</div>
-
-			<ul id="user_nav" style="float:right;margin-right: 10%;">
-				<% if session[:user_id] %>
-				<li><%= link_to "Edit Profile", edit_path%></li>
-				<li><%= link_to "Logout", logout_path%></li>
-
-				<% else%>
-				<li><%= link_to "Register", register_path %></li>
-				<li><%= link_to "Login", login_path%></li>	
-				<%end%>
-			</div>
-
-		</div>
-	</div>	
 	<div id="wrapper">
 		<div id="page">
 
-				<%= yield %>
+			<%= yield %>
 
 		</div>
-	</div>					
+	</div>	
+</div>
+<div id="footer">
+	<div id="footer-content">
+		<p> Comments, questions, complaints, suggestions? Email <%= image_tag "email.gif", :alt => "our emails"%> &copy;2010 All Rights Reserved. &nbsp;&nbsp; Layout design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+
+	</div>
+</div>
+
 </body>
 </html>
