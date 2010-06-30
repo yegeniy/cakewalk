@@ -12,6 +12,7 @@
 	<%= javascript_include_tag 'jquery' %>
 	<%= javascript_include_tag 'jrails' %>
 	<%= stylesheet_link_tag 'application' %>
+	<%= stylesheet_link_tag 'mobile' if mobile_device?%>
 	<%= yield :head %>
 
 	<%= javascript_include_tag 'google_analytics'%>
@@ -35,6 +36,11 @@
 					<li><%= link_to "Edges", edges_path%> </li>
 					<li><%= link_to "Paths", paths_path%> </li>
 					<li><%= link_to "Search", searchs_path%> </li>
+					    <% if mobile_device?%>
+							<%= link_to "Full Site", :mobile => 0%>
+						<% else %>
+							<%= link_to "Mobile Site", :mobile => 1%>	
+						<% end %>	
 				</div>
 
 				<ul id="user_nav" style="float:right;margin-right: 5%;">
