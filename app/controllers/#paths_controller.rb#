@@ -22,15 +22,12 @@ class PathsController < ApplicationController
     end
   end
   
-  N_EDGES = 2;
   # GET /paths/new
   # GET /paths/new.xml
   def new
     @path = Path.new
     
     # Adds edges to @path
-
-    N_EDGES.times{ @path.edges.build }
 
     respond_to do |format|
       format.html # new.html.erb
