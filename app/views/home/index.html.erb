@@ -1,44 +1,43 @@
 <% content_for :head do%>
-	<%= javascript_include_tag 'search_path' %>
+<%= javascript_include_tag 'search_path' %>
 <% end %>
 
-			<div id="content">
-				<h2> Hi, Welcome to the Cakewalk Home Page! </h2>
-				<label for="category">From</label>
-				<input type="text" id="start" name="m[start]" style="width:25%;"/>'
-				<label for="category">To </label>
-				<input type="text" id="finish" name="m[finish]" style="width:25%;"/>'
-				<button id="execute-search"> Get me there!!! </button>
 
-				<div>
+<h2> Hi, Welcome to the Cakewalk Home Page! </h2>
+<label for="category">From</label>
+<input type="text" id="start" name="m[start]" style="width:25%;"/>
+<label for="category">To </label>
+<input type="text" id="finish" name="m[finish]" style="width:25%;"/>
+<button id="execute-search"> Get me there!!! </button>
 
-					<br />
-					<!-- div to display the results -->
-					<div class="results" id="search-results"></div>
-				</div>
-			</div>
+<div>
+	<br />
+	<!-- div to display the results -->
+	<div class="results" id="search-results"></div>
+</div>
 
-			<div class="sidebar">
-				<ul>
-					<li>
-						<ul>
-							<h2> Top Tours </h2>
-							<li> Aliquam libero</li>
-							<li> Consectetuer adipiscing elit</li>
-							<li> Metus aliquam pellentesque</li>
-							<li> Suspendisse iaculis mauris</li>
-						</ul>
-					</li>
-					<li>
-						<ul>
-							<h2> Top Paths </h2>
-							<li> Aliquam libero</li>
-							<li> Consectetuer adipiscing elit</li>
-							<li> Metus aliquam pellentesque</li>
-							<li> Suspendisse iaculis mauris</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div style="clear: both;">&nbsp;</div>
-			
+
+<% content_for :sidebar do %>
+<ul>
+	<li>
+		<ul>
+			<h2> Top Tours </h2>
+			<li> Aliquam libero</li>
+			<li> Consectetuer adipiscing elit</li>
+			<li> Metus aliquam pellentesque</li>
+			<li> Suspendisse iaculis mauris</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<h2> Top Paths </h2>
+			<li> Aliquam libero</li>
+			<li> Consectetuer adipiscing elit</li>
+			<li> Metus aliquam pellentesque</li>
+			<li> Suspendisse iaculis mauris</li>
+		</ul>
+	</li>
+</ul>
+<% end %>
+
+

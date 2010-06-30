@@ -138,9 +138,19 @@ img.right {
 	color: #FFFFFF;
 }
 
+#user_nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#user_nav li {
+	display: inline;
+}
+
 #user_nav a {
 	display: block;
-	float: left;
+	float: right;
 	margin: 0 3px 0 0;
 	padding: 12px 15px 10px 15px;
 	border: none;

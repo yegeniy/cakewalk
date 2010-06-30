@@ -37,7 +37,7 @@
 					<li><%= link_to "Search", searchs_path%> </li>
 				</div>
 
-				<ul id="user_nav" style="float:right;margin-right: 5%;">
+				<ul id="user_nav">
 					<% if session[:user_id] %>
 					<li><%= link_to "Edit Profile", edit_path%></li>
 					<li><%= link_to "Logout", logout_path%></li>
@@ -53,9 +53,13 @@
 	</div>
 	<div id="wrapper">
 		<div id="page">
-
+			<div id="content">
 			<%= yield %>
-
+			</div>
+			<div class="sidebar">
+			<%= yield :sidebar %>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
 		</div>
 	</div>	
 </div>
