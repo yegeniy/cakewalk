@@ -1,15 +1,38 @@
+
+
 <% content_for :head do%>
 <%= javascript_include_tag 'search_path' %>
+
+<script type="text/javascript> 
+  function addAuto() { 
+		alert("hi");
+		var availableTags = <%= @point_names.inspect %>;
+		$("#start").autocomplete({
+			source: availableTags
+		});
+}
+
+window.onLoad = addAuto;
+</script>
 <% end %>
 
+<% if session[:user] %>
+	<% usr_name =  User.find(session[:user_id]).name %>
+	<%puts "!" + usr_name%>
+<% else %>
+	<% usr_name = ""%>
+	<% puts "whoops"%>
+<% end %>
 
-<h2> Hi, Welcome to the Cakewalk Home Page! </h2>
+<h2> Hi<%usr_name%>, Welcome to the Cakewalk Home Page! </h2>
+<h3> Enter in two locations, where you want to start, and where to go to </h3>
+<h3>(Currently Limited to Brandeis Locations) </h3>
 <label for="category">From</label>
-<input type="text" id="start" name="m[start]" style="width:25%;"/>
+<input type="text" id="start" class="points" name="m[start]" style="width:25%;"/>
 <label for="category">To </label>
-<input type="text" id="finish" name="m[finish]" style="width:25%;"/>
+<input type="text" id="finish" class="points" name="m[finish]" style="width:25%;"/>
 <button id="execute-search"> Get me there!!! </button>
-
+<p> Eg... From: Volen Center, To: Usdan Center </p>
 <div>
 	<br />
 	<!-- div to display the results -->
