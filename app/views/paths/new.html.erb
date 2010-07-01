@@ -2,7 +2,9 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>Create a path</title>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<%= javascript_include_tag 'map' %>
+<%#= javascript_include_tag 'map' %>
+<%= javascript_include_tag 'path'%>
+<!-- 
 <%# Want to add functionality demoed in http://code.google.com/apis/maps/documentation/javascript/examples/polyline-complex.html -%>
 <script type="text/javascript">
   
@@ -42,6 +44,7 @@
     // and it will automatically appear
     path.push(event.latLng);
 
+  //TODO:  add marker to polyline
     // Add a new marker at the new plotted point on the polyline.
     var marker = new google.maps.Marker({
       position: event.latLng,
@@ -53,11 +56,12 @@
 
   window.onload = initialize;
 </script>
+-->
 <% end %>
 <h1>Click points on map to create a path</h1>
 
 <%#= render :partial => 'form' -%>
 
-<div id="map_canvas" style="width:500px; height:400px"></div>
+<div id="mapContainer" style="width:500px; height:400px"></div>
 
 <%= link_to 'Back', paths_path %>

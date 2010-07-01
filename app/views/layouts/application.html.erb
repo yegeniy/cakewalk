@@ -18,9 +18,9 @@
 
 </head>
 <body>
-	<%- flash.each do |name, msg| -%>
+	<% flash.each do |name, msg| -%>
 	<%= content_tag :div, msg, :id => "flash_#{name}" %>
-	<%- end -%>
+	<% end -%>
 	<div id="header">
 		<div id="logo">
 			<h1> Cakewalk </h1>
@@ -35,7 +35,7 @@
 					<li><%= link_to "Edges", edges_path%> </li>
 					<li><%= link_to "Paths", paths_path%> </li>
 					<li><%= link_to "Search", searchs_path%> </li>
-				</div>
+				</ul>
 
 				<ul id="user_nav" style="float:right;margin-right: 5%;">
 					<% if session[:user_id] %>
@@ -46,7 +46,7 @@
 					<li><%= link_to "Register", register_path %></li>
 					<li><%= link_to "Login", login_path%></li>	
 					<%end%>
-				</div>
+				</ul>
 
 			</div>
 		</div>	
