@@ -3,15 +3,15 @@
 <% content_for :head do%>
 <%= javascript_include_tag 'search_path' %>
 
-<script type="text/javascript> 
+<script type="text/javascript"> 
+	alert("hi");
+	
   function addAuto() { 
-		alert("hi");
 		var availableTags = <%= @point_names.inspect %>;
 		$("#start").autocomplete({
 			source: availableTags
 		});
-}
-
+  }
 window.onLoad = addAuto;
 </script>
 <% end %>

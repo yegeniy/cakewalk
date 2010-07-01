@@ -27854,3 +27854,241 @@ Processing OperateMarkerController#map (for 127.0.0.1 at 2010-07-01 15:10:39) [G
 Rendering template within layouts/application
 Rendering operate_marker/map
 Completed in 30ms (View: 29, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-01 15:12:53) [GET]
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/home]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 15:12:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img01.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-07-01 15:12:55) [GET]
+  [4;35;1mEdge Load (1.2ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/application
+Rendering edges/index
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mPoint Load (0.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mPoint Load (0.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mPoint Load (0.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mPoint Load (0.2ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+Completed in 76ms (View: 68, DB: 3) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-01 15:19:19) [GET]
+  [4;36;1mPoint Load (1.1ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 15:19:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img01.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-07-01 15:19:21) [GET]
+Rendering template within layouts/application
+Rendering operate_marker/map
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-07-01 15:19:36) [GET]
+Rendering template within layouts/application
+Rendering operate_marker/map
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-07-01 15:20:38) [GET]
+Rendering template within layouts/application
+Rendering operate_marker/map
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-07-01 15:20:53) [GET]
+Rendering template within layouts/application
+Rendering operate_marker/map
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-07-01 15:21:40) [GET]
+Rendering template within layouts/application
+Rendering operate_marker/map
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-01 15:22:37) [GET]
+  [4;35;1mPoint Load (1.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#map (for 127.0.0.1 at 2010-07-01 15:22:41) [GET]
+Rendering template within layouts/application
+Rendering operate_marker/map
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/addpoint]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-01 15:22:43) [GET]
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/home]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 15:22:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img01.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-01 15:23:01) [GET]
+  [4;35;1mPoint Load (1.2ms)[0m   [0mSELECT * FROM "points" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 74ms (View: 8, DB: 1) | 200 OK [http://localhost/home]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 15:23:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img01.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-01 15:23:15) [GET]
+  [4;36;1mPoint Load (1.0ms)[0m   [0;1mSELECT * FROM "points" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/home]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 15:23:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img01.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-01 15:23:51) [GET]
+  [4;35;1mPoint Load (1.0ms)[0m   [0mSELECT * FROM "points" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/home]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/nickgordon/work/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 15:23:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img01.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

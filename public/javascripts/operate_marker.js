@@ -31,10 +31,6 @@ function init()
 	+ '<legend>New Point</legend>'
 	+ '<label for="name">Name</label>'
 	+ '<input type="text" id="name" name="m[name]" style="width:100%;"/>'
-	//+ '<label for="city"></label>'
-	//+ '<input type="text" id="city" name="m[city]" style="width:100%;"/>'
-	//+ '<label for="state">State</label>'
-	//+ '<input type="text" id="state" name="m[state]" style="width:100%;"/>'
 	+ '<label for="comment">Comment</label>'
 	+ '<input type="text" id="comment" name="m[comment]" style="width:100%;"/>'
 	+ '<input type="submit" value="Save"/>'
@@ -107,13 +103,13 @@ return false;
 var geocoder = new GClientGeocoder();
 
 function showAddress() {
-	var address = document.getElementById("center").value;
+	var centerPt = document.getElementById("center").value;
       if (geocoder) {
         geocoder.getLatLng(
-          address,
+          centerPt,
           function(point) {
             if (!point) {
-              alert(address + " not found");
+              alert(centerPt + " not found");
             } else {
               map.setCenter(point, 13);
 			}
