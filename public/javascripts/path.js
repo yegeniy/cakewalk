@@ -23,18 +23,28 @@
  **/
 var map; // Will be set to a Map object
 var poly; // Will be set to a Polyline object
+var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
-/*
- function openInfoWindow(infoWindow, marker){
- // Close the last selected marker before opening this one.
- if (Demo.visibleInfoWindow) {
- Demo.visibleInfoWindow.close();
- }
- 
- infoWindow.open(map, marker);
- Demo.visibleInfoWindow = infoWindow;
- }
+
+
+/**
+ * Opens selected infoWindow over the selected marker
+ * after closing the previously opened infoWindow
+ * NOTE: If this wrapper function is omitted from the click listener at marker,
+ * 	then only data in the first open infoWindow will be saved to the database... I think.
+ * @param {Object} infoWindow
+ * @param {Object} marker
  */
+function openInfoWindow(infoWindow, marker){
+    // Close the last selected marker before opening this one.
+    if (visibleInfoWindow) {
+        visibleInfoWindow.close();
+    }
+    
+    infoWindow.open(map, marker);
+    visibleInfoWindow = infoWindow;
+}
+
 /**
  * Extracts data from marker and infoWindow and saves it into a point object
  * NOTE: See page 53+ in "Beginning Google Maps Applications with Rails and Ajax" for reference
@@ -50,15 +60,15 @@ var poly; // Will be set to a Polyline object
  * Following http://code.google.com/apis/maps/articles/phpsqlinfo_v3.html
  */
 function saveData(){//marker, infoWindow){
-//    alert('entering saveData()');
+    //    alert('entering saveData()');
     
     var name = escape(document.getElementById("name").value);
     var comment = escape(document.getElementById("comment").value);
     var lat = escape(document.getElementById("latitude").value);
     var lng = escape(document.getElementById("longitude").value);
-//    alert('in saveData()');
+    //    alert('in saveData()');
     var url = "../operate_marker/create?" + //FIXME: Might not be robust to url changes.
-    "point[name]=" +
+    "point[name]=" + //NOTE: N.B. that point[...] is used, which means edge[someEdgeParam] can be used too.
     name +
     "&point[comment]=" +
     comment +
@@ -66,9 +76,9 @@ function saveData(){//marker, infoWindow){
     lat +
     "&point[lng]=" +
     lng;
-  //  alert('in saveData()');
+    //  alert('in saveData()');
     downloadUrl(url, function(data, responseCode){
-		
+    
         // Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue processing.
         // Check the length of the data string returned - an empty data file indicates that the request generated no error strings. If the length is zero, you can close the info window and output a success message. 
         if (responseCode == 200 && data.length <= 1) {
@@ -80,7 +90,11 @@ function saveData(){//marker, infoWindow){
     //alert('in saveData');
 };
 
-
+/**
+ * a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript. The downloadUrl() callback function will provide you with the content of the URL and the status code. If you use a framework like jQuery or YUI, you may want to replace this function with their respective wrapper functions.
+ * @param {Object} url
+ * @param {Object} callback
+ */
 function downloadUrl(url, callback){
     // Create browser compatible http request
     var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
@@ -95,7 +109,9 @@ function downloadUrl(url, callback){
     request.open('GET', url, true);
     request.send(null);
 }
-function doNothing() {}
+
+function doNothing(){
+}
 
 
 /**
@@ -148,14 +164,14 @@ function addToMap(event){
     });
     
     
-    //FIXME: Does the content of the infoWindow get reset to newPointForm at each call? Or does the marker "block" the DomListener which invokes addToMap? 
+    //FIXME: The content of infoWindow is reset whenever it's closed. This is inconvenient, but acceptable for now.
     var infoWindow = new google.maps.InfoWindow({
         content: newPointForm(event)
     });
     //alert('added infoWidnow')
     // Opens an infowindow over the marker on click
     google.maps.event.addListener(marker, 'click', function(){
-        infoWindow.open(map, marker);
+        openInfoWindow(infoWindow, marker);
     });
     
     
