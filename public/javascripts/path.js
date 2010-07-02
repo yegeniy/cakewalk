@@ -154,6 +154,14 @@ function addToMap(event){
     // and it will automatically appear
     path.push(event.latLng);
     
+	//map.addOverlay(poly);
+	// Opens an infowindow for click event on a part of the polyline
+	google.maps.event.addListener(poly, 'click', function(){
+		alert('poly was clicked on');
+		//infoWindow.open(poly);//openInfoWindow(infoWindow, poly);
+	});
+	
+	
     /* Add a new marker at the new plotted point on the polyline.
      * Note that a marker is just the visual marker on the map.
      */
@@ -171,9 +179,12 @@ function addToMap(event){
     //alert('added infoWidnow')
     // Opens an infowindow over the marker on click
     google.maps.event.addListener(marker, 'click', function(){
+		alert('marker was clicked on');
         openInfoWindow(infoWindow, marker);
-    });
+	});
     
+	
+	
     
     //alert('added listener for infoWindow');
     //var point
@@ -184,26 +195,48 @@ function addToMap(event){
 
 function init(){
     // Generate map with some center. TODO: Change center to something sensible.
-    var firstLatLng = new google.maps.LatLng(37.4419, -122.1419);
-    //alert('firstLatLng made?');
-    
+    var brandeisLatLng = new google.maps.LatLng(42.368089, -71.258698);
+    //alert('brandeisLatLng made?');
+   
+    mapContainer = document.getElementById('mapContainer');
+    //alert('mapContainer is' + mapContainer);
+    map = new google.maps.Map(mapContainer, {
+        zoom: 16,
+        center: brandeisLatLng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+   
+   
+   
+   	////////// Seed the initial view.
+	
+	var location = new google.maps.Marker({
+        position: new google.maps.LatLng(42.365754,-71.260757),
+        title: 'first seeded point',
+        map: map
+    });
+
+    google.maps.event.addListener(location, 'click', function(){
+		
+		alert('click on seeded first');
+	   	infoWindow.open(map, location);//openInfoWindow(infoWindow, location);
+	});
+	
+	///////////
+   
     // Initialize polyline
     var polyOptions = {
         strokeColor: '#000000',
         strokeOpacity: 1.0,
-        strokeWeight: 3
+        strokeWeight: 3,
+		clickable: true
     }
     poly = new google.maps.Polyline(polyOptions);
-    //poly.setMap(map); // not needed since there's only one map?
+    poly.setMap(map); // not needed since there's only one map?
     //alert('poly stroke weight is ' + poly.strokeWeight);
     
-    mapContainer = document.getElementById('mapContainer');
-    //alert('mapContainer is' + mapContainer);
-    map = new google.maps.Map(mapContainer, {
-        zoom: 12,
-        center: firstLatLng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+	
+   
     //alert('map should have been made I think?');
     // Initialize polyline
     var polyOptions = {
@@ -211,13 +244,8 @@ function init(){
         strokeOpacity: 1.0,
         strokeWeight: 3
     }
-    poly = new google.maps.Polyline(polyOptions);
-    poly.setMap(map);
-    
-    
-    
-    // Add a listener for click events in the map
-    google.maps.event.addListener(map, 'click', addToMap);
+	//TODO: Disabled to only load markers. Add a listener for click events in the map
+    //google.maps.event.addListener(map, 'click', addToMap);
     
 };
 
