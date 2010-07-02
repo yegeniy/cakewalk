@@ -25,7 +25,7 @@ var map; // Will be set to a Map object
 var poly; // Will be set to a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
-var markers;
+var pointIds = []; //Will hold an ordered list of the point ids. Can traverse this list to create edges. 
 
 /**
  * Opens selected infoWindow over the selected marker
@@ -88,10 +88,13 @@ function saveData(){//marker, infoWindow){
     });
     //alert('in saveData()');
     //alert('in saveData');
+	//alert('point Ids are: ' + pointIds);
 };
 
 /**
- * a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript. The downloadUrl() callback function will provide you with the content of the URL and the status code. If you use a framework like jQuery or YUI, you may want to replace this function with their respective wrapper functions.
+ * a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript. 
+ * The downloadUrl() callback function will provide you with the content of the URL and the status code. 
+ * If you use a framework like jQuery or YUI, you may want to replace this function with their respective wrapper functions.
  * @param {Object} url
  * @param {Object} callback
  */
@@ -101,21 +104,21 @@ function downloadUrl(url, callback){
     
     request.onreadystatechange = function(){
         if (request.readyState == 4) {
-//			
-//			var success = false;
-//            var content = 'Error contacting web service';
-//            try {
-//                //parse the result to JSON (simply by eval-ing it)
-//                res = eval("(" + request.responseText + ")");
-//                content = res.content;
-//                success = res.success;
-//				id = res.id;
-//				alert('id');
-//            } 
-//            catch (e) {
-//                success = false;
-//            }
-//			
+			
+			var success = false;
+            var content = 'Error contacting web service';
+            try {
+                //parse the result to JSON (simply by eval-ing it)
+                res = eval("(" + request.responseText + ")");
+                content = res.content;
+                success = res.success;
+				id = res.id;
+				pointIds.push(id);
+            }
+            catch (e) {
+                success = false;
+            }
+			
 			
             request.onreadystatechange = doNothing;
             callback(request.responseText, request.status);
@@ -124,6 +127,7 @@ function downloadUrl(url, callback){
     
     request.open('GET', url, true);
     request.send(null);
+
 }
 
 function doNothing(){
@@ -146,7 +150,6 @@ function newPointForm(event){
     "<label for='comment'>Comment</label>" +
     "<input type='text' id='comment' name='point[comment]' style='width:100%;'/>" +
     "<input type='submit' value='Save' onclick='saveData()'/>" +
-	"<input type='submit'"
     '<input type="hidden" id="longitude" name="point[lng]" value="' +
     event.latLng.lng() +
     '"/>' +
@@ -249,8 +252,19 @@ $(document).ready(function(){
     // Attach an event when div 'execute-search' is clicked
     $('#path_submit').click(function(){
 		alert('hi');
-        // call function search 
-        
+        // Create the edges using the pointIds array
+		alert(pointIds.length);
+		getvars = pointIds;
+		url = '/paths/create_edges' + getvars ;
+		
+		
+		
+		
+		
+//        for (var i in (pointIds.length -1) ) {
+//			alert(i + 'in loop');
+//			
+//		}
     });
 });
 
