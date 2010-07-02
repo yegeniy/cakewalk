@@ -15,7 +15,7 @@ def create
 	point.save
 	if point.save
 		res={:success=>true,:content=>"<div><strong>name </strong>#{point.name}
-		</div><div><strong>comment </strong>#{point.comment}</div>"}
+		</div><div><strong>comment </strong>#{point.comment}</div>, :id => point.id"}
 	else
 		res={:success=>false,:content=>"Could not save the marker"}
 	end

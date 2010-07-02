@@ -25,7 +25,7 @@ var map; // Will be set to a Map object
 var poly; // Will be set to a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
-
+var markers;
 
 /**
  * Opens selected infoWindow over the selected marker
@@ -101,6 +101,22 @@ function downloadUrl(url, callback){
     
     request.onreadystatechange = function(){
         if (request.readyState == 4) {
+//			
+//			var success = false;
+//            var content = 'Error contacting web service';
+//            try {
+//                //parse the result to JSON (simply by eval-ing it)
+//                res = eval("(" + request.responseText + ")");
+//                content = res.content;
+//                success = res.success;
+//				id = res.id;
+//				alert('id');
+//            } 
+//            catch (e) {
+//                success = false;
+//            }
+//			
+			
             request.onreadystatechange = doNothing;
             callback(request.responseText, request.status);
         }
@@ -130,6 +146,7 @@ function newPointForm(event){
     "<label for='comment'>Comment</label>" +
     "<input type='text' id='comment' name='point[comment]' style='width:100%;'/>" +
     "<input type='submit' value='Save' onclick='saveData()'/>" +
+	"<input type='submit'"
     '<input type="hidden" id="longitude" name="point[lng]" value="' +
     event.latLng.lng() +
     '"/>' +
@@ -163,6 +180,7 @@ function addToMap(event){
         map: map
     });
     
+
     
     //FIXME: The content of infoWindow is reset whenever it's closed. This is inconvenient, but acceptable for now.
     var infoWindow = new google.maps.InfoWindow({
@@ -223,4 +241,17 @@ function init(){
 
 //alert('about to call init');
 google.maps.event.addDomListener(window, 'load', init);
+
+
+
+// Jquery: Only checks for a click when document is ready
+$(document).ready(function(){
+    // Attach an event when div 'execute-search' is clicked
+    $('#path_submit').click(function(){
+		alert('hi');
+        // call function search 
+        
+    });
+});
+
 
