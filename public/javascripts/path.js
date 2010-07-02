@@ -23,33 +23,105 @@
  **/
 var map; // Will be set to a Map object
 var poly; // Will be set to a Polyline object
-alert('before newPointForm declaration');
-
-///* This is the content for a new infoWindow.
-var newPointForm;
-
-alert('after newPointForm declaration');
-
-
-function openInfoWindow(infoWindow, marker){
-    // Close the last selected marker before opening this one.
-    if (Demo.visibleInfoWindow) {
-        Demo.visibleInfoWindow.close();
-    }
+//var newPointForm; // Will be an HTML object stored in an InfoWindow
+/*
+ function openInfoWindow(infoWindow, marker){
+ // Close the last selected marker before opening this one.
+ if (Demo.visibleInfoWindow) {
+ Demo.visibleInfoWindow.close();
+ }
+ 
+ infoWindow.open(map, marker);
+ Demo.visibleInfoWindow = infoWindow;
+ }
+ */
+/**
+ * Extracts data from marker and infoWindow and saves it into a point object
+ * NOTE: See page 53+ in "Beginning Google Maps Applications with Rails and Ajax" for reference
+ * 	Listing 3-6 has the controller code
+ * "in the HTML form we displayed on the map, the fields were named in an m[fieldname]
+ bracketed format—for example, m[lat]. When aform is submitted to aRails action using the bracketed format,
+ ActiveView converts all the bracketed strings to ahash, in this case under the key :m.
+ After the action creates the marker, it saves it. Finally, it renders aJSON structure with two
+ keys, :successand :content, which indicate whether the action is successful, and the HTML
+ to be displayed, respectively. "
+ * TODO: Can probably copy operate_marker and its controller
+ * Looks like the XMLHttpRequest is what I need to use since GXmlHttp doesn't exist in Google Maps JS API V3
+ * Following http://code.google.com/apis/maps/articles/phpsqlinfo_v3.html
+ */
+function saveData(){//marker, infoWindow){
+//    alert('entering saveData()');
     
-    infoWindow.open(map, marker);
-    Demo.visibleInfoWindow = infoWindow;
+    var name = escape(document.getElementById("name").value);
+    var comment = escape(document.getElementById("comment").value);
+    var lat = escape(document.getElementById("latitude").value);
+    var lng = escape(document.getElementById("longitude").value);
+//    alert('in saveData()');
+    var url = "../operate_marker/create?" + //FIXME: Might not be robust to url changes.
+    "point[name]=" +
+    name +
+    "&point[comment]=" +
+    comment +
+    "&point[lat]=" +
+    lat +
+    "&point[lng]=" +
+    lng;
+  //  alert('in saveData()');
+    downloadUrl(url, function(data, responseCode){
+		
+        // Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue processing.
+        // Check the length of the data string returned - an empty data file indicates that the request generated no error strings. If the length is zero, you can close the info window and output a success message. 
+        if (responseCode == 200 && data.length <= 1) {
+            infowindow.close();
+            document.getElementById("message").innerHTML = "Location added.";// TODO: How does this work?
+        }
+    });
+    //alert('in saveData()');
+    //alert('in saveData');
+};
+
+
+function downloadUrl(url, callback){
+    // Create browser compatible http request
+    var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+    
+    request.onreadystatechange = function(){
+        if (request.readyState == 4) {
+            request.onreadystatechange = doNothing;
+            callback(request.responseText, request.status);
+        }
+    };
+    
+    request.open('GET', url, true);
+    request.send(null);
 }
+function doNothing() {}
 
 
 /**
- * Opens an info window above the marker and displays a form!
- * TODO: Set the marker's info window's content to that of the point.
- * @param {Object} marker is a google maps Marker object.
+ * A form for passing data about a point associated with the event (invoked by clicking a marker)
+ * 	form contains name, comment, longitude, and latitude for a point.
+ * @param {MouseEvent} event
  */
-function markerInfoWindow(marker){
-    infoWindow
-}
+function newPointForm(event){
+
+    //FIXME: This is not a very useful newPointForm... Also, need something to control edges.
+    //NOTE: The ".." in point[..] within the name parameters are passed into the controller I think.
+    return "<fieldset style='width:150px;'>" +
+    "<legend>New Point</legend>" +
+    "<label for='name'>Name</label>" +
+    "<input type='text' id='name' name='point[name]' style='width:100%;'/>" +
+    "<label for='comment'>Comment</label>" +
+    "<input type='text' id='comment' name='point[comment]' style='width:100%;'/>" +
+    "<input type='submit' value='Save' onclick='saveData()'/>" +
+    '<input type="hidden" id="longitude" name="point[lng]" value="' +
+    event.latLng.lng() +
+    '"/>' +
+    '<input type="hidden" id="latitude" name="point[lat]" value="' +
+    event.latLng.lat() +
+    '"/>'
+    "</fieldset>";
+};
 
 /**
  * Handles click events on a map:
@@ -58,9 +130,9 @@ function markerInfoWindow(marker){
  *
  * Create a marker at the coordinate that was clicked.
  *  Then, assign a click listener to the marker that pops open an info window over the marker.
- * @param {MouseEvent} mouseEvent
+ * @param {MouseEvent} event
  */
-function addToPath(event){
+function addToMap(event){
     var path = poly.getPath();
     // Because path is an MVCArray, we can simply append a new coordinate
     // and it will automatically appear
@@ -71,47 +143,29 @@ function addToPath(event){
      */
     var marker = new google.maps.Marker({
         position: event.latLng,
-        //title: '#' + path.getLength(),
+        title: '#' + path.getLength(),
         map: map
     });
     
-    //FIXME: Does the content of the infoWindow get reset to newPointForm at each call? Or does the marker "block" the DomListener which invokes addToPath? 
-    var infoWindow = new google.maps.InfoWindow({
-        content: newPointForm
-    })
-    //TODO: Save the marker as a point
-    // Add marker click event listener.
-    alert('entering marker InfoWindow');
-    //google.maps.event.addListener(marker, 'click', markerInfoWindow(marker));
     
-    // Opens an infowindow over the 
+    //FIXME: Does the content of the infoWindow get reset to newPointForm at each call? Or does the marker "block" the DomListener which invokes addToMap? 
+    var infoWindow = new google.maps.InfoWindow({
+        content: newPointForm(event)
+    });
+    //alert('added infoWidnow')
+    // Opens an infowindow over the marker on click
     google.maps.event.addListener(marker, 'click', function(){
         infoWindow.open(map, marker);
     });
     
     
-    
-    
-    alert('exiting marker InfoWindow');
+    //alert('added listener for infoWindow');
     //var point
 
 
 };
 //TODO: Create the point from the marker's info and other info?
 
-
-// TODO: Write tests. 
-/**
- * displays a marker on the map.
- * stores the marker's position as a point in the database
- * @param {Object} selectedLatLng
- *
- createPoint: function(selectedLatLng){
- return function() {
- // TODO: Where do
- }
- } ,
- */
 function init(){
     // Generate map with some center. TODO: Change center to something sensible.
     var firstLatLng = new google.maps.LatLng(37.4419, -122.1419);
@@ -144,22 +198,13 @@ function init(){
     poly = new google.maps.Polyline(polyOptions);
     poly.setMap(map);
     
-	//FIXME: This is not a very useful newPointForm...
-    newPointForm = "<fieldset style='width:150px;'>" +
-    "<legend>New Point</legend>" +
-    "<label for='name'>Name</label>" +
-    "<input type='text' id='name' name='m[name]' style='width:100%;'/>" +
-    "<label for='comment'>Comment</label>" +
-    "<input type='text' id='comment' name='m[comment]' style='width:100%;'/>" +
-    "<input type='submit' value='Save'/>" +
-    "</fieldset>";
-    alert('before addToPath listener is declared');
+    
     
     // Add a listener for click events in the map
-    google.maps.event.addListener(map, 'click', addToPath);
+    google.maps.event.addListener(map, 'click', addToMap);
     
 };
 
-alert('about to call init');
+//alert('about to call init');
 google.maps.event.addDomListener(window, 'load', init);
 

@@ -22,15 +22,15 @@ class PathsController < ApplicationController
     end
   end
   
-  N_EDGES = 2;
+  #N_EDGES = 2;
   # GET /paths/new
   # GET /paths/new.xml
   def new
     @path = Path.new
-    
+
     # Adds edges to @path
 
-    N_EDGES.times{ @path.edges.build }
+    #N_EDGES.times{ @path.edges.build }
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,7 +42,7 @@ class PathsController < ApplicationController
   def edit
     @path = Path.find(params[:id])
   end
-
+  
   def search_path
     # What is :m? What is a?
 	a =  params[:m] 
@@ -72,6 +72,8 @@ class PathsController < ApplicationController
   # POST /paths
   # POST /paths.xml
   def create
+    
+
     @path = Path.new(params[:path])
 
     respond_to do |format|
@@ -84,6 +86,16 @@ class PathsController < ApplicationController
         format.xml  { render :xml => @path.errors, :status => :unprocessable_entity }
       end
     end
+  end
+  
+  # GET /paths/add_point
+  def add_point
+    #Handle points: TODO: Should be in the points controller, right?
+    puts "about to create a point!"
+    point = Point.new(params[:point]) 
+    point.save
+    puts "created a point!"
+    
   end
 
   # PUT /paths/1

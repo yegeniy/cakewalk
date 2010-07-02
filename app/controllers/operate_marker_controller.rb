@@ -11,7 +11,7 @@ class OperateMarkerController < ApplicationController
 #called from an AJAX Rresuest
 def create
    # Point is created with the arguments passed in the request and saved to database
-	point = Point.new(params[:m])
+	point = Point.new(params[:point])
 	point.save
 	if point.save
 		res={:success=>true,:content=>"<div><strong>name </strong>#{point.name}
