@@ -2,20 +2,22 @@
 
 <% content_for :head do%>
 <%= javascript_include_tag 'search_path' %>
-
-<script type="text/javascript"> 
-	alert("hi");
-	
-  function addAuto() { 
-		var availableTags = <%= @point_names.inspect %>;
-		$("#start").autocomplete({
-			source: availableTags
-		});
-  }
-window.onLoad = addAuto;
+<%= javascript_include_tag 'jquery-1.4.2.min' %>
+<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min' %>
+<%= javascript_include_tag 'jquery.ui.autocomplete.js' %>
+<%= stylesheet_link_tag 'jquery-ui-1.8.2.custom' %>
+<script type="text/javascript">
+$(function() {
+    var availableTags = <%= @point_names.inspect %>
+	$(".points").autocomplete({
+	    source: availableTags
+	}).autocomplete("enable");
+    alert("this worked?");
+});
 </script>
-<% end %>
 
+<% end %>
+<% usr_name = "" %>
 <% if session[:user] %>
 	<% usr_name =  User.find(session[:user_id]).name %>
 	<%puts "!" + usr_name%>
@@ -23,14 +25,13 @@ window.onLoad = addAuto;
 	<% usr_name = ""%>
 	<% puts "whoops"%>
 <% end %>
-
 <h2> Hi<%usr_name%>, Welcome to the Cakewalk Home Page! </h2>
 <h3> Enter in two locations, where you want to start, and where to go to </h3>
 <h3>(Currently Limited to Brandeis Locations) </h3>
 <label for="category">From</label>
-<input type="text" id="start" class="points" name="m[start]" style="width:25%;"/>
+<input id="start" class="points" name="m[start]" style="width:25%;" />
 <label for="category">To </label>
-<input type="text" id="finish" class="points" name="m[finish]" style="width:25%;"/>
+<input id="finish" class="points" name="m[finish]" style="width:25%;" />
 <button id="execute-search"> Get me there!!! </button>
 <p> Eg... From: Volen Center, To: Usdan Center </p>
 <div>
