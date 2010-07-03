@@ -170,10 +170,15 @@ function newPointForm(event){
  */
 function addToMap(event){
     var path = poly.getPath();
+	
     // Because path is an MVCArray, we can simply append a new coordinate
     // and it will automatically appear
     path.push(event.latLng);
+	
+	
+	
     
+	
     /* Add a new marker at the new plotted point on the polyline.
      * Note that a marker is just the visual marker on the map.
      */
@@ -183,7 +188,7 @@ function addToMap(event){
         map: map
     });
     
-
+	
     
     //FIXME: The content of infoWindow is reset whenever it's closed. This is inconvenient, but acceptable for now.
     var infoWindow = new google.maps.InfoWindow({
@@ -193,8 +198,14 @@ function addToMap(event){
     // Opens an infowindow over the marker on click
     google.maps.event.addListener(marker, 'click', function(){
         openInfoWindow(infoWindow, marker);
+		alert('path added');
     });
     
+	if (pointIds.length != 0) {
+       edgeInfo();
+	   }
+    	   
+	
     
     //alert('added listener for infoWindow');
     //var point
@@ -202,6 +213,11 @@ function addToMap(event){
 
 };
 //TODO: Create the point from the marker's info and other info?
+
+
+
+
+
 
 function init(){
     // Generate map with some center. TODO: Change center to something sensible.
@@ -217,6 +233,9 @@ function init(){
     poly = new google.maps.Polyline(polyOptions);
     //poly.setMap(map); // not needed since there's only one map?
     //alert('poly stroke weight is ' + poly.strokeWeight);
+    
+
+
     
     mapContainer = document.getElementById('mapContainer');
     //alert('mapContainer is' + mapContainer);
@@ -246,25 +265,38 @@ function init(){
 google.maps.event.addDomListener(window, 'load', init);
 
 
+function edgeInfo() {
+    //create a html string
+    html = '<p>';
+	html += '<label for="path"> Edge description </label>';
+	html += '<input type="text" id="edge_name" name="m[edge_description]" style="width:25%;"/>'
+
+		//add it to the 'search-results' div
+    $('#search-results').html(html);
+}
+
+
+
+
+
 
 // Jquery: Only checks for a click when document is ready
 $(document).ready(function(){
     // Attach an event when div 'execute-search' is clicked
-    $('#path_submit').click(function(){
-		alert('hi');
-        // Create the edges using the pointIds array
-		alert(pointIds.length);
-		getvars = pointIds;
-		url = '/paths/create_edges' + getvars ;
+    $('#execute_path').click(function(){
 		
+        name = $('#path_name').val()
+		description = $('#path_description').val()
 		
+		getvars = "?m[point_ids]=" + pointIds + "&m[path_name]=" + name  + "&m[path_description]=" + description;
+		url = '/operate_marker/create_edges' + getvars ;
+		//alert(url);
 		
+		$.getJSON(url,function(json) {
+		alert('success- path created');
+		});		
 		
-		
-//        for (var i in (pointIds.length -1) ) {
-//			alert(i + 'in loop');
-//			
-//		}
+	
     });
 });
 

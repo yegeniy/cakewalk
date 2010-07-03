@@ -2,8 +2,10 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect 'search/map', :controller => 'search', :action => "map", :method => :get
   map.connect 'search/getdirect', :controller => 'search', :action => "getdirect"
+  map.connect "operate_marker/create_edges", :controller => "operate_marker", :action => "create_edges"
  
   map.connect "paths/search_path", :controller => "paths", :action => "search_path"
+ 
   map.resources :paths
   map.resources :users
   map.resources :edges
@@ -18,6 +20,7 @@ ActionController::Routing::Routes.draw do |map|
   #map.connect "create", :controller => "operate_marker", :action => "create"
   #map.connect "paths/search_path", :controller => "path", :action => "search_path"
   map.root :controller => "home"
+   
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

@@ -45,6 +45,7 @@ class PathsController < ApplicationController
   
   def search_path
     # What is :m? What is a?
+	
 	a =  params[:m] 
 	
 	result = []
