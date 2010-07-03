@@ -198,25 +198,18 @@ function addToMap(event){
     // Opens an infowindow over the marker on click
     google.maps.event.addListener(marker, 'click', function(){
         openInfoWindow(infoWindow, marker);
-		alert('path added');
+		
     });
     
 	if (pointIds.length != 0) {
-       edgeInfo();
+		//whenever an edge is created, ask user to enter edge description
+	    edgeInfo();
 	   }
-    	   
-	
     
-    //alert('added listener for infoWindow');
-    //var point
 
 
 };
 //TODO: Create the point from the marker's info and other info?
-
-
-
-
 
 
 function init(){
@@ -234,9 +227,7 @@ function init(){
     //poly.setMap(map); // not needed since there's only one map?
     //alert('poly stroke weight is ' + poly.strokeWeight);
     
-
-
-    
+   
     mapContainer = document.getElementById('mapContainer');
     //alert('mapContainer is' + mapContainer);
     map = new google.maps.Map(mapContainer, {
@@ -267,12 +258,12 @@ google.maps.event.addDomListener(window, 'load', init);
 
 function edgeInfo() {
     //create a html string
-    html = '<p>';
-	html += '<label for="path"> Edge description </label>';
+   
+	html = '<p>';
+	html += '<label for="path"> Enter the edge description </label>';
 	html += '<input type="text" id="edge_name" name="m[edge_description]" style="width:25%;"/>'
-
-		//add it to the 'search-results' div
-    $('#search-results').html(html);
+    //add it to the 'search-results' div
+    $('#ask_edge_description').html(html);
 }
 
 
