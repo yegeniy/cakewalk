@@ -18,6 +18,12 @@ class OperateMarkerController < ApplicationController
   def create_edges 
       
 	point_string=  params[:m]["point_ids"]
+	edges_string = params[:m]["edge_descriptions"]
+	puts point_string
+	puts edges_string
+	puts edges_string.class
+	edges_description = edges_string.split("**,")
+	puts edges_description
 	
 	#convert string into array of point_ids
 	point_ids = point_string.split(",")
@@ -26,12 +32,15 @@ class OperateMarkerController < ApplicationController
 	path.save
 	len =  point_ids.length
 	edges =[]
+	k = 0
 	for i in point_ids[0..-2]
 	    puts i
 		j = i.to_i + 1
 		puts i.class
-		edge = Edge.new(:point_id => i, :endpoint_id => j, :direction => "go left")
+		
+		edge = Edge.new(:point_id => i, :endpoint_id => j, :direction => edges_description[k])
 		edge.save
+		k += 1
 		edges.push(edge)
 	end	
 	path.edges << edges

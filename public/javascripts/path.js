@@ -26,6 +26,7 @@ var poly; // Will be set to a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
 var pointIds = []; //Will hold an ordered list of the point ids. Can traverse this list to create edges. 
+var edge_descriptions = [];
 
 /**
  * Opens selected infoWindow over the selected marker
@@ -194,6 +195,7 @@ function addToMap(event){
     var infoWindow = new google.maps.InfoWindow({
         content: newPointForm(event)
     });
+	
     //alert('added infoWidnow')
     // Opens an infowindow over the marker on click
     google.maps.event.addListener(marker, 'click', function(){
@@ -262,24 +264,35 @@ function edgeInfo() {
 	html = '<p>';
 	html += '<label for="path"> Enter the edge description </label>';
 	html += '<input type="text" id="edge_name" name="m[edge_description]" style="width:25%;"/>'
+	html += '<button id="save_edge"> Save </button>'
     //add it to the 'search-results' div
     $('#ask_edge_description').html(html);
+	
+	$('#save_edge').click(function(){
+		edge_description = $('#edge_name').val();
+		 edge_description = edge_description + "**" ;
+		//push edge description to array
+	    edge_descriptions.push(edge_description);
+	    //$('#edge_name').val()
+		//alert(edge_descriptions);
+    });
+
+	
+	
 }
-
-
-
-
-
 
 // Jquery: Only checks for a click when document is ready
 $(document).ready(function(){
+
+   
     // Attach an event when div 'execute-search' is clicked
     $('#execute_path').click(function(){
 		
         name = $('#path_name').val()
 		description = $('#path_description').val()
 		
-		getvars = "?m[point_ids]=" + pointIds + "&m[path_name]=" + name  + "&m[path_description]=" + description;
+		getvars = "?m[point_ids]=" + pointIds + "&m[path_name]=" + name  + 
+		"&m[path_description]=" + description + "&m[edge_descriptions]=" + edge_descriptions + ",";
 		url = '/operate_marker/create_edges' + getvars ;
 		//alert(url);
 		
