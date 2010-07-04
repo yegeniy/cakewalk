@@ -9,7 +9,7 @@
  * Maintain an overall polyline (poly) which is split up into smaller polylines representing the edges in a path.
  * 	Maintain a list of indices at which to split the polyline (edge_boundaries).
  *  Split the polyline into edges at each point on edge_boundaries.
- *
+ * The path and its edges are created at the same time as the boundary.
  * Pre 7/3/10:
  * I want to be able to click on a map and create points with each click.
  * 	 The points should give a popup form through which they can be updated.
@@ -32,16 +32,45 @@ var map; // Will be set to a Map object
 var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
-var edge_boundaries = new Array(); //Will hold an ordered list of (indices: point_id) pairs at which to split the polyline (edge_boundaries).
+var edge_boundaries = new Array(); //Will hold an ordered list of indices(indices: point_id) pairs at which to split the polyline (edge_boundaries).
+var markerToPointDict = new Object(); //An associative array to match path_indix to its point_id in the database. 
 // TODO: Use ArrayObj.splice() to insert http://www.w3schools.com/jsref/jsref_obj_array.asp
 
+/**
+ * A form for creating the path.
+ * Has a field for the path name, the path description, and hidden fields containing the information for creating the edges.
+ */
+function savePathForm(){
+	return "<fieldset class='main_container'>"+
+	"<legend>Create a path</legend>" +
+	"<label for='name'>Name</label>" +
+	"<input type='text' id='name' name='path[name]'/>" +
+	"<label for='description'>description</label>" +
+	"<input type='text' id='description' name='path[description]'/>" +
+	"<input type='submit' value='Submit Path' onclick='submitPath()'/>" +
+	"</fieldset>";
+};
 
-
+/**
+ * Creates a path by sending a request to the server.
+ * Receives a path_id in return 
+ * once the path_id is returned, create edges based on edge_boundaries array:
+ * for i=0; i<edge_boundaries.length-1; i++
+ * 	edgeStartInPoly = edge_boundaries(i);
+ *  edgeEndInPoly 	= edge_boundaries(i+1);
+ *  point_id 		= markerToPointDict.edgeStartInPoly;
+ *  endpoint_id 	= markerToPointDict.edgeEndInPoly;
+ * 	extract poly.getPath() from startMarker to endMarker
+ */
+function submitPath(){
+	
+};
 
 /**
  * A form for passing data about a point associated with the event (invoked by clicking a marker)
  * 	form contains name, comment, longitude, and latitude for a point.
  * @param {MouseEvent} event
+ * @param marker is the marker associated with the mouse event.
  */
 function newPointForm(event, marker){
 
@@ -104,23 +133,31 @@ function createPoint(){//marker, infoWindow){
     lng;
     //  alert('in saveData()');
     downloadUrl(url, function(data, responseCode){
-        alert('in createPoint callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
-        // Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue processing.
-        // Note sure if this applies anymore since I am getting data back: Check the length of the data string returned - an empty data file indicates that the request generated no error strings. If the length is zero, you can close the info window and output a success message and add the path_index and point_id to the edge_boundaries.
+        //alert('in createPoint callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
+        /* Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue with the callback.
+        * Note sure if this applies anymore since I am getting data back: Check the length of the data string returned - an empty data file indicates that the request generated no error strings. If the length is zero,
+		* 
+		* If the response is fine, you can close the info window and output a success message and add the path_index and point_id to the edge_boundaries.
+		*/
         if (responseCode == 200) {// && data.length <= 1) {
-            alert('response and data length are fine.');
+            //alert('response and data length are fine.');
             // TODO: This is where the path_index and point_id are added to edge_boundaries.
             // FIXME: Is it okay to be parsing the data again?
             //parse the result to JSON (simply by eval-ing it)
-            //alert("edge_boundaries are: " + edge_boundaries);
-            res = eval("(" + data.responseText + ")");
+           // alert("edge_boundaries length: " + edge_boundaries.length);
+            res = eval("(" + data + ")");
             point_id = res.id;
-            alert("edge_boundaries are: " + edge_boundaries);
-            path_index = escape(document.getElementById("path_index").value);
-            edge_boundaries.push(path_index);//splice(path_index, 0, id); // Add id to 
-            edge_boundaries[path_index].point_id = id;
-            alert("edge_boundaries are: " + edge_boundaries);
-            //
+            
+            path_index = document.getElementById("path_index").value; //escape(document.getElementById("path_index").value);
+			//alert('path_index: ' + path_index + '<br />point_id: ' + point_id);
+            edge_boundaries.push(path_index);//splice(path_index, 0, id); // Add path_index to end of edge_boundaries
+            //alert("edge_boundaries are: " + edge_boundaries);
+			
+            markerToPointDict.path_index = point_id;//edge_boundaries[path_index].point_id = id;
+            //alert("edge_boundaries are: " + edge_boundaries);
+			alert("markerToPointDict.path_index: " + markerToPointDict.path_index);
+            
+			
             infowindow.close();
             document.getElementById("message").innerHTML = "Location added.";// TODO: How does this work?
         }
@@ -151,9 +188,10 @@ function downloadUrl(url, callback){
             try {
                 //parse the result to JSON (simply by eval-ing it)
                 res = eval("(" + request.responseText + ")");
-                content = res.content;
+				// Checks each "field" of res
+//                content = res.content;
                 success = res.success;
-                id = res.id;
+//                id = res.id;
                 //alert('id: ' + id);
                 //edge_boundaries.splice(id);
             } 
@@ -161,7 +199,7 @@ function downloadUrl(url, callback){
                 success = false;
             }
             
-            alert('request.responseText is: ' + request.responseText);
+//            alert('request.responseText is: ' + request.responseText);
             request.onreadystatechange = doNothing;
             callback(request.responseText, request.status);
         }
@@ -170,10 +208,10 @@ function downloadUrl(url, callback){
     request.open('GET', url, true);
     request.send(null);
     
-}
+};
 
 function doNothing(){
-}
+};
 
 
 /**
@@ -196,7 +234,7 @@ function addToMap(event){
      */
     var marker = new google.maps.Marker({
         position: event.latLng,
-        title: '#' + path.getLength(),
+        title: path.getLength().toString(), //FIXME: marker.title might not be the right place to put the path index, because the overlay will probably need to be the title of the location.  
         map: map
     });
     
@@ -271,7 +309,7 @@ function init(){
     poly = new google.maps.Polyline(polyOptions);
     poly.setMap(map);
     
-    
+    // Establish a point_id property in edge_boundaries.
     
     // Add a listener for click events in the map
     google.maps.event.addListener(map, 'click', addToMap);
@@ -279,6 +317,9 @@ function init(){
 };
 
 //alert('about to call init');
+// Display the Create path Form
+document.write(savePathForm());
+
 // Call the init function once the window (page) is loaded.
 google.maps.event.addDomListener(window, 'load', init);
 
