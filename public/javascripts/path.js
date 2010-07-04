@@ -74,13 +74,16 @@ function submitPath(){
 	description;
 	
 	downloadUrl(url, function(data, responseCode){
-		//alert('in createPoint callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
+		alert('in submitPath callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
 		/* 
 		 * Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue with the callback.
 		 *	If the response is fine, retrieve the path_id and create the edges.
 		 */
 		if (responseCode == 200) {
 			// Receive path_id
+			res = eval("(" + data + ")");
+            path_id = res.id;
+			alert('path_id: ' +path_id);
 		}
 	});
 };

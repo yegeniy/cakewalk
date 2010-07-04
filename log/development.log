@@ -31065,3 +31065,58 @@ Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:25:08) [POST]
   Parameters: {"path"=>{"name"=>"path_name_is_here", "description"=>"desc_path_is_here"}}
   [4;36;1mPath Create (0.5ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_here', '2010-07-04 21:25:08', 'desc_path_is_here', '2010-07-04 21:25:08')[0m
 Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_here&path[description]=desc_path_is_here]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:29:43) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:29:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:29:50) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:29:50', 'desc_path_is_hereaf', '2010-07-04 21:29:50')[0m
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:33:27) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:33:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:33:28) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;36;1mPath Create (1.8ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:33:28', 'desc_path_is_hereaf', '2010-07-04 21:33:28')[0m
+Completed in 23ms (View: 4, DB: 2) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:33:32) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;35;1mPath Create (0.5ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:33:32', 'desc_path_is_hereaf', '2010-07-04 21:33:32')[0m
+Completed in 43ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
