@@ -4,7 +4,12 @@
  * I think we can use this structure to compartmentalize some of our code.
  * It's getting to be rather monolothic here.
  */
-/** I want to be able to click on a map and create points with each click. 
+/** 
+ * 7/30/10:
+ * Maintain an overall polyline which is split up into smaller polylines representing the edges in a path.
+ * 	A list of indices at which to split the polyline. at which  edge_boundaries and an 
+ * Pre 7/3/10:
+ * I want to be able to click on a map and create points with each click. 
  * 	 The points should give a popup form through which they can be updated.
  * 	Subsequent points should be connected by a line representing the edge between them.
  * 	 The edge should be saved automatically.
@@ -22,30 +27,43 @@
  *    (or optionally, an anchor). They are not otherwise associated
  **/
 var map; // Will be set to a Map object
-var poly; // Will be set to a Polyline object
+var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
 var pointIds = []; //Will hold an ordered list of the point ids. Can traverse this list to create edges. 
 
-/**
- * Opens selected infoWindow over the selected marker
- * after closing the previously opened infoWindow
- * NOTE: If this wrapper function is omitted from the click listener at marker,
- * 	then only data in the first open infoWindow will be saved to the database... I think.
- * @param {Object} infoWindow
- * @param {Object} marker
- */
-function openInfoWindow(infoWindow, marker){
-    // Close the last selected marker before opening this one.
-    if (visibleInfoWindow) {
-        visibleInfoWindow.close();
-    }
-    
-    infoWindow.open(map, marker);
-    visibleInfoWindow = infoWindow;
-}
+
+
 
 /**
+ * A form for passing data about a point associated with the event (invoked by clicking a marker)
+ * 	form contains name, comment, longitude, and latitude for a point.
+ * @param {MouseEvent} event
+ */
+function newPointForm(event){
+
+    //FIXME: This is not a very useful newPointForm... Also, need something to control edges.
+    //NOTE: The ".." in point[..] within the name parameters are passed into the controller I think.
+    return "<fieldset class='info_window' style='width:150px;'>" +
+    "<legend>New Point</legend>" +
+    "<label for='name'>Name</label>" +
+    "<input type='text' id='name' name='point[name]' style='width:100%;'/>" +
+    "<label for='comment'>Comment</label>" +
+    "<input type='text' id='comment' name='point[comment]' style='width:100%;'/>" +
+    "<input type='submit' value='Create' onclick='createPoint()'/>" +
+    '<input type="hidden" id="longitude" name="point[lng]" value="' +
+    event.latLng.lng() +
+    '"/>' +
+    '<input type="hidden" id="latitude" name="point[lat]" value="' +
+    event.latLng.lat() +
+    '"/>'
+    "</fieldset>";
+};
+
+/**
+ * 7/30/10:
+ * Using a form (document), create a Point and return its point_id.
+ * Pre 7/30/10:
  * Extracts data from marker and infoWindow and saves it into a point object
  * NOTE: See page 53+ in "Beginning Google Maps Applications with Rails and Ajax" for reference
  * 	Listing 3-6 has the controller code
@@ -59,7 +77,7 @@ function openInfoWindow(infoWindow, marker){
  * Looks like the XMLHttpRequest is what I need to use since GXmlHttp doesn't exist in Google Maps JS API V3
  * Following http://code.google.com/apis/maps/articles/phpsqlinfo_v3.html
  */
-function saveData(){//marker, infoWindow){
+function createPoint(){//marker, infoWindow){
     //    alert('entering saveData()');
     
     var name = escape(document.getElementById("name").value);
@@ -67,8 +85,10 @@ function saveData(){//marker, infoWindow){
     var lat = escape(document.getElementById("latitude").value);
     var lng = escape(document.getElementById("longitude").value);
     //    alert('in saveData()');
+	
+	// URL to create a point
     var url = "../operate_marker/create?" + //FIXME: Might not be robust to url changes.
-    "point[name]=" + //NOTE: N.B. that point[...] is used, which means edge[someEdgeParam] can be used too.
+    "point[name]=" + // N.B.: point[...] is used, which means edge[someEdgeParam] can be used too.
     name +
     "&point[comment]=" +
     comment +
@@ -135,31 +155,6 @@ function doNothing(){
 
 
 /**
- * A form for passing data about a point associated with the event (invoked by clicking a marker)
- * 	form contains name, comment, longitude, and latitude for a point.
- * @param {MouseEvent} event
- */
-function newPointForm(event){
-
-    //FIXME: This is not a very useful newPointForm... Also, need something to control edges.
-    //NOTE: The ".." in point[..] within the name parameters are passed into the controller I think.
-    return "<fieldset style='width:150px;'>" +
-    "<legend>New Point</legend>" +
-    "<label for='name'>Name</label>" +
-    "<input type='text' id='name' name='point[name]' style='width:100%;'/>" +
-    "<label for='comment'>Comment</label>" +
-    "<input type='text' id='comment' name='point[comment]' style='width:100%;'/>" +
-    "<input type='submit' value='Save' onclick='saveData()'/>" +
-    '<input type="hidden" id="longitude" name="point[lng]" value="' +
-    event.latLng.lng() +
-    '"/>' +
-    '<input type="hidden" id="latitude" name="point[lat]" value="' +
-    event.latLng.lat() +
-    '"/>'
-    "</fieldset>";
-};
-
-/**
  * Handles click events on a map:
  *  adds a new marker to the Polyline.
  *  creates a new Point for that marker.
@@ -203,6 +198,25 @@ function addToMap(event){
 };
 //TODO: Create the point from the marker's info and other info?
 
+/**
+ * Opens selected infoWindow over the selected marker
+ * after closing the previously opened infoWindow
+ * NOTE: If this wrapper function is omitted from the click listener at marker,
+ * 	then only data in the first open infoWindow will be saved to the database... I think.
+ * @param {Object} infoWindow
+ * @param {Object} marker
+ */
+function openInfoWindow(infoWindow, marker){
+    // Close the last selected marker before opening this one.
+    if (visibleInfoWindow) {
+        visibleInfoWindow.close();
+    }
+    
+    infoWindow.open(map, marker);
+    visibleInfoWindow = infoWindow;
+}
+
+
 function init(){
     // Generate map with some center. TODO: Change center to something sensible.
     var firstLatLng = new google.maps.LatLng(37.4419, -122.1419);
@@ -243,29 +257,30 @@ function init(){
 };
 
 //alert('about to call init');
+// Call the init function once the window (page) is loaded.
 google.maps.event.addDomListener(window, 'load', init);
 
-
-
-// Jquery: Only checks for a click when document is ready
-$(document).ready(function(){
-    // Attach an event when div 'execute-search' is clicked
-    $('#path_submit').click(function(){
-		alert('hi');
-        // Create the edges using the pointIds array
-		alert(pointIds.length);
-		getvars = pointIds;
-		url = '/paths/create_edges' + getvars ;
-		
-		
-		
-		
-		
-//        for (var i in (pointIds.length -1) ) {
-//			alert(i + 'in loop');
-//			
-//		}
-    });
-});
-
-
+/*
+//
+//// Jquery: Only checks for a click when document is ready
+//$(document).ready(function(){
+//    // Attach an event when div 'execute-search' is clicked
+//    $('#path_submit').click(function(){
+//		alert('hi');
+//        // Create the edges using the pointIds array
+//		alert(pointIds.length);
+//		getvars = pointIds;
+//		url = '/paths/create_edges' + getvars ;
+//		
+//		
+//		
+//		
+//		
+////        for (var i in (pointIds.length -1) ) {
+////			alert(i + 'in loop');
+////			
+////		}
+//    });
+//});
+//
+*/
