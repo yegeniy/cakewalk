@@ -44,9 +44,9 @@ function savePathForm(){
 	return "<fieldset class='main_container'>"+
 	"<legend>Create a path</legend>" +
 	"<label for='name'>Name</label>" +
-	"<input type='text' id='name' name='path[name]'/>" +
+	"<input type='text' id='path[name]' name='path[name]'/>" +
 	"<label for='description'>description</label>" +
-	"<input type='text' id='description' name='path[description]'/>" +
+	"<input type='text' id='path[description]' name='path[description]'/>" +
 	"<input type='submit' value='Submit Path' onclick='submitPath()'/>" +
 	"</fieldset>";
 };
@@ -56,14 +56,33 @@ function savePathForm(){
  * Receives a path_id in return 
  * once the path_id is returned, create edges based on edge_boundaries array:
  * for i=0; i<edge_boundaries.length-1; i++
- * 	edgeStartInPoly = edge_boundaries(i);
- *  edgeEndInPoly 	= edge_boundaries(i+1);
- *  point_id 		= markerToPointDict.edgeStartInPoly;
- *  endpoint_id 	= markerToPointDict.edgeEndInPoly;
+ * 	edgeStartPolyIndex	= edge_boundaries(i);
+ *  edgeEndPolyIndex	= edge_boundaries(i+1);
+ *  point_id 			= markerToPointDict.edgeStartInPoly;
+ *  endpoint_id 		= markerToPointDict.edgeEndInPoly;
  * 	extract poly.getPath() from startMarker to endMarker
+ *  set edge description to an easily parseable version of the subpath. (TODO: Change the field to polyline - description should be human readable.)
  */
 function submitPath(){
+	var name = escape(document.getElementById("path[name]").value);
+	var description = escape(document.getElementById("path[description]").value);
+
+	var url = "../paths/create?" + //FIXME: Might not be robust to url changes.
+    "path[name]=" +
+    name +
+	"&path[description]=" +
+	description;
 	
+	downloadUrl(url, function(data, responseCode){
+		//alert('in createPoint callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
+		/* 
+		 * Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue with the callback.
+		 *	If the response is fine, retrieve the path_id and create the edges.
+		 */
+		if (responseCode == 200) {
+			// Receive path_id
+		}
+	});
 };
 
 /**
@@ -79,18 +98,18 @@ function newPointForm(event, marker){
     return "<fieldset class='info_window' style='width:150px;'>" +
     "<legend>New Point</legend>" +
     "<label for='name'>Name</label>" +
-    "<input type='text' id='name' name='point[name]' style='width:100%;'/>" +
+    "<input type='text' id='point[name]' name='point[name]' style='width:100%;'/>" +
     "<label for='comment'>Comment</label>" +
-    "<input type='text' id='comment' name='point[comment]' style='width:100%;'/>" +
+    "<input type='text' id='point[comment]' name='point[comment]' style='width:100%;'/>" +
     "<input type='submit' value='Create' onclick='createPoint()'/>" +
-    "<input type='hidden' id='longitude' name='point[lng]' value='" +
+    "<input type='hidden' id='point[longitude]' name='point[lng]' value='" +
     event.latLng.lng() +
     "'/>" +
-    "<input type='hidden' id='latitude' name='point[lat]' value='" +
+    "<input type='hidden' id='point[latitude]' name='point[lat]' value='" +
     event.latLng.lat() +
     "'/>" +
-    "<input type='hidden' id='path_index' value='" +
-    marker.title +
+    "<input type='hidden' id='point[path_index]' value='" +
+    marker.title + // FIXME: using marker.title to set path_index is weak. Depends on marker.title being set to its index in the overall polyline. 
     "'/>" +
     "</fieldset>";
 };
@@ -115,10 +134,10 @@ function newPointForm(event, marker){
 function createPoint(){//marker, infoWindow){
     //    alert('entering saveData()');
     
-    var name = escape(document.getElementById("name").value);
-    var comment = escape(document.getElementById("comment").value);
-    var lat = escape(document.getElementById("latitude").value);
-    var lng = escape(document.getElementById("longitude").value);
+    var name = escape(document.getElementById("point[name]").value);
+    var comment = escape(document.getElementById("point[comment]").value);
+    var lat = escape(document.getElementById("point[latitude]").value);
+    var lng = escape(document.getElementById("point[longitude]").value);
     //    alert('in saveData()');
     
     // URL to create a point
@@ -205,7 +224,7 @@ function downloadUrl(url, callback){
         }
     };
     
-    request.open('GET', url, true);
+    request.open('POST', url, true); // FIXME: Might need to be a GET action. 
     request.send(null);
     
 };
