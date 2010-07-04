@@ -6,10 +6,12 @@
  */
 /** 
  * 7/30/10:
- * Maintain an overall polyline which is split up into smaller polylines representing the edges in a path.
- * 	A list of indices at which to split the polyline. at which  edge_boundaries and an 
+ * Maintain an overall polyline (poly) which is split up into smaller polylines representing the edges in a path.
+ * 	Maintain a list of indices at which to split the polyline (edge_boundaries).
+ *  Split the polyline into edges at each point on edge_boundaries.
+ *
  * Pre 7/3/10:
- * I want to be able to click on a map and create points with each click. 
+ * I want to be able to click on a map and create points with each click.
  * 	 The points should give a popup form through which they can be updated.
  * 	Subsequent points should be connected by a line representing the edge between them.
  * 	 The edge should be saved automatically.
@@ -30,7 +32,8 @@ var map; // Will be set to a Map object
 var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
-var pointIds = []; //Will hold an ordered list of the point ids. Can traverse this list to create edges. 
+var edge_boundaries = new Array(); //Will hold an ordered list of (indices: point_id) pairs at which to split the polyline (edge_boundaries).
+// TODO: Use ArrayObj.splice() to insert http://www.w3schools.com/jsref/jsref_obj_array.asp
 
 
 
@@ -40,7 +43,7 @@ var pointIds = []; //Will hold an ordered list of the point ids. Can traverse th
  * 	form contains name, comment, longitude, and latitude for a point.
  * @param {MouseEvent} event
  */
-function newPointForm(event){
+function newPointForm(event, marker){
 
     //FIXME: This is not a very useful newPointForm... Also, need something to control edges.
     //NOTE: The ".." in point[..] within the name parameters are passed into the controller I think.
@@ -51,12 +54,15 @@ function newPointForm(event){
     "<label for='comment'>Comment</label>" +
     "<input type='text' id='comment' name='point[comment]' style='width:100%;'/>" +
     "<input type='submit' value='Create' onclick='createPoint()'/>" +
-    '<input type="hidden" id="longitude" name="point[lng]" value="' +
+    "<input type='hidden' id='longitude' name='point[lng]' value='" +
     event.latLng.lng() +
-    '"/>' +
-    '<input type="hidden" id="latitude" name="point[lat]" value="' +
+    "'/>" +
+    "<input type='hidden' id='latitude' name='point[lat]' value='" +
     event.latLng.lat() +
-    '"/>'
+    "'/>" +
+    "<input type='hidden' id='path_index' value='" +
+    marker.title +
+    "'/>" +
     "</fieldset>";
 };
 
@@ -71,7 +77,7 @@ function newPointForm(event){
  bracketed format—for example, m[lat]. When aform is submitted to aRails action using the bracketed format,
  ActiveView converts all the bracketed strings to ahash, in this case under the key :m.
  After the action creates the marker, it saves it. Finally, it renders aJSON structure with two
- keys, :successand :content, which indicate whether the action is successful, and the HTML
+ keys, :success and :content, which indicate whether the action is successful, and the HTML
  to be displayed, respectively. "
  * TODO: Can probably copy operate_marker and its controller
  * Looks like the XMLHttpRequest is what I need to use since GXmlHttp doesn't exist in Google Maps JS API V3
@@ -85,8 +91,8 @@ function createPoint(){//marker, infoWindow){
     var lat = escape(document.getElementById("latitude").value);
     var lng = escape(document.getElementById("longitude").value);
     //    alert('in saveData()');
-	
-	// URL to create a point
+    
+    // URL to create a point
     var url = "../operate_marker/create?" + //FIXME: Might not be robust to url changes.
     "point[name]=" + // N.B.: point[...] is used, which means edge[someEdgeParam] can be used too.
     name +
@@ -98,22 +104,35 @@ function createPoint(){//marker, infoWindow){
     lng;
     //  alert('in saveData()');
     downloadUrl(url, function(data, responseCode){
-    
+        alert('in createPoint callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
         // Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue processing.
-        // Check the length of the data string returned - an empty data file indicates that the request generated no error strings. If the length is zero, you can close the info window and output a success message. 
-        if (responseCode == 200 && data.length <= 1) {
+        // Note sure if this applies anymore since I am getting data back: Check the length of the data string returned - an empty data file indicates that the request generated no error strings. If the length is zero, you can close the info window and output a success message and add the path_index and point_id to the edge_boundaries.
+        if (responseCode == 200) {// && data.length <= 1) {
+            alert('response and data length are fine.');
+            // TODO: This is where the path_index and point_id are added to edge_boundaries.
+            // FIXME: Is it okay to be parsing the data again?
+            //parse the result to JSON (simply by eval-ing it)
+            //alert("edge_boundaries are: " + edge_boundaries);
+            res = eval("(" + data.responseText + ")");
+            point_id = res.id;
+            alert("edge_boundaries are: " + edge_boundaries);
+            path_index = escape(document.getElementById("path_index").value);
+            edge_boundaries.push(path_index);//splice(path_index, 0, id); // Add id to 
+            edge_boundaries[path_index].point_id = id;
+            alert("edge_boundaries are: " + edge_boundaries);
+            //
             infowindow.close();
             document.getElementById("message").innerHTML = "Location added.";// TODO: How does this work?
         }
     });
     //alert('in saveData()');
     //alert('in saveData');
-	//alert('point Ids are: ' + pointIds);
+    //alert('point Ids are: ' + edge_boundaries);
 };
 
 /**
- * a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript. 
- * The downloadUrl() callback function will provide you with the content of the URL and the status code. 
+ * a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript.
+ * The downloadUrl() callback function will provide you with the content of the URL and the status code.
  * If you use a framework like jQuery or YUI, you may want to replace this function with their respective wrapper functions.
  * @param {Object} url
  * @param {Object} callback
@@ -122,24 +141,27 @@ function downloadUrl(url, callback){
     // Create browser compatible http request
     var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
     
+    /* Get response from web service and on success, update edge_boundaries
+     */
     request.onreadystatechange = function(){
         if (request.readyState == 4) {
-			
-			var success = false;
+        
+            var success = false;
             var content = 'Error contacting web service';
             try {
                 //parse the result to JSON (simply by eval-ing it)
                 res = eval("(" + request.responseText + ")");
                 content = res.content;
                 success = res.success;
-				id = res.id;
-				pointIds.push(id);
-            }
+                id = res.id;
+                //alert('id: ' + id);
+                //edge_boundaries.splice(id);
+            } 
             catch (e) {
                 success = false;
             }
-			
-			
+            
+            alert('request.responseText is: ' + request.responseText);
             request.onreadystatechange = doNothing;
             callback(request.responseText, request.status);
         }
@@ -147,7 +169,7 @@ function downloadUrl(url, callback){
     
     request.open('GET', url, true);
     request.send(null);
-
+    
 }
 
 function doNothing(){
@@ -178,11 +200,11 @@ function addToMap(event){
         map: map
     });
     
-
+    
     
     //FIXME: The content of infoWindow is reset whenever it's closed. This is inconvenient, but acceptable for now.
     var infoWindow = new google.maps.InfoWindow({
-        content: newPointForm(event)
+        content: newPointForm(event, marker)
     });
     //alert('added infoWidnow')
     // Opens an infowindow over the marker on click
@@ -261,26 +283,50 @@ function init(){
 google.maps.event.addDomListener(window, 'load', init);
 
 /*
-//
-//// Jquery: Only checks for a click when document is ready
-//$(document).ready(function(){
-//    // Attach an event when div 'execute-search' is clicked
-//    $('#path_submit').click(function(){
-//		alert('hi');
-//        // Create the edges using the pointIds array
-//		alert(pointIds.length);
-//		getvars = pointIds;
-//		url = '/paths/create_edges' + getvars ;
-//		
-//		
-//		
-//		
-//		
-////        for (var i in (pointIds.length -1) ) {
-////			alert(i + 'in loop');
-////			
-////		}
-//    });
-//});
-//
-*/
+
+ //
+
+ //// Jquery: Only checks for a click when document is ready
+
+ //$(document).ready(function(){
+
+ //    // Attach an event when div 'execute-search' is clicked
+
+ //    $('#path_submit').click(function(){
+
+ //		alert('hi');
+
+ //        // Create the edges using the edge_boundaries array
+
+ //		alert(edge_boundaries.length);
+
+ //		getvars = edge_boundaries;
+
+ //		url = '/paths/create_edges' + getvars ;
+
+ //
+
+ //
+
+ //
+
+ //
+
+ //
+
+ ////        for (var i in (edge_boundaries.length -1) ) {
+
+ ////			alert(i + 'in loop');
+
+ ////
+
+ ////		}
+
+ //    });
+
+ //});
+
+ //
+
+ */
+
