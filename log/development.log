@@ -31120,3 +31120,217 @@ Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:33:32) [POST]
   Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
   [4;35;1mPath Create (0.5ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:33:32', 'desc_path_is_hereaf', '2010-07-04 21:33:32')[0m
 Completed in 43ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:39:17) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:39:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:39:21) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.16919415893555", "lat"=>"37.454910405971255", "comment"=>""}}
+  [4;36;1mPoint Create (0.7ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.16919415893555', NULL, '37.454910405971255', '', NULL)[0m
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.454910405971255&point[lng]=-122.16919415893555]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:39:24) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.13383191528321", "lat"=>"37.47262344979895", "comment"=>""}}
+  [4;35;1mPoint Create (0.6ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.13383191528321', NULL, '37.47262344979895', '', NULL)[0m
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.47262344979895&point[lng]=-122.13383191528321]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:39:26) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;36;1mPath Create (0.6ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:39:26', 'desc_path_is_hereaf', '2010-07-04 21:39:26')[0m
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:39:40) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;35;1mPath Create (19.9ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:39:40', 'desc_path_is_hereaf', '2010-07-04 21:39:40')[0m
+Completed in 37ms (View: 1, DB: 20) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:41:01) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:41:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:41:02) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;36;1mPath Create (0.6ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:41:02', 'desc_path_is_hereaf', '2010-07-04 21:41:02')[0m
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:41:08) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.15374463500977", "lat"=>"37.45409277956536", "comment"=>""}}
+  [4;35;1mPoint Create (0.6ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.15374463500977', NULL, '37.45409277956536', '', NULL)[0m
+Completed in 34ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.45409277956536&point[lng]=-122.15374463500977]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:41:12) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.09125989379883", "lat"=>"37.47398581781146", "comment"=>""}}
+  [4;36;1mPoint Create (0.6ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.09125989379883', NULL, '37.47398581781146', '', NULL)[0m
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.47398581781146&point[lng]=-122.09125989379883]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:41:13) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:41:13', 'desc_path_is_hereaf', '2010-07-04 21:41:13')[0m
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:41:34) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.09125989379883", "lat"=>"37.47398581781146", "comment"=>""}}
+  [4;36;1mPoint Create (0.6ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.09125989379883', NULL, '37.47398581781146', '', NULL)[0m
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.47398581781146&point[lng]=-122.09125989379883]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:42:22) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.09125989379883", "lat"=>"37.47398581781146", "comment"=>""}}
+  [4;35;1mPoint Create (1.3ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.09125989379883', NULL, '37.47398581781146', '', NULL)[0m
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.47398581781146&point[lng]=-122.09125989379883]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:42:25) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 114ms (View: 6, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:42:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:42:30) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.17949384155274", "lat"=>"37.4603610202505", "comment"=>""}}
+  [4;36;1mPoint Create (0.7ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.17949384155274', NULL, '37.4603610202505', '', NULL)[0m
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.4603610202505&point[lng]=-122.17949384155274]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:43:47) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:43:51) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.18636029663087", "lat"=>"37.431468238071986", "comment"=>""}}
+  [4;35;1mPoint Create (0.6ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.18636029663087', NULL, '37.431468238071986', '', NULL)[0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.431468238071986&point[lng]=-122.18636029663087]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:44:40) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 105ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:44:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:44:43) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.16267102661133", "lat"=>"37.462813667065326", "comment"=>""}}
+  [4;36;1mPoint Create (0.6ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.16267102661133', NULL, '37.462813667065326', '', NULL)[0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.462813667065326&point[lng]=-122.16267102661133]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:44:51) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;35;1mPath Create (0.5ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:44:51', 'desc_path_is_hereaf', '2010-07-04 21:44:51')[0m
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-04 17:46:08) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-04 17:46:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-04 17:46:10) [POST]
+  Parameters: {"path"=>{"name"=>"path_name_is_herea", "description"=>"desc_path_is_hereaf"}}
+  [4;36;1mPath Create (0.6ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('path_name_is_herea', '2010-07-04 21:46:10', 'desc_path_is_hereaf', '2010-07-04 21:46:10')[0m
+Completed in 136ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=path_name_is_herea&path[description]=desc_path_is_hereaf]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-04 17:46:15) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.17331403198243", "lat"=>"37.43991916840342", "comment"=>""}}
+  [4;35;1mPoint Create (0.6ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.17331403198243', NULL, '37.43991916840342', '', NULL)[0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.43991916840342&point[lng]=-122.17331403198243]

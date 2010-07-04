@@ -52,16 +52,27 @@ function savePathForm(){
 };
 
 /**
- * Creates a path by sending a request to the server.
- * Receives a path_id in return 
- * once the path_id is returned, create edges based on edge_boundaries array:
  * for i=0; i<edge_boundaries.length-1; i++
  * 	edgeStartPolyIndex	= edge_boundaries(i);
  *  edgeEndPolyIndex	= edge_boundaries(i+1);
  *  point_id 			= markerToPointDict.edgeStartInPoly;
  *  endpoint_id 		= markerToPointDict.edgeEndInPoly;
  * 	extract poly.getPath() from startMarker to endMarker
- *  set edge description to an easily parseable version of the subpath. (TODO: Change the field to polyline - description should be human readable.)
+ *  set edge description to an easily parsable version of the subpath. (TODO: Change the field to polyline - description should be human readable.)
+ * 
+ * @param {Object} path_id is the path that each edge should be associated with.
+ */
+function createEdges(path_id){
+	//edgeStartPolyIndex	= edge_boundaries
+	
+	alert('edge_boundaries[0]: ' + edge_boundaries[0] + '<br /> markerToPointDict[edge_boundaries[0]]: ' + markerToPointDict[edge_boundaries[0]]);
+}
+
+
+/**
+ * Creates a path by sending a request to the server.
+ * Receives a path_id in return 
+ * once the path_id is returned, create edges based on edge_boundaries array:
  */
 function submitPath(){
 	var name = escape(document.getElementById("path[name]").value);
@@ -83,7 +94,9 @@ function submitPath(){
 			// Receive path_id
 			res = eval("(" + data + ")");
             path_id = res.id;
-			alert('path_id: ' +path_id);
+			//alert('path_id: ' + path_id);
+			
+			createEdges(path_id);
 		}
 	});
 };
@@ -162,7 +175,7 @@ function createPoint(){//marker, infoWindow){
 		* If the response is fine, you can close the info window and output a success message and add the path_index and point_id to the edge_boundaries.
 		*/
         if (responseCode == 200) {// && data.length <= 1) {
-            //alert('response and data length are fine.');
+            alert('response and data length are fine.');
             // TODO: This is where the path_index and point_id are added to edge_boundaries.
             // FIXME: Is it okay to be parsing the data again?
             //parse the result to JSON (simply by eval-ing it)
@@ -170,8 +183,8 @@ function createPoint(){//marker, infoWindow){
             res = eval("(" + data + ")");
             point_id = res.id;
             
-            path_index = document.getElementById("path_index").value; //escape(document.getElementById("path_index").value);
-			//alert('path_index: ' + path_index + '<br />point_id: ' + point_id);
+            var path_index = document.getElementById("point[path_index]").value; //escape(document.getElementById("path_index").value);
+			alert('path_index: ' + path_index + '<br />point_id: ' + point_id);
             edge_boundaries.push(path_index);//splice(path_index, 0, id); // Add path_index to end of edge_boundaries
             //alert("edge_boundaries are: " + edge_boundaries);
 			
