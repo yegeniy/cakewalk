@@ -120,7 +120,6 @@ function createMarker(){
 
 var geocoder = new GClientGeocoder();
 
-
 function showAddress(){
     var address = document.getElementById("center").value;
     if (geocoder) {
@@ -133,6 +132,7 @@ function showAddress(){
             }
         });
     }
+
 }
 
 window.onload = init;
