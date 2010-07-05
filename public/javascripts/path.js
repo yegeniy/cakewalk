@@ -65,7 +65,7 @@ function savePathForm(){
 function createEdges(path_id){
 	
 	//edgeStartPolyIndex	= edge_boundaries
-	alert('createEdges(path_id ' + path_id + '); edge_boundaries: ' + edge_boundaries);
+	//alert('createEdges(path_id ' + path_id + '); edge_boundaries: ' + edge_boundaries);
 	for (var i = 0; i < edge_boundaries.length - 1; i++){ //N.B.: From the first POI to the before last.
 		edgeStartPolyIndex	= edge_boundaries[i];
 		edgeEndPolyIndex	= edge_boundaries[i+1];
@@ -75,13 +75,13 @@ function createEdges(path_id){
 		// Extract a sub-polyline from the overall polyline. Will be used for direction parameter of the created edge. 
 		var direction = polyLineSubPath(poly, edgeStartPolyIndex, edgeEndPolyIndex);
 			
-		alert('i: ' + i + ' out of ' + edge_boundaries.length +
-		'; edgeStartPolyIndex: ' + edgeStartPolyIndex +
-		'; edgeEndPolyIndex: ' + edgeEndPolyIndex +
-		'; point_id: ' + point_id +
-		'; endpoint_id: ' + endpoint_id +
-		'; direction: ' + direction +
-		';');
+//		alert('i: ' + i + ' out of ' + edge_boundaries.length +
+//		'; edgeStartPolyIndex: ' + edgeStartPolyIndex +
+//		'; edgeEndPolyIndex: ' + edgeEndPolyIndex +
+//		'; point_id: ' + point_id +
+//		'; endpoint_id: ' + endpoint_id +
+//		'; direction: ' + direction +
+//		';');
 		
 		var url = "../edges/create?" + //FIXME: Might not be robust to url changes.
    		"edge[path_id]=" +
@@ -96,7 +96,7 @@ function createEdges(path_id){
 		direction;
 		
 		downloadUrl(url, function(data, responseCode){
-		alert('in createEdges callback. ' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
+		//alert('in createEdges callback. ' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
 		/* 
 		 * Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue with the callback.
 		 *	If the response is fine, retrieve the path_id and create the edges.
@@ -130,7 +130,7 @@ function polyLineSubPath(poly, startIndex, endIndex){
 	for (var i = startIndex; i <= endIndex; i++) {
 		subPath.push(path.getAt(i-1)); //N.B.: path indices start at zero. marker titles start at one. This is probably a bug and getting i-1 is probably a hack.
 	}
-	alert('overall poly length: ' + path.getLength() + 'subPath length: ' + subPath.length + 'startIndex: ' + startIndex + 'endIndex' + endIndex);
+	//alert('overall poly length: ' + path.getLength() + 'subPath length: ' + subPath.length + 'startIndex: ' + startIndex + 'endIndex' + endIndex);
 //	alert('overall poly: ' + path.toString() + 'subPath: ' + subPath);
 	return subPath;
 }
@@ -151,7 +151,7 @@ function submitPath(){
 	description;
 	
 	downloadUrl(url, function(data, responseCode){
-		alert('in submitPath callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
+		//alert('in submitPath callback.\n' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
 		/* 
 		 * Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue with the callback.
 		 *	If the response is fine, retrieve the path_id and create the edges.
@@ -256,7 +256,7 @@ function createPoint() {//marker, infoWindow){
 			// Set the marker_index: point_id pair
             markerToPointDict[path_index.toString()] = point_id;//edge_boundaries[path_index].point_id = id;
             //alert("edge_boundaries are: " + edge_boundaries);
-			alert("markerToPointDict[" + path_index + "]: " + markerToPointDict[path_index.toString()]);
+			//alert("markerToPointDict[" + path_index + "]: " + markerToPointDict[path_index.toString()]);
             
 			
             infowindow.close();
