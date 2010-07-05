@@ -63,17 +63,6 @@ function savePathForm(){
  * @param {Object} path_id is the path that each edge should be associated with.
  */
 function createEdges(path_id){
-
-
-//	var dictString = new Object();
-//	for (var i in markerToPointDict) {
-//		dictString += i + "\n";
-//		alert(markerToPointDict[i]);
-//	}
-//	alert('markerToPointDict: ' + dictString);
-	
-	
-	
 	
 	//edgeStartPolyIndex	= edge_boundaries
 	alert('createEdges(path_id ' + path_id + '); edge_boundaries: ' + edge_boundaries);
@@ -92,7 +81,7 @@ function createEdges(path_id){
 		'; point_id: ' + point_id +
 		'; endpoint_id: ' + endpoint_id +
 		'; direction: ' + direction +
-		'; can yousee this? ');
+		';');
 		
 		var url = "../edges/create?" + //FIXME: Might not be robust to url changes.
    		"edge[path_id]=" +
@@ -105,6 +94,19 @@ function createEdges(path_id){
 		i +
 		"&edge[direction]=" +
 		direction;
+		
+		downloadUrl(url, function(data, responseCode){
+		alert('in createEdges callback. ' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
+		/* 
+		 * Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue with the callback.
+		 *	If the response is fine, retrieve the path_id and create the edges.
+		 */
+		if (responseCode == 200) {
+			// Receive path_id
+			res = eval("(" + data + ")");
+
+		}
+	});
 	};
 
 }

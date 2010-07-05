@@ -33906,3 +33906,291 @@ Processing PathsController#create (for 127.0.0.1 at 2010-07-05 11:18:31) [POST]
   Parameters: {"path"=>{"name"=>"", "description"=>""}}
   [4;35;1mPath Create (0.5ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('', '2010-07-05 15:18:31', '', '2010-07-05 15:18:31')[0m
 Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=&path[description]=]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-05 11:20:28) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 11:20:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-05 11:20:32) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 11:20:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:20:34) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.18636029663087", "lat"=>"37.41168206073027", "comment"=>""}}
+  [4;36;1mPoint Create (0.6ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.18636029663087', NULL, '37.41168206073027', '', NULL)[0m
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.41168206073027&point[lng]=-122.18636029663087]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:20:48) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.02637189331055", "lat"=>"37.447124427411936", "comment"=>""}}
+  [4;35;1mPoint Create (0.8ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.02637189331055', NULL, '37.447124427411936', '', NULL)[0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.447124427411936&point[lng]=-122.02637189331055]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-05 11:20:51) [POST]
+  Parameters: {"path"=>{"name"=>"", "description"=>""}}
+  [4;36;1mPath Create (0.5ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('', '2010-07-05 15:20:51', '', '2010-07-05 15:20:51')[0m
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=&path[description]=]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:21:08) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.09297650756837", "lat"=>"37.49862223168794", "comment"=>""}}
+  [4;35;1mPoint Create (0.6ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.09297650756837', NULL, '37.49862223168794', '', NULL)[0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.49862223168794&point[lng]=-122.09297650756837]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-05 11:21:11) [POST]
+  Parameters: {"path"=>{"name"=>"", "description"=>""}}
+  [4;36;1mPath Create (0.5ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('', '2010-07-05 15:21:11', '', '2010-07-05 15:21:11')[0m
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=&path[description]=]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:21:23) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.00783246459962", "lat"=>"37.55525604147163", "comment"=>""}}
+  [4;35;1mPoint Create (0.6ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.00783246459962', NULL, '37.55525604147163', '', NULL)[0m
+Completed in 138ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.55525604147163&point[lng]=-122.00783246459962]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-05 11:21:27) [POST]
+  Parameters: {"path"=>{"name"=>"", "description"=>""}}
+  [4;36;1mPath Create (0.5ms)[0m   [0;1mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('', '2010-07-05 15:21:27', '', '2010-07-05 15:21:27')[0m
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=&path[description]=]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-05 11:21:31) [POST]
+  Parameters: {"path"=>{"name"=>"", "description"=>""}}
+  [4;35;1mPath Create (0.5ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('', '2010-07-05 15:21:31', '', '2010-07-05 15:21:31')[0m
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=&path[description]=]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:23:33) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.06242078247071", "lat"=>"37.54491269027022", "comment"=>""}}
+  [4;36;1mPoint Create (0.5ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.06242078247071', NULL, '37.54491269027022', '', NULL)[0m
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.54491269027022&point[lng]=-122.06242078247071]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-05 11:23:37) [POST]
+  Parameters: {"path"=>{"name"=>"", "description"=>""}}
+  [4;35;1mPath Create (0.6ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('', '2010-07-05 15:23:37', '', '2010-07-05 15:23:37')[0m
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=&path[description]=]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-05 11:26:31) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-05 11:26:35) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 151ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 11:26:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:26:44) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.16438764038087", "lat"=>"37.40268248312481", "comment"=>""}}
+  [4;36;1mPoint Create (0.6ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.16438764038087', NULL, '37.40268248312481', '', NULL)[0m
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.40268248312481&point[lng]=-122.16438764038087]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:26:50) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.08199017944337", "lat"=>"37.46156918623494", "comment"=>""}}
+  [4;35;1mPoint Create (0.8ms)[0m   [0mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.08199017944337', NULL, '37.46156918623494', '', NULL)[0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.46156918623494&point[lng]=-122.08199017944337]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing OperateMarkerController#create (for 127.0.0.1 at 2010-07-05 11:26:55) [POST]
+  Parameters: {"point"=>{"name"=>"", "lng"=>"-122.13074201049805", "lat"=>"37.50134599480299", "comment"=>""}}
+  [4;36;1mPoint Create (0.5ms)[0m   [0;1mINSERT INTO "points" ("name", "city", "address2", "zip", "lng", "address", "lat", "comment", "state") VALUES('', NULL, NULL, NULL, '-122.13074201049805', NULL, '37.50134599480299', '', NULL)[0m
+Completed in 25ms (View: 1, DB: 1) | 200 OK [http://localhost/operate_marker/create?point[name]=&point[comment]=&point[lat]=37.50134599480299&point[lng]=-122.13074201049805]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#create (for 127.0.0.1 at 2010-07-05 11:27:12) [POST]
+  Parameters: {"path"=>{"name"=>"test 7 5 10", "description"=>""}}
+  [4;35;1mPath Create (0.5ms)[0m   [0mINSERT INTO "paths" ("name", "updated_at", "description", "created_at") VALUES('test 7 5 10', '2010-07-05 15:27:12', '', '2010-07-05 15:27:12')[0m
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/paths/create?path[name]=test%207%205%2010&path[description]=]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing EdgesController#create (for 127.0.0.1 at 2010-07-05 11:27:20) [POST]
+  Parameters: {"edge"=>{"point_id"=>"286", "path_id"=>"101", "direction"=>"(37.40268248312481, -122.16438764038087),(37.411409362140716, -122.09057324829102),(37.452303055292624, -122.08508008422852),(37.46156918623494, -122.08199017944337)", "position"=>"0", "endpoint_id"=>"287"}}
+  [4;36;1mPoint Load (2.3ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 286) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;36;1mEdge Create (0.6ms)[0m   [0;1mINSERT INTO "edges" ("updated_at", "path_id", "point_id", "endpoint_id", "position", "direction", "created_at") VALUES('2010-07-05 15:27:20', 101, 286, 287, 0, '(37.40268248312481, -122.16438764038087),(37.411409362140716, -122.09057324829102),(37.452303055292624, -122.08508008422852),(37.46156918623494, -122.08199017944337)', '2010-07-05 15:27:20')[0m
+Redirected to http://localhost:3000/edges/13
+Completed in 218ms (DB: 4) | 302 Found [http://localhost/edges/create?edge[path_id]=101&edge[point_id]=286&edge[endpoint_id]=287&edge[position]=0&edge[direction]=(37.40268248312481,%20-122.16438764038087),(37.411409362140716,%20-122.09057324829102),(37.452303055292624,%20-122.08508008422852),(37.46156918623494,%20-122.08199017944337)]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-07-05 11:27:20) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mEdge Load (0.5ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 13) [0m
+Rendering template within layouts/application
+Rendering edges/show
+  [4;36;1mPoint Load (3.2ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 286) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+Rendered edges/_edge (24.5ms)
+Completed in 69ms (View: 53, DB: 4) | 200 OK [http://localhost/edges/13]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing EdgesController#create (for 127.0.0.1 at 2010-07-05 11:27:33) [POST]
+  Parameters: {"edge"=>{"point_id"=>"287", "path_id"=>"101", "direction"=>"(37.46156918623494, -122.08199017944337),(37.47192409567514, -122.12902539672852),(37.482822446415454, -122.15820783081055),(37.5157802804744, -122.13211530151368),(37.50134599480299, -122.13074201049805)", "position"=>"1", "endpoint_id"=>"288"}}
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;35;1mPoint Load (0.3ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 288) [0m
+  [4;36;1mEdge Create (0.5ms)[0m   [0;1mINSERT INTO "edges" ("updated_at", "path_id", "point_id", "endpoint_id", "position", "direction", "created_at") VALUES('2010-07-05 15:27:33', 101, 287, 288, 1, '(37.46156918623494, -122.08199017944337),(37.47192409567514, -122.12902539672852),(37.482822446415454, -122.15820783081055),(37.5157802804744, -122.13211530151368),(37.50134599480299, -122.13074201049805)', '2010-07-05 15:27:33')[0m
+Redirected to http://localhost:3000/edges/14
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/edges/create?edge[path_id]=101&edge[point_id]=287&edge[endpoint_id]=288&edge[position]=1&edge[direction]=(37.46156918623494,%20-122.08199017944337),(37.47192409567514,%20-122.12902539672852),(37.482822446415454,%20-122.15820783081055),(37.5157802804744,%20-122.13211530151368),(37.50134599480299,%20-122.13074201049805)]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing EdgesController#show (for 127.0.0.1 at 2010-07-05 11:27:33) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mEdge Load (0.4ms)[0m   [0mSELECT * FROM "edges" WHERE ("edges"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering edges/show
+  [4;36;1mPoint Load (0.6ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;35;1mPoint Load (0.6ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 288) [0m
+Rendered edges/_edge (14.7ms)
+Completed in 31ms (View: 19, DB: 2) | 200 OK [http://localhost/edges/14]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-07-05 11:29:39) [GET]
+  [4;36;1mPath Load (23.0ms)[0m   [0;1mSELECT * FROM "paths" [0m
+Rendering template within layouts/application
+Rendering paths/index
+Completed in 538ms (View: 481, DB: 23) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 11:29:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#show (for 127.0.0.1 at 2010-07-05 11:29:44) [GET]
+  Parameters: {"id"=>"101"}
+  [4;35;1mPath Load (0.4ms)[0m   [0mSELECT * FROM "paths" WHERE ("paths"."id" = 101) [0m
+Rendering template within layouts/application
+Rendering paths/show
+  [4;36;1mEdge Load (0.8ms)[0m   [0;1mSELECT * FROM "edges" WHERE ("edges".path_id = 101) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 286) [0m
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 288) [0m
+Completed in 255ms (View: 202, DB: 3) | 200 OK [http://localhost/paths/101]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 11:29:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-07-05 11:30:26) [GET]
+  [4;35;1mEdge Load (2.7ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/application
+Rendering edges/index
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;36;1mPoint Load (0.6ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 286) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 288) [0m
+Completed in 98ms (View: 83, DB: 7) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 11:30:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
