@@ -114,19 +114,22 @@ function createEdges(path_id){
 
 /**
  * returns a part of poly's path, from startIndex to endIndex, inclusively 
+ * FIXME: The last point isn't being stored!
  * @param {Object} poly
  * @param {Object} startIndex
  * @param {Object} endIndex
  */ 
 function polyLineSubPath(poly, startIndex, endIndex){
 	path = poly.getPath();
+	
 	var subPath = new Array();
 	
 	// Build sub path from startIndex to endIndex using poly's path.
 	for (var i = startIndex; i <= endIndex; i++) {
-		subPath.push(path.getAt(i));
+		subPath.push(path.getAt(i-1)); //N.B.: path indices start at zero. marker titles start at one. This is probably a bug and getting i-1 is probably a hack.
 	}
-	//alert('subPath: ' + subPath);
+	alert('overall poly length: ' + path.getLength() + 'subPath length: ' + subPath.length + 'startIndex: ' + startIndex + 'endIndex' + endIndex);
+//	alert('overall poly: ' + path.toString() + 'subPath: ' + subPath);
 	return subPath;
 }
 
