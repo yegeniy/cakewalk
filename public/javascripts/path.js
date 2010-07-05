@@ -33,7 +33,7 @@ var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
 var edge_boundaries = new Array(); //Will hold an ordered list of indices(indices: point_id) pairs at which to split the polyline (edge_boundaries).
-var markerToPointDict = new Array(); //An associative array to match path_indix to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString], where i is an integer.
+var markerToPointDict = new Object(); //An associative array to match path_indix to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString], where i is an integer.
 // TODO: Use ArrayObj.splice() to insert http://www.w3schools.com/jsref/jsref_obj_array.asp
 
 /**
@@ -63,25 +63,72 @@ function savePathForm(){
  * @param {Object} path_id is the path that each edge should be associated with.
  */
 function createEdges(path_id){
+
+
+//	var dictString = new Object();
+//	for (var i in markerToPointDict) {
+//		dictString += i + "\n";
+//		alert(markerToPointDict[i]);
+//	}
+//	alert('markerToPointDict: ' + dictString);
+	
+	
+	
+	
 	//edgeStartPolyIndex	= edge_boundaries
-	alert('createEdges(' + path_id + '); edge_boundaries: ' + edge_boundaries);
+	alert('createEdges(path_id ' + path_id + '); edge_boundaries: ' + edge_boundaries);
 	for (var i = 0; i < edge_boundaries.length - 1; i++){ //N.B.: From the first POI to the before last.
-		alert('i: ' + i + ' out of ' + edge_boundaries.length);
 		edgeStartPolyIndex	= edge_boundaries[i];
-		alert('edgeStartPolyIndex: ' + edgeStartPolyIndex);
-//		alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// +
 		edgeEndPolyIndex	= edge_boundaries[i+1];
-		alert('edgeEndPolyIndex: ' + edgeEndPolyIndex);
-//		alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);// +
-		point_id 			= markerToPointDict[edgeStartPolyIndex.toString];
-		endpoint_id 		= markerToPointDict[edgeEndPolyIndex.toString];
-		alert('point_id: ' + point_id + ' == ' + markerToPointDict[edgeStartPolyIndex.toString]);// + ' == ' + markerToPointDict[edgeStartPolyIndex]);
-//		alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// + 
-		//' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);
+		var point_id 			= markerToPointDict[edgeStartPolyIndex.toString()];
+		var endpoint_id 		= markerToPointDict[edgeEndPolyIndex.toString()];
+
+		// Extract a sub-polyline from the overall polyline. Will be used for direction parameter of the created edge. 
+		var direction = polyLineSubPath(poly, edgeStartPolyIndex, edgeEndPolyIndex);
+			
+		alert('i: ' + i + ' out of ' + edge_boundaries.length +
+		'; edgeStartPolyIndex: ' + edgeStartPolyIndex +
+		'; edgeEndPolyIndex: ' + edgeEndPolyIndex +
+		'; point_id: ' + point_id +
+		'; endpoint_id: ' + endpoint_id +
+		'; direction: ' + direction +
+		'; can yousee this? ');
+		
+		var url = "../edges/create?" + //FIXME: Might not be robust to url changes.
+   		"edge[path_id]=" +
+	    path_id +
+		"&edge[point_id]=" +
+		point_id +
+		"&edge[endpoint_id]=" +
+		endpoint_id +
+		"&edge[position]=" +
+		i +
+		"&edge[direction]=" +
+		direction;
 	};
-	//alert('in createEdges(' + path_id + '): edge_boundaries[0]: ' + edge_boundaries[0] + '<br /> markerToPointDict[edge_boundaries[0]]: ' + markerToPointDict[edge_boundaries[0]]);
+
 }
 
+
+
+
+/**
+ * returns a part of poly's path, from startIndex to endIndex, inclusively 
+ * @param {Object} poly
+ * @param {Object} startIndex
+ * @param {Object} endIndex
+ */ 
+function polyLineSubPath(poly, startIndex, endIndex){
+	path = poly.getPath();
+	var subPath = new Array();
+	
+	// Build sub path from startIndex to endIndex using poly's path.
+	for (var i = startIndex; i <= endIndex; i++) {
+		subPath.push(path.getAt(i));
+	}
+	//alert('subPath: ' + subPath);
+	return subPath;
+}
 
 /**
  * Creates a path by sending a request to the server.
@@ -201,9 +248,10 @@ function createPoint() {//marker, infoWindow){
             edge_boundaries.push(path_index);//splice(path_index, 0, id); // Add path_index to end of edge_boundaries
             //alert("edge_boundaries are: " + edge_boundaries);
 			
-            markerToPointDict[path_index.toString] = point_id;//edge_boundaries[path_index].point_id = id;
+			// Set the marker_index: point_id pair
+            markerToPointDict[path_index.toString()] = point_id;//edge_boundaries[path_index].point_id = id;
             //alert("edge_boundaries are: " + edge_boundaries);
-			alert("markerToPointDict[" + path_index + "]: " + markerToPointDict[path_index.toString]);
+			alert("markerToPointDict[" + path_index + "]: " + markerToPointDict[path_index.toString()]);
             
 			
             infowindow.close();
