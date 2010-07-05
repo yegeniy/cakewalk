@@ -65,16 +65,17 @@ function savePathForm(){
 function createEdges(path_id){
 	//edgeStartPolyIndex	= edge_boundaries
 	alert('createEdges(' + path_id + '); edge_boundaries: ' + edge_boundaries);
-	for (var i = 0; i <= edge_boundaries.length - 1; i++){ //N.B.: From the first POI to the before last.
+	for (var i = 0; i < edge_boundaries.length - 1; i++){ //N.B.: From the first POI to the before last.
 	alert('i: ' + i + ' out of ' + edge_boundaries.length);
-	edgeStartPolyIndex	= edge_boundaries[i].toString;
-	alert('edgeStartPolyIndex: ' + edgeStartPolyIndex.toString);
+	edgeStartPolyIndex	= edge_boundaries[i];
+	alert('edgeStartPolyIndex: ' + edgeStartPolyIndex);
 //	alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// +
-	edgeEndPolyIndex	= edge_boundaries[i+1].toString;
+	edgeEndPolyIndex	= edge_boundaries[i+1];
 	alert('edgeEndPolyIndex: ' + edgeEndPolyIndex);
 //	alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);// +
-	point_id 			= markerToPointDict[edgeStartInPoly];
-	endpoint_id 		= markerToPointDict[edgeEndInPoly];
+	point_id 			= markerToPointDict[edgeStartPolyIndex.toString];
+	endpoint_id 		= markerToPointDict[edgeEndPolyIndex.toString];
+	alert('point_id: ' + point_id + ' == ' + markerToPointDict[edgeStartPolyIndex.toString]);// + ' == ' + markerToPointDict[edgeStartPolyIndex]);
 //	alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// + 
 	//' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);
 };
