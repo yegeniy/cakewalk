@@ -378,7 +378,7 @@ function openInfoWindow(infoWindow, marker){
 
 function init(){
     // Generate map with some center. TODO: Change center to something sensible.
-    var firstLatLng = new google.maps.LatLng(37.4419, -122.1419);
+    var firstLatLng = new google.maps.LatLng(42.368089, -71.258698);
     //alert('firstLatLng made?');
     
     // Initialize polyline
