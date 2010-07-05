@@ -12,12 +12,13 @@ ActionController::Routing::Routes.draw do |map|
   map.searchs "search", :controller=>"search", :action=>"index"
   map.home "home", :controller => "home", :action => "index"
   map.addpoint "addpoint", :controller =>"operate_marker", :action=>"map"
+  map.create_path "create_path", :controller=>"paths", :action=>"new"
   
   map.register "register", :controller=>"users", :action=>"new"
   map.login "login", :controller => "admin", :action=> "login"
   map.logout "logout", :controller => "admin", :action=> "logout"
   map.edit "edit", :controller => "users", :action=>"edit"
-  #map.connect "create", :controller => "operate_marker", :action => "create"
+  map.connect "create", :controller => "operate_marker", :action => "create"
   #map.connect "paths/search_path", :controller => "path", :action => "search_path"
   map.root :controller => "home"
    

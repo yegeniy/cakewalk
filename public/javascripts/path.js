@@ -216,7 +216,7 @@ function addToMap(event){
 
 function init(){
     // Generate map with some center. TODO: Change center to something sensible.
-    var firstLatLng = new google.maps.LatLng(37.4419, -122.1419);
+    var firstLatLng = new google.maps.LatLng(42.36809, -71.258698);
     //alert('firstLatLng made?');
     
     // Initialize polyline
@@ -233,7 +233,7 @@ function init(){
     mapContainer = document.getElementById('mapContainer');
     //alert('mapContainer is' + mapContainer);
     map = new google.maps.Map(mapContainer, {
-        zoom: 12,
+        zoom: 16,
         center: firstLatLng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -263,7 +263,7 @@ function edgeInfo() {
    
 	html = '<p>';
 	html += '<label for="path"> Enter the edge description </label>';
-	html += '<input type="text" id="edge_name" name="m[edge_description]" style="width:25%;"/>'
+	html += '<input type="text" id="edge_name" name="m[edge_description]" style="width:50%;"/>'
 	html += '<button id="save_edge"> Save </button>'
     //add it to the 'search-results' div
     $('#ask_edge_description').html(html);
