@@ -1,5 +1,6 @@
 class PathsController < ApplicationController
-	
+
+before_filter :requirelogin, :except => ["show", "search_path"]
   # GET /paths
   # GET /paths.xml
   def index

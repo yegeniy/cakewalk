@@ -12,11 +12,14 @@ before_filter :requirelogin, :except => ["login", "logout"]
       if user
         isadmin=user.isadmin?
         session[:user_id] = user.id
+		uri=session[:original_uri]
+		session[:original_uri]=nil
+		redirect_to(uri || {:controller => "home", :action => "index" })
         if(isadmin==true)
-          redirect_to(:action => "welcome")
+          # redirect_to(:action => "welcome")
         else
           flash.now[:notice] = "You are not an administrator..." 
-          redirect_to(:controller => "home", :action => "index")
+          #redirect_to(:controller => "home", :action => "index")
         end   
       else
         flash.now[:notice] = "Invalid user/password combination"

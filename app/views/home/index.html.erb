@@ -17,14 +17,15 @@ $(function() {
 
 <% end %>
 <% usr_name = "" %>
-<% if session[:user] %>
+<% if session[:user_id] %>
 	<% usr_name =  User.find(session[:user_id]).name %>
-	<%puts "!" + usr_name%>
+	<%puts "!" + usr_name%>	
 <% else %>
 	<% usr_name = ""%>
 	<% puts "whoops"%>
 <% end %>
-<h2> Hi<%usr_name%>, Welcome to the Cakewalk Home Page! </h2>
+
+<h2> Hi <%= usr_name %>, Welcome to the Cakewalk Home Page! </h2>
 <h3> Enter in two locations, where you want to start, and where to go to </h3>
 <h3>(Currently Limited to Brandeis Locations) </h3>
 <label for="category">From</label>
