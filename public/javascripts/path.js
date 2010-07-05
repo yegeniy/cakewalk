@@ -33,7 +33,7 @@ var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
 var edge_boundaries = new Array(); //Will hold an ordered list of indices(indices: point_id) pairs at which to split the polyline (edge_boundaries).
-var markerToPointDict = new Object(); //An associative array to match path_indix to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString], where i is an integer.
+var markerToPointDict = new Array(); //An associative array to match path_indix to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString], where i is an integer.
 // TODO: Use ArrayObj.splice() to insert http://www.w3schools.com/jsref/jsref_obj_array.asp
 
 /**
@@ -66,19 +66,19 @@ function createEdges(path_id){
 	//edgeStartPolyIndex	= edge_boundaries
 	alert('createEdges(' + path_id + '); edge_boundaries: ' + edge_boundaries);
 	for (var i = 0; i < edge_boundaries.length - 1; i++){ //N.B.: From the first POI to the before last.
-	alert('i: ' + i + ' out of ' + edge_boundaries.length);
-	edgeStartPolyIndex	= edge_boundaries[i];
-	alert('edgeStartPolyIndex: ' + edgeStartPolyIndex);
-//	alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// +
-	edgeEndPolyIndex	= edge_boundaries[i+1];
-	alert('edgeEndPolyIndex: ' + edgeEndPolyIndex);
-//	alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);// +
-	point_id 			= markerToPointDict[edgeStartPolyIndex.toString];
-	endpoint_id 		= markerToPointDict[edgeEndPolyIndex.toString];
-	alert('point_id: ' + point_id + ' == ' + markerToPointDict[edgeStartPolyIndex.toString]);// + ' == ' + markerToPointDict[edgeStartPolyIndex]);
-//	alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// + 
-	//' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);
-};
+		alert('i: ' + i + ' out of ' + edge_boundaries.length);
+		edgeStartPolyIndex	= edge_boundaries[i];
+		alert('edgeStartPolyIndex: ' + edgeStartPolyIndex);
+//		alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// +
+		edgeEndPolyIndex	= edge_boundaries[i+1];
+		alert('edgeEndPolyIndex: ' + edgeEndPolyIndex);
+//		alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);// +
+		point_id 			= markerToPointDict[edgeStartPolyIndex.toString];
+		endpoint_id 		= markerToPointDict[edgeEndPolyIndex.toString];
+		alert('point_id: ' + point_id + ' == ' + markerToPointDict[edgeStartPolyIndex.toString]);// + ' == ' + markerToPointDict[edgeStartPolyIndex]);
+//		alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);// + 
+		//' markerToPointDict[' + i + '+1]: ' + markerToPointDict[edgeEndPolyIndex]);
+	};
 	//alert('in createEdges(' + path_id + '): edge_boundaries[0]: ' + edge_boundaries[0] + '<br /> markerToPointDict[edge_boundaries[0]]: ' + markerToPointDict[edge_boundaries[0]]);
 }
 
@@ -203,7 +203,7 @@ function createPoint() {//marker, infoWindow){
 			
             markerToPointDict[path_index.toString] = point_id;//edge_boundaries[path_index].point_id = id;
             //alert("edge_boundaries are: " + edge_boundaries);
-			alert("markerToPointDict.path_index: " + markerToPointDict[path_index.toString]);
+			alert("markerToPointDict[" + path_index + "]: " + markerToPointDict[path_index.toString]);
             
 			
             infowindow.close();
