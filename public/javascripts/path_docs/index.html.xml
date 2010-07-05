@@ -1,0 +1,116 @@
+<?xml-stylesheet type="text/xsl" href="docs.xsl"?><javascript fileName="path.js">
+    <function name="savePathForm" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Function">
+        <description>A form for creating the path. Has a field for the path name, the path description, and hidden fields containing the information for creating the edges.</description>
+    </function>
+    <function name="submitPath" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Function">
+        <description>Creates a path by sending a request to the server. Receives a path_id in return once the path_id is returned, create edges based on edge_boundaries array: for i=0; i&lt;edge_boundaries.length-1; i++ edgeStartPolyIndex = edge_boundaries(i); edgeEndPolyIndex = edge_boundaries(i+1); point_id = markerToPointDict.edgeStartInPoly; endpoint_id = markerToPointDict.edgeEndInPoly; extract poly.getPath() from startMarker to endMarker set edge description to an easily parseable version of the subpath. (TODO: Change the field to polyline - description should be human readable.)</description>
+        <property name="submitPath" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Object">
+            <description>Creates a path by sending a request to the server. Receives a path_id in return once the path_id is returned, create edges based on edge_boundaries array: for i=0; i&lt;edge_boundaries.length-1; i++ edgeStartPolyIndex = edge_boundaries(i); edgeEndPolyIndex = edge_boundaries(i+1); point_id = markerToPointDict.edgeStartInPoly; endpoint_id = markerToPointDict.edgeEndInPoly; extract poly.getPath() from startMarker to endMarker set edge description to an easily parseable version of the subpath. (TODO: Change the field to polyline - description should be human readable.)</description>
+        </property>
+        <property name="description" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+        <property name="url" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+    </function>
+    <function name="newPointForm" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Function">
+        <description>A form for passing data about a point associated with the event (invoked by clicking a marker) form contains name, comment, longitude, and latitude for a point.</description>
+        <parameters>
+            <parameter name="event" type="MouseEvent">
+            </parameter>
+            <parameter name="marker" type="Object">
+                <description>is the marker associated with the mouse event.</description>
+            </parameter>
+        </parameters>
+    </function>
+    <function name="createPoint" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Function">
+        <description>7/30/10: Using a form (document), create a Point and return its point_id. Pre 7/30/10: Extracts data from marker and infoWindow and saves it into a point object NOTE: See page 53+ in &quot;Beginning Google Maps Applications with Rails and Ajax&quot; for reference Listing 3-6 has the controller code &quot;in the HTML form we displayed on the map, the fields were named in an m [ fieldname ] bracketed format—for example, m [ lat ] . When aform is submitted to aRails action using the bracketed format, ActiveView converts all the bracketed strings to ahash, in this case under the key :m. After the action creates the marker, it saves it. Finally, it renders aJSON structure with two keys, :success and :content, which indicate whether the action is successful, and the HTML to be displayed, respectively. &quot; TODO: Can probably copy operate_marker and its controller Looks like the XMLHttpRequest is what I need to use since GXmlHttp doesn&apos;t exist in Google Maps JS API V3 Following http://code.google.com/apis/maps/articles/phpsqlinfo_v3.html</description>
+        <property name="name" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+        <property name="comment" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+        <property name="lat" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+        <property name="lng" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+        <property name="url" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+    </function>
+    <function name="downloadUrl" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Function">
+        <description>a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript. The downloadUrl() callback function will provide you with the content of the URL and the status code. If you use a framework like jQuery or YUI, you may want to replace this function with their respective wrapper functions.</description>
+        <parameters>
+            <parameter name="url" type="Object">
+            </parameter>
+            <parameter name="callback" type="Object">
+            </parameter>
+        </parameters>
+        <property name="request" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+            <function name="onreadystatechange" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+                <property name="success" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Boolean">
+                </property>
+                <property name="content" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="String">
+                </property>
+                <property name="request" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+                    <property name="onreadystatechange" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+                    </property>
+                </property>
+                <property name="res" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+                </property>
+            </function>
+        </property>
+    </function>
+    <function name="doNothing" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+    </function>
+    <function name="addToMap" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Function">
+        <description>Handles click events on a map: adds a new marker to the Polyline. creates a new Point for that marker. Create a marker at the coordinate that was clicked. Then, assign a click listener to the marker that pops open an info window over the marker.</description>
+        <parameters>
+            <parameter name="event" type="MouseEvent">
+            </parameter>
+        </parameters>
+        <property name="addToMap" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Object">
+            <description>Handles click events on a map: adds a new marker to the Polyline. creates a new Point for that marker. Create a marker at the coordinate that was clicked. Then, assign a click listener to the marker that pops open an info window over the marker.</description>
+            <parameters>
+                <parameter name="event" type="MouseEvent">
+                </parameter>
+            </parameters>
+        </property>
+        <property name="marker" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+        <property name="infoWindow" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+    </function>
+    <function name="openInfoWindow" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Function">
+        <description>Opens selected infoWindow over the selected marker after closing the previously opened infoWindow NOTE: If this wrapper function is omitted from the click listener at marker, then only data in the first open infoWindow will be saved to the database... I think.</description>
+        <parameters>
+            <parameter name="infoWindow" type="Object">
+            </parameter>
+            <parameter name="marker" type="Object">
+            </parameter>
+        </parameters>
+    </function>
+    <function name="init" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Function">
+        <property name="firstLatLng" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+        <object_literal name="polyOptions" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+            <property name="strokeColor" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="String">
+            </property>
+            <property name="strokeOpacity" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Number">
+            </property>
+            <property name="strokeWeight" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Number">
+            </property>
+        </object_literal>
+        <property name="mapContainer" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+        </property>
+    </function>
+    <property name="map" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Object">
+        <description>7/30/10: Maintain an overall polyline (poly) which is split up into smaller polylines representing the edges in a path. Maintain a list of indices at which to split the polyline (edge_boundaries). Split the polyline into edges at each point on edge_boundaries. The path and its edges are created at the same time as the boundary. Pre 7/3/10: I want to be able to click on a map and create points with each click. The points should give a popup form through which they can be updated. Subsequent points should be connected by a line representing the edge between them. The edge should be saved automatically. Eventually the line should be any shape between two points. After a path is complete it should be given a name? NOTE: I want a point to be created even if the form is not filled out. So basically an empty point is created along with the marker. Then, clicking on the marker reveals an infoWindow with a form and a &apos;Save&apos; button Clicking &apos;Save&apos; passes the form into the edit method of the point controller. A similar procedure can be applied for edges and paths. NOTE: A note on info windows. As far as I can tell, their content is associated with their location (or optionally, an anchor). They are not otherwise associated</description>
+    </property>
+    <property name="map" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="false" internal="false" type="Object">
+        <description>7/30/10: Maintain an overall polyline (poly) which is split up into smaller polylines representing the edges in a path. Maintain a list of indices at which to split the polyline (edge_boundaries). Split the polyline into edges at each point on edge_boundaries. The path and its edges are created at the same time as the boundary. Pre 7/3/10: I want to be able to click on a map and create points with each click. The points should give a popup form through which they can be updated. Subsequent points should be connected by a line representing the edge between them. The edge should be saved automatically. Eventually the line should be any shape between two points. After a path is complete it should be given a name? NOTE: I want a point to be created even if the form is not filled out. So basically an empty point is created along with the marker. Then, clicking on the marker reveals an infoWindow with a form and a &apos;Save&apos; button Clicking &apos;Save&apos; passes the form into the edit method of the point controller. A similar procedure can be applied for edges and paths. NOTE: A note on info windows. As far as I can tell, their content is associated with their location (or optionally, an anchor). They are not otherwise associated</description>
+    </property>
+    <property name="visibleInfoWindow" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+    </property>
+    <property name="edge_boundaries" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+    </property>
+    <property name="markerToPointDict" scope="static" constructor="false" deprecated="false" private="false" protected="false" ignored="true" internal="false" type="Object">
+    </property>
+</javascript>

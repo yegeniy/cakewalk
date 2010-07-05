@@ -33,7 +33,7 @@ var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
 var edge_boundaries = new Array(); //Will hold an ordered list of indices(indices: point_id) pairs at which to split the polyline (edge_boundaries).
-var markerToPointDict = new Object(); //An associative array to match path_indix to its point_id in the database. 
+var markerToPointDict = new Object(); //An associative array to match path_indix to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString], where i is an integer.
 // TODO: Use ArrayObj.splice() to insert http://www.w3schools.com/jsref/jsref_obj_array.asp
 
 /**
@@ -53,8 +53,8 @@ function savePathForm(){
 
 /**
  * for i=0; i<edge_boundaries.length-1; i++
- * 	edgeStartPolyIndex	= edge_boundaries(i);
- *  edgeEndPolyIndex	= edge_boundaries(i+1);
+ * 	edgeStartPolyIndex	= edge_boundaries[i];
+ *  edgeEndPolyIndex	= edge_boundaries[i+1];
  *  point_id 			= markerToPointDict.edgeStartInPoly;
  *  endpoint_id 		= markerToPointDict.edgeEndInPoly;
  * 	extract poly.getPath() from startMarker to endMarker
@@ -64,8 +64,14 @@ function savePathForm(){
  */
 function createEdges(path_id){
 	//edgeStartPolyIndex	= edge_boundaries
-	
-	alert('edge_boundaries[0]: ' + edge_boundaries[0] + '<br /> markerToPointDict[edge_boundaries[0]]: ' + markerToPointDict[edge_boundaries[0]]);
+	for (var i = 0; i <= edge_boundaries.length - 1; i++){ //N.B.: From the first POI to the before last.
+	edgeStartPolyIndex	= edge_boundaries[i].toString;
+	alert('in createEdges(' + path_id + '): ' +	' markerToPointDict[' + i + ']: ' + markerToPointDict[edgeStartPolyIndex]);
+	edgeEndPolyIndex	= edge_boundaries[i+1];
+	point_id 			= markerToPointDict[edgeStartInPoly];
+	endpoint_id 		= markerToPointDict[edgeEndInPoly];
+};
+	//alert('in createEdges(' + path_id + '): edge_boundaries[0]: ' + edge_boundaries[0] + '<br /> markerToPointDict[edge_boundaries[0]]: ' + markerToPointDict[edge_boundaries[0]]);
 }
 
 
@@ -95,7 +101,6 @@ function submitPath(){
 			res = eval("(" + data + ")");
             path_id = res.id;
 			//alert('path_id: ' + path_id);
-			
 			createEdges(path_id);
 		}
 	});
@@ -147,7 +152,7 @@ function newPointForm(event, marker){
  * Looks like the XMLHttpRequest is what I need to use since GXmlHttp doesn't exist in Google Maps JS API V3
  * Following http://code.google.com/apis/maps/articles/phpsqlinfo_v3.html
  */
-function createPoint(){//marker, infoWindow){
+function createPoint() {//marker, infoWindow){
     //    alert('entering saveData()');
     
     var name = escape(document.getElementById("point[name]").value);
@@ -174,7 +179,7 @@ function createPoint(){//marker, infoWindow){
 		* 
 		* If the response is fine, you can close the info window and output a success message and add the path_index and point_id to the edge_boundaries.
 		*/
-        if (responseCode == 200) {// && data.length <= 1) {
+        if (responseCode == 200){
             alert('response and data length are fine.');
             // TODO: This is where the path_index and point_id are added to edge_boundaries.
             // FIXME: Is it okay to be parsing the data again?
@@ -188,22 +193,21 @@ function createPoint(){//marker, infoWindow){
             edge_boundaries.push(path_index);//splice(path_index, 0, id); // Add path_index to end of edge_boundaries
             //alert("edge_boundaries are: " + edge_boundaries);
 			
-            markerToPointDict.path_index = point_id;//edge_boundaries[path_index].point_id = id;
+            markerToPointDict[path_index.toString] = point_id;//edge_boundaries[path_index].point_id = id;
             //alert("edge_boundaries are: " + edge_boundaries);
-			alert("markerToPointDict.path_index: " + markerToPointDict.path_index);
+			alert("markerToPointDict.path_index: " + markerToPointDict[path_index.toString]);
             
 			
             infowindow.close();
             document.getElementById("message").innerHTML = "Location added.";// TODO: How does this work?
         }
-    });
+	});
     //alert('in saveData()');
     //alert('in saveData');
     //alert('point Ids are: ' + edge_boundaries);
 };
 
-/**
- * a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript.
+/** a simple function which wraps the XMLHTTPRequest object that lets you retrieve files (commonly in XML format) via JavaScript.
  * The downloadUrl() callback function will provide you with the content of the URL and the status code.
  * If you use a framework like jQuery or YUI, you may want to replace this function with their respective wrapper functions.
  * @param {Object} url
@@ -223,10 +227,10 @@ function downloadUrl(url, callback){
             try {
                 //parse the result to JSON (simply by eval-ing it)
                 res = eval("(" + request.responseText + ")");
-				// Checks each "field" of res
-//                content = res.content;
+                // Checks each "field" of res
+                //                content = res.content;
                 success = res.success;
-//                id = res.id;
+                //                id = res.id;
                 //alert('id: ' + id);
                 //edge_boundaries.splice(id);
             } 
@@ -234,12 +238,11 @@ function downloadUrl(url, callback){
                 success = false;
             }
             
-//            alert('request.responseText is: ' + request.responseText);
+            //            alert('request.responseText is: ' + request.responseText);
             request.onreadystatechange = doNothing;
             callback(request.responseText, request.status);
         }
-    };
-    
+    }
     request.open('POST', url, true); // FIXME: Might need to be a GET action. 
     request.send(null);
     
@@ -322,7 +325,7 @@ function init(){
         strokeColor: '#000000',
         strokeOpacity: 1.0,
         strokeWeight: 3
-    }
+    };
     poly = new google.maps.Polyline(polyOptions);
     //poly.setMap(map); // not needed since there's only one map?
     //alert('poly stroke weight is ' + poly.strokeWeight);
@@ -340,7 +343,7 @@ function init(){
         strokeColor: '#000000',
         strokeOpacity: 1.0,
         strokeWeight: 3
-    }
+    };
     poly = new google.maps.Polyline(polyOptions);
     poly.setMap(map);
     
