@@ -4,14 +4,16 @@
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<title>Cakewalk</title>
-	<!-->
+	<!--
 	Design by Free CSS Templates
 	http://www.freecsstemplates.org
 	Released for free under a Creative Commons Attribution 2.5 License
 	-->
 	<%= javascript_include_tag 'jquery' %>
+	<%= javascript_include_tag 'jquery-ui' %>
 	<%= javascript_include_tag 'jrails' %>
 	<%= stylesheet_link_tag 'application' %>
+
 	<%= yield :head %>
 
 	<%= javascript_include_tag 'google_analytics'%>
@@ -24,7 +26,7 @@
 	<div id="header">
 		<div id="logo">
 			<h1> Cakewalk </h1>
-			<p> Making getting there easier </p>
+			<p> Making getting there easier on campuses everywhere</p>
 			<div id="headimage" style="float:right; margin-right:10%;margin-top:5%;"><%= image_tag "portal-cake.jpg", :size => '100x100', :alt => 'The cake is a lie'%> </div>
 		</div>
 		<div id="menu-bg">
@@ -37,7 +39,7 @@
 					<li><%= link_to "Search", searchs_path%> </li>
 				</ul>
 
-				<ul id="user_nav" style="float:right;margin-right: 5%;">
+				<ul id="user_nav">
 					<% if session[:user_id] %>
 					<li><%= link_to "Edit Profile", edit_path%></li>
 					<li><%= link_to "Logout", logout_path%></li>
@@ -53,9 +55,13 @@
 	</div>
 	<div id="wrapper">
 		<div id="page">
-
+			<div id="content">
 			<%= yield %>
-
+			</div>
+			<div class="sidebar">
+			<%= yield :sidebar %>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
 		</div>
 	</div>	
 </div>

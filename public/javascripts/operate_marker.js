@@ -2,6 +2,7 @@ var centerLatitude = 42.368078;
 var centerLongitude = -71.257064;
 var startZoom = 16;
 var map;
+
 function init(){
     if (GBrowserIsCompatible()) {
         map = new GMap2(document.getElementById("map"));
@@ -53,6 +54,7 @@ function init(){
         });
     }
     
+
 }
 
 function addMarkerToMap(latlng, html){
@@ -117,6 +119,7 @@ function createMarker(){
 
 
 var geocoder = new GClientGeocoder();
+
 
 function showAddress(){
     var address = document.getElementById("center").value;

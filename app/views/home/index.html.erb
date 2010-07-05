@@ -1,44 +1,66 @@
+
+
 <% content_for :head do%>
-	<%= javascript_include_tag 'search_path' %>
+<%= javascript_include_tag 'search_path' %>
+<%= javascript_include_tag 'jquery-1.4.2.min' %>
+<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min' %>
+<%= javascript_include_tag 'jquery.ui.autocomplete.js' %>
+<%= stylesheet_link_tag 'jquery-ui-1.8.2.custom' %>
+<script type="text/javascript">
+$(function() {
+    var availableTags = <%= @point_names.inspect %>
+	$(".points").autocomplete({
+	    source: availableTags
+	}).autocomplete("enable");
+});
+</script>
+
+<% end %>
+<% usr_name = "" %>
+<% if session[:user] %>
+	<% usr_name =  User.find(session[:user_id]).name %>
+	<%puts "!" + usr_name%>
+<% else %>
+	<% usr_name = ""%>
+	<% puts "whoops"%>
+<% end %>
+<h2> Hi<%usr_name%>, Welcome to the Cakewalk Home Page! </h2>
+<h3> Enter in two locations, where you want to start, and where to go to </h3>
+<h3>(Currently Limited to Brandeis Locations) </h3>
+<label for="category">From</label>
+<input id="start" class="points" name="m[start]" style="width:25%;" />
+<label for="category">To </label>
+<input id="finish" class="points" name="m[finish]" style="width:25%;" />
+<button id="execute-search"> Get me there!!! </button>
+<p> Eg... From: Volen Center, To: Usdan Center </p>
+<div>
+	<br />
+	<!-- div to display the results -->
+	<div class="results" id="search-results"></div>
+</div>
+
+
+<% content_for :sidebar do %>
+<ul>
+	<li>
+		<ul>
+			<h2> Top Tours </h2>
+			<li> Aliquam libero</li>
+			<li> Consectetuer adipiscing elit</li>
+			<li> Metus aliquam pellentesque</li>
+			<li> Suspendisse iaculis mauris</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<h2> Top Paths </h2>
+			<li> Aliquam libero</li>
+			<li> Consectetuer adipiscing elit</li>
+			<li> Metus aliquam pellentesque</li>
+			<li> Suspendisse iaculis mauris</li>
+		</ul>
+	</li>
+</ul>
 <% end %>
 
-			<div id="content">
-				<h2> Hi, Welcome to the Cakewalk Home Page! </h2>
-				<label for="category">From</label>
-				<input type="text" id="start" name="m[start]" style="width:25%;"/>'
-				<label for="category">To </label>
-				<input type="text" id="finish" name="m[finish]" style="width:25%;"/>'
-				<button id="execute-search"> Get me there!!! </button>
 
-				<div>
-
-					<br />
-					<!-- div to display the results -->
-					<div class="results" id="search-results"></div>
-				</div>
-			</div>
-
-			<div class="sidebar">
-				<ul>
-					<li>
-						<ul>
-							<h2> Top Tours </h2>
-							<li> Aliquam libero</li>
-							<li> Consectetuer adipiscing elit</li>
-							<li> Metus aliquam pellentesque</li>
-							<li> Suspendisse iaculis mauris</li>
-						</ul>
-					</li>
-					<li>
-						<ul>
-							<h2> Top Paths </h2>
-							<li> Aliquam libero</li>
-							<li> Consectetuer adipiscing elit</li>
-							<li> Metus aliquam pellentesque</li>
-							<li> Suspendisse iaculis mauris</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div style="clear: both;">&nbsp;</div>
-			
