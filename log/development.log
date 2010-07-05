@@ -34680,3 +34680,119 @@ ActionController::RoutingError (No route matches "/images/email.gif" with {:meth
   -e:2
 
 Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing EdgesController#index (for 127.0.0.1 at 2010-07-05 11:56:04) [GET]
+  [4;35;1mEdge Load (4.2ms)[0m   [0mSELECT * FROM "edges" [0m
+Rendering template within layouts/application
+Rendering edges/index
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 2) [0m
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mPoint Load (0.6ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mPoint Load (0.6ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 6) [0m
+  [4;36;1mPoint Load (0.6ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 286) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 287) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 288) [0m
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 290) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 291) [0m
+  [4;36;1mPoint Load (0.4ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 292) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 293) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 293) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 294) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 294) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 295) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 295) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 296) [0m
+  [4;36;1mPoint Load (0.5ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 297) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 298) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 298) [0m
+  [4;35;1mPoint Load (0.4ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 299) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 296) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 297) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "points" WHERE ("points"."id" = 299) [0m
+  [4;35;1mPoint Load (0.5ms)[0m   [0mSELECT * FROM "points" WHERE ("points"."id" = 300) [0m
+Completed in 152ms (View: 130, DB: 14) | 200 OK [http://localhost/edges]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 11:56:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#index (for 127.0.0.1 at 2010-07-05 12:04:08) [GET]
+  [4;36;1mPath Load (11.6ms)[0m   [0;1mSELECT * FROM "paths" [0m
+Rendering template within layouts/application
+Rendering paths/index
+Completed in 494ms (View: 471, DB: 12) | 200 OK [http://localhost/paths]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 12:04:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-05 12:04:12) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 12:04:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing PathsController#new (for 127.0.0.1 at 2010-07-05 12:11:14) [GET]
+Rendering template within layouts/application
+Rendering paths/new
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://localhost/paths/new]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /Users/yegeniy/Documents/Documents/Brandeis University/Fifth Year Brandeis/Summer/JBS/Incubator/cakewalk/app/controllers/application_controller.rb:7)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 12:11:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/email.gif" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
