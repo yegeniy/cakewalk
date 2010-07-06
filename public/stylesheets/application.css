@@ -138,16 +138,7 @@ img.right {
 	color: #FFFFFF;
 }
 
-#user_nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#user_nav li {
-	display: inline;
-}
-
+/* Login/Logout User Nav*/
 #user_nav a {
 	display: block;
 	float: right;
@@ -158,16 +149,16 @@ img.right {
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
-	color: #DDBB04;
+	color: 	#717D7D;
 }
-
+/*
 #user_nav a:hover {
 	margin: 0 3px 0 0;
 	background: #191E1A;
 	border-bottom: 3px solid #DDBB04;
 	color: #FFFFFF;
 }
-
+*/
 #user_nav ul {
 	margin: 0;
 	padding: 0;
