@@ -59,9 +59,20 @@ function search(start,finish) {
 	//receives JSON objects from the url 
     $.getJSON(url,function(json) {
 	//alert('in loop');
-	alert(json);
+	//alert(json.length);
 	//call display function to display json object in html
-    display(json);
+	if (json.length > 0)
+	{
+	    display(json);
+	}
+	else
+	{
+	    html = '<p> This path doesn\'t exist, want to create your own version? </p>';
+	    html += '<FORM>';
+	    html += '<INPUT TYPE="button" value="Create it!" onClick="parent.location=\'create_path\'">';
+	    html += '</FORM>';
+	$('#search-results').html(html);
+	}
 	});
 }
 
