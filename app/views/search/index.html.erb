@@ -21,39 +21,28 @@
 </script>
 <% end %>
 
-<div id=page>
-  <div id="wrapper">
-    <h2> Search for a path </h2>
+<h2> Search for a path </h2>
 
-    <fieldset>
-      <% 2.times do %>
-      &nbsp
-      <% end %>
-      <label for="category">From: </label>
-      <input type="text" id="start" />
-      <% 5.times do %>
-      &nbsp
-      <% end %>
-      <label for="category">To: </label>
-      <input type="text" id="end" /> 
-      <% 5.times do %>
-      &nbsp
-      <% end %>
-      <button id="search" onClick="directions()"> Search! </button>
-    </fieldset>
-    <br />
-    <div id="content">
+<fieldset>
+  <% 2.times do %>
+  &nbsp
+  <% end %>
+  <label for="category">From: </label>
+  <input type="text" id="start" />
+  <% 5.times do %>
+  &nbsp
+  <% end %>
+  <label for="category">To: </label>
+  <input type="text" id="end" /> 
+  <% 5.times do %>
+  &nbsp
+  <% end %>
+  <button id="search" onClick="directions()"> Search! </button>
+</fieldset>
 
+<div id="map_canvas" style="width:100%; height:500px"></div>
 
-
-
-
-      <div id="map_canvas" style="width:500px; height:400px"></div>
-
-    </div>
-    <div id="sidebar1" class="sidebar">
-      <div id="directionsPanel" style="width:100%;height:40%;"></div>
-    </div>
-  </div>
-</div>
-
+<% content_for :sidebar do %>
+<h2> Directions </h2>
+<div id="directionsPanel" style="width:100%;height:40%;"></div>
+<% end %>
