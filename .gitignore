@@ -1,5 +1,6 @@
-
 # Ignores temporary emacs files 
 *~
-#FIXME: ignore .log files
+# FIXME: ignore .log files (not actually ignoring)
 log/*.log
+# FIXME: no .DS_Store (should be recursive)
+*/.DS_Store
