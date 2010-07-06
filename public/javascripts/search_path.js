@@ -59,7 +59,7 @@ function search(start,finish) {
 	//receives JSON objects from the url 
     $.getJSON(url,function(json) {
 	//alert('in loop');
-	//alert(json);
+	alert(json);
 	//call display function to display json object in html
     display(json);
 	});
