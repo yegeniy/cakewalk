@@ -9,7 +9,20 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
-
+  <h3>Add Edges</h3>
+  <% f.fields_for :edges do |builder| %>
+    <%=builder.label :point_id, "Point ID:" -%>
+    <%#builder.text_field :point_id -%>
+    <%=builder.collection_select(:point_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
+    
+    <%=builder.label :endpoint_id, "Endpoint ID:" -%>
+    <%#builder.text_field :endpoint_id -%>
+    <%=builder.collection_select(:endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
+    
+    <%=builder.label :direction, "Direction:"-%>
+    <%=builder.text_field :direction -%><br />
+    <br />
+  <% end %>
   <p>
     <%= f.submit 'Submit' %>
   </p>

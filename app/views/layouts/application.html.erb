@@ -1,89 +1,104 @@
 <!DOCTYPE html PUBLIC "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<title>Cakewalk</title>
-	<!--
-	Design by Free CSS Templates
-	http://www.freecsstemplates.org
-	Released for free under a Creative Commons Attribution 2.5 License
-	-->
-	<%= javascript_include_tag 'jquery' %>
-	<%= javascript_include_tag 'jquery-ui' %>
-	<%= javascript_include_tag 'jrails' %>
-	<%= stylesheet_link_tag 'application' %>
-
-	<%= yield :head %>
-
-	<%= javascript_include_tag 'google_analytics'%>
-
-</head>
-<body>
-	<% flash.each do |name, msg| -%>
-	<%= content_tag :div, msg, :id => "flash_#{name}" %>
-	<% end -%>
-	<div id="header">
-		<div id="logo">
-			<h1> Cakewalk </h1>
-			<p>  Making walks a piece of cake!</p>
-			<div id="headimage" style="float:right; position:relative; right:15%; margin-top:4%;"><%= image_tag "portal-cake.jpg", :size => '100x100', :alt => 'The cake is a lie'%> </div>
-
-			<ul id="user_nav">
-			  <% if session[:user_id] %>
-			  <li><%= link_to "Edit Profile", edit_path%></li>
-			  <li><%= link_to "Logout", logout_path%></li>
-			  
-			  <% else%>
-			  <li><%= link_to "Register", register_path %></li>
-			  <li><%= link_to "Login", login_path%></li>	
-			  <%end%>
-			
-			</ul>
-		</div>
-		<div id="menu-bg">
-			<div id="menu">
-				<ul id="main">
-					<li><%= link_to "Home", home_path%> </li>
-<!--					<li><%= link_to "Add a Point", addpoint_path%> </li> -->
-					<li><%= link_to "Shortcuts", edges_path%> </li>
-					<li><%= link_to "Create Your Own Path", create_path_path%> </li>
-					<li><%= link_to "Google Maps Search", searchs_path%> </li>
-					<li><%= link_to "Feedback", "http://spreadsheets.google.com/viewform?hl=en&formkey=dDRidWNOZ2hxSVV2RG5iQnlwLTlBR0E6MQ#gid=0", :popup => true %></li>
-				</ul>
-			</div>
-		</div>	
-	</div>
-	<div id="wrapper">
-		<div id="page">
-			<div id="content">
-			<%= yield %>
-			</div>
-			<div class="sidebar">
-			<%= yield :sidebar %>
-			</div>
-			<div style="clear: both;">&nbsp;</div>
-		</div>
-	</div>	
-</div>
-<div id="footer">
-	<div id="footer-content">
-		<p> Comments, questions, complaints, suggestions? Email <%= image_tag "email.gif", :alt => "our emails"%> &copy;2010 All Rights Reserved. &nbsp;&nbsp; Layout design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
-
-	</div>
-</div>
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-
-<script type="text/javascript">
-try{
-var pageTracker = _gat._getTracker("UA-17191590-1");
-pageTracker._trackPageview();
-} catch(err) {}
-</script>
-
-</body>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <title>Cakewalk</title>
+        <!--
+        Design by Free CSS Templates
+        http://www.freecsstemplates.org
+        Released for free under a Creative Commons Attribution 2.5 License
+        --><%= javascript_include_tag 'jquery' %>
+        <%= javascript_include_tag 'jquery-ui' %>
+        <%= javascript_include_tag 'jrails' %>
+        <%= stylesheet_link_tag 'application' %>
+        <%= yield :head %>
+        <%= javascript_include_tag 'google_analytics' %>
+    </head>
+    <body>
+        <% flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        <% end -%>
+        <div id="header">
+            <div id="logo">
+                <h1>Cakewalk </h1>
+                <p>
+                    Making Walks a Piece of Cake
+                </p>
+                <div id="headimage" style="float:right; position:relative; right:15%; margin-top:4%;">
+                    <%= image_tag "portal-cake.jpg", :size => '100x100', :alt => 'The cake is a lie' %>
+                </div>
+                <ul id="user_nav">
+                    <% if session[:user_id] %>
+                    <li>
+                        <%= link_to "Edit Profile", edit_path %>
+                    </li>
+                    <li>
+                        <%= link_to "Logout", logout_path %>
+                    </li>
+                    <% else %>
+                    <li>
+                        <%= link_to "Register", register_path %>
+                    </li>
+                    <li>
+                        <%= link_to "Login", login_path %>
+                    </li>
+                    <%end %>
+                </ul>
+            </div>
+            <div id="menu-bg">
+                <div id="menu">
+                    <ul id="main">
+                        <li>
+                            <%= link_to "Ho#e8e8e8me", home_path %>
+                        </li>
+                        <!--					<li><%= link_to "Add a Point", addpoint_path%> </li> -->
+                        <li>
+                            <%= link_to "Shortcuts", edges_path %>
+                        </li>
+                        <li>
+                            <%= link_to "Create Your Own Path", create_path_path %>
+                        </li>
+                        <li>
+                            <%= link_to "Google Maps Search", searchs_path %>
+                        </li>
+                        <li>
+                            <%= link_to "Feedback", "http://spreadsheets.google.com/viewform?hl=en&formkey=dDRidWNOZ2hxSVV2RG5iQnlwLTlBR0E6MQ#gid=0", :popup => true %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="page">
+                <div id="content">
+                    <%= yield %>
+                </div>
+                <div class="sidebar">
+                    <%= yield :sidebar %>
+                </div>
+                <div style="clear: both;">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-content">
+                <p>
+                    Comments, questions, complaints, suggestions? Email <%= image_tag "email.gif", :alt => "our emails" %>&copy;2010 All Rights Reserved. &nbsp;&nbsp; Layout design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-17191590-1");
+                pageTracker._trackPageview();
+            } 
+            catch (err) {
+            }
+        </script>
+    </body>
 </html>
