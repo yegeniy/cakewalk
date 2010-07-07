@@ -11,7 +11,7 @@
 <p>
   <b>Edges:</b>
   <% @path.edges.each do |path_edge| %>
-    <%=h Point.find(path_edge.point_id).name %> to <%=h Point.find(path_edge.endpoint_id).name %><br />
+    From "<%=h Point.find(path_edge.point_id).name %>" <%=h path_edge.direction %> to <%=h Point.find(path_edge.endpoint_id).name %>. Polyline: { <%=h path_edge.polyline %> }<br />
   <% end %>
 </p>
 
