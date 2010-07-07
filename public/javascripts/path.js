@@ -28,13 +28,14 @@
  *   As far as I can tell, their content is associated with their location
  *    (or optionally, an anchor). They are not otherwise associated
  **/
+
 var map; // Will be set to a Map object
 var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
 //var newPointForm; // Will be an HTML object stored in an InfoWindow
 
-var pointIds = []; //Will hold an ordered list of the point ids. Can traverse this list to create edges. 
-var edge_descriptions = [];
+//var pointIds = []; //Will hold an ordered list of the point ids. Can traverse this list to create edges. 
+//var edge_descriptions = [];
 
 var edge_boundaries = new Array(); //Will hold an ordered list of indices(indices: point_id) pairs at which to split the polyline (edge_boundaries).
 var markerToPointDict = new Object(); //An associative array to match path_indix to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString], where i is an integer.
@@ -78,14 +79,14 @@ function createEdges(path_id){
 		var endpoint_id 		= markerToPointDict[edgeEndPolyIndex.toString()];
 
 		// Extract a sub-polyline from the overall polyline. Will be used for direction parameter of the created edge. 
-		var direction = polyLineSubPath(poly, edgeStartPolyIndex, edgeEndPolyIndex);
+		var edge_polyline = polyLineSubPath(poly, edgeStartPolyIndex, edgeEndPolyIndex);
 			
 //		alert('i: ' + i + ' out of ' + edge_boundaries.length +
 //		'; edgeStartPolyIndex: ' + edgeStartPolyIndex +
 //		'; edgeEndPolyIndex: ' + edgeEndPolyIndex +
 //		'; point_id: ' + point_id +
 //		'; endpoint_id: ' + endpoint_id +
-//		'; direction: ' + direction +
+//		'; edge_polyline: ' + edge_polyline +
 //		';');
 		
 		var url = "../edges/create?" + //FIXME: Might not be robust to url changes.
@@ -97,14 +98,14 @@ function createEdges(path_id){
 		endpoint_id +
 		"&edge[position]=" +
 		i +
-		"&edge[direction]=" +
-		direction;
+		"&edge[polyline]=" +
+		edge_polyline;
 		
 		downloadUrl(url, function(data, responseCode){
 		//alert('in createEdges callback. ' + 'responseCode: ' + responseCode + 'data.length is ' + data.length);
 		/* 
 		 * Check that the returned status code is 200. This means that the file was retrieved successfully and we can continue with the callback.
-		 *	If the response is fine, retrieve the path_id and create the edges.
+		 *	If the response is fine, display the edge in the sidebar. FIXME: Doesn't need to be done here, does it?
 		 */
 		if (responseCode == 200) {
 			// Receive path_id
@@ -359,10 +360,11 @@ function addToMap(event){
 		
     });
     
-	if (pointIds.length != 0) {
-		//whenever an edge is created, ask user to enter edge description
-	    edgeInfo();
-	   }
+//	// FIXME: I think this should be done through a different view. (something in the sidebar, much like the AJAX Cart in the depot app.
+//	if (pointIds.length != 0) {
+//		//whenever an edge is created, ask user to enter edge description
+//	    edgeInfo();
+//	   }
     
 
 
