@@ -28,42 +28,44 @@
                     <%= image_tag "portal-cake.jpg", :size => '100x100', :alt => 'The cake is a lie' %>
                 </div>
                 <ul id="user_nav">
-                    <% if session[:user_id] %>
-                    <li>
-                        <%= link_to "Edit Profile", edit_path %>
-                    </li>
-                    <li>
-                        <%= link_to "Logout", logout_path %>
-                    </li>
-                    <% else %>
-                    <li>
-                        <%= link_to "Register", register_path %>
-                    </li>
-                    <li>
-                        <%= link_to "Login", login_path %>
-                    </li>
-                    <%end %>
                 </ul>
             </div>
             <div id="menu-bg">
                 <div id="menu">
                     <ul id="main">
                         <li>
-                            <%= link_to "Ho#e8e8e8me", home_path %>
+                            <%= link_to "Search Paths", home_path %>
                         </li>
-                        <!--					<li><%= link_to "Add a Point", addpoint_path%> </li> -->
+                        <li>
+                            <%= link_to "Google Directions Search", searchs_path %>
+                        </li>
+                        <!--					<li><%= link_to "Add a Point", addpoint_path%> </li> 
                         <li>
                             <%= link_to "Shortcuts", edges_path %>
-                        </li>
+                        </li>-->
                         <li>
                             <%= link_to "Create Your Own Path", create_path_path %>
                         </li>
-                        <li>
-                            <%= link_to "Google Maps Search", searchs_path %>
-                        </li>
-                        <li>
+                        <div style="float: right">
+			<li>
                             <%= link_to "Feedback", "http://spreadsheets.google.com/viewform?hl=en&formkey=dDRidWNOZ2hxSVV2RG5iQnlwLTlBR0E6MQ#gid=0", :popup => true %>
                         </li>
+			<% if session[:user_id] %>
+			<li>
+			  <%= link_to "Edit Profile", edit_path %>
+			</li>
+			<li>
+			  <%= link_to "Logout", logout_path %>
+			</li>
+			<% else %>
+			<li>
+			  <%= link_to "Register", register_path %>
+			</li>
+			<li>
+			  <%= link_to "Login", login_path %>
+			</li>
+			<%end %>
+			</div>
                     </ul>
                 </div>
             </div>
