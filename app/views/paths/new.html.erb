@@ -50,8 +50,8 @@ window.onload = foo;
 
 <% content_for :sidebar do %>
 
-	<%=h render :partial => 'form' -%> <br />
-	<%=h render :partial => 'edges/edges_from_path' %>
+	<%= render :partial => 'form' -%> <br />
+	<%= render :partial => 'edges/edges_from_path' %>
 <%
 =begin %>
 	Edges should appear here as they are added. <br />
