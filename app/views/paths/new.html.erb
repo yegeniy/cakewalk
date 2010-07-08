@@ -12,7 +12,13 @@ var m;
 	position: new google.maps.LatLng(<%= point.lat + "," + point.lng %>), 
 	map: map, 
 	title: '<%= point.name %>'});
-    
+    var infoWindow = new google.maps.InfoWindow({});
+        google.maps.event.addListener(m, 'click', function(){
+        openInfoWindow(infoWindow, m);
+		
+    });
+
+
     //markers.push(temp);
 <% end %>
 }
