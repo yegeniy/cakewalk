@@ -9,9 +9,9 @@ function foo() {
 var m;
 <% for point in @points do %>  
     m  = new google.maps.Marker({
-	position: new google.maps.LatLng(<%= point.lat + "," + point.lng %>), 
+	position: new google.maps.LatLng(<%=h point.lat + "," + point.lng %>), 
 	map: map, 
-	title: '<%= point.name %>'});
+	title: "<%=h point.name %>"});
 /* To be implemented later
     var infoWindow = new google.maps.InfoWindow({
 	content: 
@@ -46,12 +46,12 @@ window.onload = foo;
 <div id="mapContainer" style="width:100%; height:500px"></div>
 <div id="message"></div>
 
-<%= link_to 'Back', paths_path %>
+<%=h link_to 'Back', paths_path %>
 
 <% content_for :sidebar do %>
 
-	<%= render :partial => 'form' -%> <br />
-	<%= render :partial => 'edges/edges_from_path' %>
+	<%=h render :partial => 'form' -%> <br />
+	<%=h render :partial => 'edges/edges_from_path' %>
 <%
 =begin %>
 	Edges should appear here as they are added. <br />
