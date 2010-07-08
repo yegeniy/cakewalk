@@ -1,45 +1,16 @@
-<!--<% form_for(@path) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <h3>Add Edges</h3>
-  <% f.fields_for :edges do |builder| %>
-    <%=builder.label :point_id, "Point ID:" -%>
-    <%#builder.text_field :point_id -%>
-    <%=builder.collection_select(:point_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
-    
-    <%=builder.label :endpoint_id, "Endpoint ID:" -%>
-    <%#builder.text_field :endpoint_id -%>
-    <%=builder.collection_select(:endpoint_id, Point.find(:all), :id, :name, {:prompt => true}) -%><br />
-    
-    <%=builder.label :direction, "Direction:"-%>
-    <%=builder.text_field :direction -%><br />
-    <br />
-  <% end %>
-  <p>
-    <%= f.submit 'Submit' %>
-  </p>
-
-<% end %>
--->
-
-<label for="path"> Name </label>
-<input type="text" id="path_name" name="m[path_name]" style="width:25%;"/>'
-
-<label for="path"> Description </label>
-<input type="text" id="path_description" name="m[path_description]" style="width:25%;"/>'
-
-<button id="execute_path"> Create path!!! </button>
-<br/>
-<p>
-<p>
-<div class ="sidebar" id = "ask_edge_description">
-
-</div>
+<fieldset class='main_container'>
+    <legend>
+        Create a path
+    </legend>
+    <label for='name'>
+        Name
+    </label>
+    <input type='text' id='path[name]' name='path[name]'/>
+    <br/>
+    <label for='description'>
+        Description
+    </label>
+    <input type='text' id='path[description]' name='path[description]'/>
+    <br/>
+    <input type='submit' value='Submit Path' onclick='submitPath()'/>
+</fieldset>

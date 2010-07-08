@@ -2,10 +2,13 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect 'search/map', :controller => 'search', :action => "map", :method => :get
   map.connect 'search/getdirect', :controller => 'search', :action => "getdirect"
+  map.connect "paths/search_path", :controller => "paths", :action => "search_path"
+
   map.connect "operate_marker/create_edges", :controller => "operate_marker", :action => "create_edges"
  
-  map.connect "paths/search_path", :controller => "paths", :action => "search_path"
- 
+  
+  map.connect "edges/path/:id", :controller => "edges", :action => "show_from_path"
+  
   map.resources :paths
   map.resources :users
   map.resources :edges

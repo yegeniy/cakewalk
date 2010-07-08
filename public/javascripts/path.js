@@ -42,25 +42,18 @@ var visibleInfoWindow; //Will be used to set the current, open info window.
 //var pointIds = []; //Will hold an ordered list of the point ids. Can traverse this list to create edges. 
 //var edge_descriptions = [];
 
-var edge_boundaries = new Array(); //Will hold an ordered list of indices(indices: point_id) pairs at which to split the polyline (edge_boundaries).
-var markerToPointDict = new Object(); //An associative array to match path_indix to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString], where i is an integer.
-// TODO: Use ArrayObj.splice() to insert http://www.w3schools.com/jsref/jsref_obj_array.asp
+var edge_boundaries = new Array(); //Will hold an ordered list of indices at which to split the overall polyline array (poly) into edges
+var markerToPointDict = new Object(); //An associative array to match path_index to its point_id in the database. Access it like this: markerToPointDict[edge_boundaries[i].toString()], where i is an integer.
+// Maybe TODO: Consider that someArray.splice(...) inserts into array http://www.w3schools.com/jsref/jsref_obj_array.asp
 
 
-/**
- * A form for creating the path.
- * Has a field for the path name, the path description, and hidden fields containing the information for creating the edges.
- */
-function savePathForm(){
-	return "<fieldset class='main_container'>"+
-	"<legend>Create a path</legend>" +
-	"<label for='name'>Name</label>" +
-	"<input type='text' id='path[name]' name='path[name]'/>" +
-	"<label for='description'>description</label>" +
-	"<input type='text' id='path[description]' name='path[description]'/>" +
-	"<input type='submit' value='Submit Path' onclick='submitPath()'/>" +
-	"</fieldset>";
-};
+///**
+// * A form for creating the path.
+// * Has a field for the path name, the path description, and hidden fields containing the information for creating the edges.
+// */
+//function savePathForm(){
+//	return "
+//};
 
 /**
  * for i=0; i<edge_boundaries.length-1; i++
@@ -116,7 +109,7 @@ function createEdges(path_id){
 			// Receive path_id
 			res = eval("(" + data + ")");
             // TODO: Display an edge.
-            //In edge.js there exists function createAnEdge() and some var
+            //In edge.js there should exists function createAnEdge() and some var
             //createAnEdge()
 		}
 	});
@@ -441,7 +434,7 @@ function init(){
 
 //alert('about to call init');
 // Display the Create path Form
-document.write(savePathForm());
+//document.write(savePathForm());
 
 // Call the init function once the window (page) is loaded.
 google.maps.event.addDomListener(window, 'load', init);

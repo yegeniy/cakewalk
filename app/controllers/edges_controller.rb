@@ -1,6 +1,4 @@
 class EdgesController < ApplicationController
-
-	
   # GET /edges
   # GET /edges.xml
   def index
@@ -20,6 +18,17 @@ class EdgesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @edge }
+    end
+  end
+
+  # GET /edges/path/:id
+  def show_from_path
+    @current_path = Path.find(params[:id])
+    @edges = Edge.all.select{ |edge| edge.path_id == @current_path.id }#find(:all, :params => { :path_id => :id })
+
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @edges }
     end
   end
 
