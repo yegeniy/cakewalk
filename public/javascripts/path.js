@@ -144,7 +144,8 @@ function polyLineSubPath(poly, startIndex, endIndex){
 /**
  * Creates a path by sending a request to the server.
  * Receives a path_id in return 
- * once the path_id is returned, create edges based on edge_boundaries array:
+ * once the path_id is returned, create edges based on edge_boundaries array;
+ * Once all edges are created, display the edges from path form
  */
 function submitPath(){
 	var name = escape(document.getElementById("path[name]").value);
@@ -168,6 +169,21 @@ function submitPath(){
             path_id = res.id;
 			//alert('path_id: ' + path_id);
 			createEdges(path_id);
+			
+			alert('success: path created/updated');
+			
+			// TODO: Now refresh the edges in this path by calling the show_from_path action (with) this path_id and redisplay _edges_from_path. 
+			var showFromPathUrl = "../edges/path/" + path_id;//alert($('#edges_from_path').html());
+			
+			downloadUrl(showFromPathUrl, function(data, responseCode){
+				if (responseCode == 200){
+					
+				}
+			});
+			
+		}
+		else{
+			alert('creating path failed with responseCode ' + responseCode);
 		}
 	});
 };

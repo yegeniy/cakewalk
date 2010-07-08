@@ -25,7 +25,8 @@ class EdgesController < ApplicationController
   def show_from_path
     @current_path = Path.find(params[:id])
     @edges = Edge.all.select{ |edge| edge.path_id == @current_path.id }#find(:all, :params => { :path_id => :id })
-
+      
+    #redirect_to 
     respond_to do |format|
       format.html
       format.xml { render :xml => @edges }

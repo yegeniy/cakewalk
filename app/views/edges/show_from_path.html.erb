@@ -9,17 +9,9 @@
     <th>Options</th>
   </tr>
 
-<% @edges.each do |edge| %>
-  <tr>
-    <td><%=h Point.find(edge.point_id).name %></td>
-    <td><%=h Point.find(edge.endpoint_id).name %></td>
-    <td><%=h edge.direction %></td>
-	<td><%=h edge.polyline %></td>
-    <td><%= link_to 'Show', edge %>
-    	<%= link_to 'Edit', edit_edge_path(edge) %>
-    	<%= link_to 'Destroy', edge, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<%= render :partial => 'edges_from_path' %>
+
+
 </table>
 
 <br />
