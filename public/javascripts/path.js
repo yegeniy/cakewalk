@@ -29,6 +29,11 @@
  *    (or optionally, an anchor). They are not otherwise associated
  **/
 
+/*
+* FIXME: Put vars with scope of the whole page into a single file
+* Global scope function  should do the same. 
+* Then in the view, 
+*/
 var map; // Will be set to a Map object
 var poly; // Will be a Polyline object
 var visibleInfoWindow; //Will be used to set the current, open info window.
@@ -110,7 +115,9 @@ function createEdges(path_id){
 		if (responseCode == 200) {
 			// Receive path_id
 			res = eval("(" + data + ")");
-
+            // TODO: Display an edge.
+            //In edge.js there exists function createAnEdge() and some var
+            //createAnEdge()
 		}
 	});
 	};
@@ -345,7 +352,8 @@ function addToMap(event){
     var marker = new google.maps.Marker({
         position: event.latLng,
         title: path.getLength().toString(), //FIXME: marker.title might not be the right place to put the path index, because the overlay will probably need to be the title of the location.  
-        map: map
+        map: map,
+        icon: "../images/Waypoint.gif"
     });
     
     //FIXME: The content of infoWindow is reset whenever it's closed. This is inconvenient, but acceptable for now.
