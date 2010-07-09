@@ -20,7 +20,11 @@ class Path < ActiveRecord::Base
       sample_path = []
       if !p.edges.nil?
         if start == p.edges.first.point.name
-          if finish == p.edges.last.endpoint.name
+
+          if finish == p.edges.first.endpoint.name
+            sample_path.push(p.edges.first)
+            available.push(sample_path)   
+          elsif finish == p.edges.last.endpoint.name
             available.push(p.edges)
 
           else
